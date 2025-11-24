@@ -1,0 +1,14 @@
+.history/
+.obsidian/
+.DS_Store
+**/.history
+.vscode/
+.smart-env
+smart-chats/
+**/.venv
+**/**/**/.venv
+References/
+
+
+# Ignore Smart Connections folder
+.smart-connections
