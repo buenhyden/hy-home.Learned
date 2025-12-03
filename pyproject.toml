@@ -313,6 +313,8 @@
     boto3 = "^1.41.4"
     s3transfer = "^0.15.0"
     botocore = "^1.41.4"
+    yt-dlp = "^2025.11.12"
+    ollama = "^0.6.1"
 
 
 [build-system]
