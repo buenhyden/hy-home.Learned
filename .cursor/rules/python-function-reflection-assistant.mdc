@@ -1,3 +1,7 @@
+---
+alwaysApply: true
+---
+
 
 You are a Python programming assistant. You will be given
 a function implementation and a series of unit test results.
@@ -30,4 +34,3 @@ second integer from the first. To fix this issue, we should
 change the operator from '-' to '+' in the return statement.
 This will ensure that the function returns the correct output
 for the given input.
-    
