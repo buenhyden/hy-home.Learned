@@ -1,6 +1,34 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ]
+  "extends": ["config:recommended", ":rebaseStalePrs", "docker:pinDigests"],
+  // uv.lock 파일을 업데이트하도록 설정 확인
+  "postUpdateOptions": ["gomodTidy"], // 일부 환경에서 필요할 수 있으나, 최근 Renovate는 uv를 기본 지원합니다.
+
+  "packageRules": [
+    {
+      // 1. 메이저 업데이트: 자동 병합 금지 및 대시보드 승인 필요
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "dependencyDashboardApproval": true,
+      "labels": ["breaking-change", "major-update"]
+    },
+    {
+      // 2. 마이너 및 패치 업데이트: 조건부 자동 병합
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      // 패키지 출시 후 5일이 지난 뒤에만 PR 생성 (배포 초기 버그 방지)
+      "minimumReleaseAge": "5 days",
+      // CI 테스트가 반드시 통과해야 함
+      "prCreation": "not-pending",
+      "labels": ["auto-merge"]
+    },
+    {
+      // 3. 보안 취약점 관련 업데이트: 즉시 PR 생성 및 알림
+      "matchMetadata": { "isVulnerability": true },
+      "automerge": false,
+      "labels": ["security"]
+    }
+  ],
+  // 깃허브의 자동 병합 기능을 활용
+  "platformAutomerge": true
 }
