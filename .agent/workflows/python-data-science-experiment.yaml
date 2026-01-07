@@ -1,0 +1,62 @@
+name: Data Science Experiment Workflow
+description: >
+  Run a reproducible Python-based data science experiment (data prep, model
+  training, evaluation) with clear configuration and path-agnostic behavior.
+
+triggers:
+  - user_request: "run experiment"
+  - user_request: "train model"
+  - user_request: "reproduce results"
+
+assumptions:
+  - Data is accessible via project-relative paths or configuration.
+  - The project has or will have src/ modules for data and models.    
+
+steps:
+  - name: Confirm project structure
+    action: analyze_repository
+    description: >
+      Verify or create the standard layout with src/, data/, notebooks/,
+      config/, and models/ directories. 
+
+  - name: Define experiment configuration
+    action: modify_files
+    description: >
+      Create or update a configuration file (for example,
+      config/experiment.yaml) containing:
+        - Data paths (relative), feature sets, and splits.
+        - Model type and hyperparameters.
+        - Output paths for models and metrics (for example, "models/",
+      "reports/").
+      Ensure nothing depends on user-specific absolute paths. 
+
+  - name: Implement experiment script
+    action: modify_files
+    description: >
+      Add or refine a script (for example, src/run_experiment.py) that:
+        - Loads configuration.
+        - Reads data using relative paths.
+        - Performs preprocessing, training, and evaluation.
+        - Saves artifacts and metrics under project-relative directories.
+
+  - name: Connect notebooks to code
+    action: modify_files
+    description: >
+      Update or create notebooks that:
+        - Import functions from src/ instead of re-implementing logic.
+        - Load configuration and artifacts from relative paths.
+      Ensure notebooks can be executed from the project root without path edits.
+
+  - name: Log and track experiments
+    action: add_experiment_tracking
+    description: >
+      Integrate simple experiment tracking (for example, MLflow, CSV logs, or
+      similar) so that each run records config, metrics, and artifact locations
+      using relative paths. 
+
+  - name: Provide run instructions
+    action: summarize
+    description: >
+      Document how to run the experiment (for example, `python -m
+      src.run_experiment` with optional config overrides) and how to reproduce
+      results on another machine using the same environment file.

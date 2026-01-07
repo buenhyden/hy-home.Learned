@@ -1,0 +1,58 @@
+name: Bootstrap Python Data Project
+description: >
+  Create or normalize a Python-based data engineering/data science project
+  structure that is path-independent and reproducible.
+
+triggers:
+  - user_request: "create python data project"
+  - user_request: "restructure data project"
+  - user_request: "make this project reproducible"
+
+assumptions:
+  - The user wants a standard layout with clear separation of data, code, and
+    notebooks. 
+
+steps:
+  - name: Analyze current repository
+    action: analyze_repository
+    description: >
+      Inspect existing folders (for example, data, src, notebooks, config,
+      tests) and detect any current structure or conventions.
+
+  - name: Propose project layout
+    action: propose_structure
+    description: >
+      Suggest a standard layout:
+        - data/raw, data/processed, data/interim
+        - src/ for reusable code modules
+        - notebooks/ for exploratory analysis
+        - config/ for configuration files
+        - tests/ for tests
+        - models/, reports/, or artifacts/ as needed
+      Ask the user to confirm or adjust.
+
+  - name: Create missing directories and placeholders
+    action: modify_files
+    description: >
+      Create any missing directories and README placeholders (for example,
+      data/README.md) using relative paths from the repository root.
+
+  - name: Initialize environment specification
+    action: modify_files
+    description: >
+      Add or update pyproject.toml, requirements.txt, or environment.yml to
+      capture dependencies, without referencing host-specific paths.
+     
+
+  - name: Add example configuration
+    action: modify_files
+    description: >
+      Create a config/example.yaml (or similar) with path-related settings (for
+      example, data_dir: "data") to demonstrate path-agnostic configuration.
+
+  - name: Document usage
+    action: summarize
+    description: >
+      Update or create the README to describe the structure, how to set up the
+      environment, and how to run basic commands, all using project-root
+      relative paths.
