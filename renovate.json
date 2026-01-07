@@ -1,34 +1,34 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", ":rebaseStalePrs", "docker:pinDigests"],
-  // uv.lock 파일을 업데이트하도록 설정 확인
-  "postUpdateOptions": ["gomodTidy"], // 일부 환경에서 필요할 수 있으나, 최근 Renovate는 uv를 기본 지원합니다.
+  "extends": ["config:recommended", ":rebaseStalePrs"],
+  // [Step 1] 기본 원칙: 모든 자동 병합을 전역적으로 비활성화합니다.
+  "automerge": false,
+  "automergeStrategy": "squash",
 
   "packageRules": [
     {
-      // 1. 메이저 업데이트: 자동 병합 금지 및 대시보드 승인 필요
+      // [Step 2] 예외 규칙: patch, pin, digest 업데이트만 자동 병합을 허용합니다.
+      // 기존의 'minor'를 제외하여 위험 요소를 제거했습니다.
+      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "automerge": true,
+      // 안정성을 위해 출시 후 3일이 지난 패키지만 처리합니다.
+      "minimumReleaseAge": "3 days",
+      "labels": ["dependencies", "auto-merge"]
+    },
+    {
+      // [Step 3] 메이저 업데이트: 명시적으로 수동 검토 대상으로 분류합니다.
       "matchUpdateTypes": ["major"],
       "automerge": false,
-      "dependencyDashboardApproval": true,
-      "labels": ["breaking-change", "major-update"]
+      "labels": ["dependencies", "major-update"]
     },
     {
-      // 2. 마이너 및 패치 업데이트: 조건부 자동 병합
-      "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true,
-      // 패키지 출시 후 5일이 지난 뒤에만 PR 생성 (배포 초기 버그 방지)
-      "minimumReleaseAge": "5 days",
-      // CI 테스트가 반드시 통과해야 함
-      "prCreation": "not-pending",
-      "labels": ["auto-merge"]
-    },
-    {
-      // 3. 보안 취약점 관련 업데이트: 즉시 PR 생성 및 알림
-      "matchMetadata": { "isVulnerability": true },
+      // [Step 4] 마이너 업데이트: 별도 설정이 없으므로 전역 설정(false)을 따르지만,
+      // 명확한 관리를 위해 라벨을 부여할 수 있습니다.
+      "matchUpdateTypes": ["minor"],
       "automerge": false,
-      "labels": ["security"]
+      "labels": ["dependencies", "minor-update"]
     }
   ],
-  // 깃허브의 자동 병합 기능을 활용
+  // GitHub의 Native Auto-merge 기능을 사용하여 안정적으로 병합합니다.
   "platformAutomerge": true
 }
