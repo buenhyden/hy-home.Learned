@@ -9,6 +9,7 @@ smart-chats/
 **/**/**/.venv
 References/
 
+.agent/
 
 # Ignore Smart Connections folder
 .smart-connections
