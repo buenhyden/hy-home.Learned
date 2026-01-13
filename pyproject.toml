@@ -298,7 +298,7 @@
         "werkzeug==3.0.4",
         "wheel==0.44.0",
         "widgetsnbextension==4.0.13",
-        "wrapt==1.16.0",
+        "wrapt==2.0.1",
         "wsproto==1.2.0",
         "xlsx2csv==0.8.3",
         "xlsxwriter==3.2.0",
