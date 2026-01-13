@@ -9,7 +9,10 @@ smart-chats/
 **/**/**/.venv
 References/
 
-.agent/rules
+.agent/rules/
+.github/instructions/
+.github/agents/
+.github/prompts/
 
 # Ignore Smart Connections folder
 .smart-connections
