@@ -15,11 +15,18 @@
 
 | Folder | Description |
 | :--- | :--- |
-| **[Studies/](./Studies)** | 특정 주제(CS, AI, Frontend, Backend 등)에 대한 심층 연구 및 분석. |
-| **[TIL/](./TIL)** | 매일 새롭게 배운 기술적 조각과 문제 해결 기록. |
-| **[References/](./References)** | 도서, 강의, 화이트페이퍼 등 신뢰할 수 있는 소스의 요약. |
-| **[infra/](./infra)** | 실험적 개발 환경 구성을 위한 IaC 및 Docker 설정. |
-| **[.agent/](./.agent)** | 에이전트 워크플로우 및 규칙 설정 (Agentic Workflow). |
+| **[TIL/](./TIL)** | **Today I Learned**. 2024~2026년의 일일 학습 및 문제 해결 기록. |
+| **[References/](./References)** | **Knowledge Base**. 도서(Books), 강의 자료(Lecture-Data) 등 학습 리소스 아카이브. |
+| **[.agent/](./.agent)** | **AI Configuration**. Agentic Workflow 규칙 및 설정. |
+| **[.github/](./.github)** | **Project Management**. 템플릿, 워크플로우, 커뮤니티 건강 파일(Community Health Files). |
+
+### 📚 Key Documents
+
+| File | Description |
+| :--- | :--- |
+| **[AGENTS.md](./AGENTS.md)** | 사용 가능한 45+ AI 에이전트 목록 및 설명. |
+| **[GEMINI.md](./GEMINI.md)** | Antigravity(Gemini) 모델의 역할 및 가이드. |
+| **[CLAUDE.md](./CLAUDE.md)** | Claude 모델의 역할 및 가이드. |
 
 ## 🤖 AI Orchestration
 
@@ -32,9 +39,20 @@
 
 ## 🛠️ Usage & Setup
 
-1. **Prerequisites**: Python 3.13+, Docker.
-2. **AI Tools**: 프로젝트 루트의 `.cursorrules`와 `.github/instructions/`가 AI 도구에 의해 자동으로 인식됩니다.
-3. **Contribution**: 학습 및 연구 기록 시 [CONTRIBUTING.md](./.github/CONTRIBUTING.md)의 AI 정책을 준수하십시오.
+### ⚡ Getting Started
+
+이 프로젝트는 **`uv`** 를 사용하여 의존성을 관리합니다.
+
+1. **Prerequisites**: Python 3.13+, Docker, [uv](https://github.com/astral-sh/uv).
+2. **Setup**:
+
+    ```bash
+    # 의존성 설치 (Sync dependencies)
+    uv sync
+    ```
+
+3. **AI Tools**: 프로젝트 루트의 `.cursorrules`와 `.github/instructions/`가 AI 도구에 의해 자동으로 인식됩니다.
+4. **Contribution**: 학습 및 연구 기록 시 [CONTRIBUTING.md](./.github/CONTRIBUTING.md)의 AI 정책을 준수하십시오.
 
 ## 📄 License & Contact
 
