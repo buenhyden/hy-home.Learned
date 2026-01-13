@@ -1,24 +1,43 @@
-# Learned
+# Learned: Professional Knowledge Archive
 
-개인적인 학습 내용과 기술적 연구를 기록하는 저장소입니다.
-(Repository for recording personal learning and technical research.)
+개인적인 학습 여정, 기술적 연구, 그리고 AI 기반의 지식 관리를 위한 중앙 저장소입니다.
+(Central repository for personal learning journeys, technical research, and AI-driven knowledge management.)
 
-## 📂 저장소 구조 (Repository Structure)
+---
 
-- **[Studies/](file:///d:/hy-home.SourceCode/hy-home.Learned/Studies)**: 특정 주제에 대한 심층적인 연구 및 정리
-  (In-depth research and summaries on specific topics.)
-- **[TIL/](file:///d:/hy-home.SourceCode/hy-home.Learned/TIL)**: 매일 새롭게 배운 내용 조각
-  (Bite-sized pieces of daily learning.)
-- **[References/](file:///d:/hy-home.SourceCode/hy-home.Learned/References)**: 참고 도서, 강의, 문서 요약
-  (Summaries of reference books, lectures, and documents.)
-- **[infra/](file:///d:/hy-home.SourceCode/hy-home.Learned/infra)**: 테스트 및 학습을 위한 인프라 설정
-  (Infrastructure setup for testing and learning.)
+## 🚀 Key Features
 
-## 🛠️ 기술 스택 (Tech Stack)
+- **AI-First Workflow**: 45개 이상의 전용 에이전트와 지침을 활용한 지능형 개발 및 학습 환경.
+- **Structured Learning**: `Studies`, `TIL`, `References`로 구분된 체계적인 지식 아카이브.
+- **Modern Infrastructure**: 테스트와 실험을 위한 Docker 및 클라우드 네이티브 설정 포함.
 
-이 저장소는 주로 Python을 사용하며, 다양한 인프라 도구(Docker, Kubernetes 등)와 자동화 스크립트를 포함합니다.
+## 📂 Repository Structure
 
-## 🤖 AI Policy
+| Folder | Description |
+| :--- | :--- |
+| **[Studies/](./Studies)** | 특정 주제(CS, AI, Frontend, Backend 등)에 대한 심층 연구 및 분석. |
+| **[TIL/](./TIL)** | 매일 새롭게 배운 기술적 조각과 문제 해결 기록. |
+| **[References/](./References)** | 도서, 강의, 화이트페이퍼 등 신뢰할 수 있는 소스의 요약. |
+| **[infra/](./infra)** | 실험적 개발 환경 구성을 위한 IaC 및 Docker 설정. |
+| **[.agent/](./.agent)** | 에이전트 워크플로우 및 규칙 설정 (Agentic Workflow). |
 
-기여 시 [CONTRIBUTING.md](file:///d:/hy-home.SourceCode/hy-home.Learned/.github/CONTRIBUTING.md)에 명시된
-AI 도구 사용 가이드를 준수합니다.
+## 🤖 AI Orchestration
+
+이 저장소는 AI 도구(Cursor, Claude, Gemini)와의 협업을 최적화하도록 설계되었습니다.
+
+- **[Specialized Agents](./AGENTS.md)**: 45개 이상의 특화된 에이전트 페르소나 안내.
+- **[Gemini Guide](./GEMINI.md)**: Antigravity(Gemini) 모델의 역할 및 상호작용 방식.
+- **[Claude Guide](./CLAUDE.md)**: Claude의 역할 및 주요 워크플로우 안내.
+- **[.cursorrules](./.cursorrules)**: AI 에디터(Cursor 등)를 위한 컨텍스트 규칙.
+
+## 🛠️ Usage & Setup
+
+1. **Prerequisites**: Python 3.10+, Docker.
+2. **AI Tools**: 프로젝트 루트의 `.cursorrules`와 `.github/instructions/`가 AI 도구에 의해 자동으로 인식됩니다.
+3. **Contribution**: 학습 및 연구 기록 시 [CONTRIBUTING.md](./.github/CONTRIBUTING.md)의 AI 정책을 준수하십시오.
+
+## 📄 License & Contact
+
+- **License**: [MIT License](./LICENSE)
+- **Author**: buenhyden ([chochyjj@gmail.com](mailto:chochyjj@gmail.com))
+- **Links**: [GitHub Discussions](https://github.com/buenhyden/hy-home.Learned/discussions)
