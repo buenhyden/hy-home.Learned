@@ -28,9 +28,7 @@ updates:
   #     - "buenhyden"
 
   # pip (Python)
-  # - package-ecosystem: "pip"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "weekly"
-  #   reviewers:
-  #     - "buenhyden"
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
