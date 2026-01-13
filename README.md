@@ -32,7 +32,7 @@
 
 ## 🛠️ Usage & Setup
 
-1. **Prerequisites**: Python 3.10+, Docker.
+1. **Prerequisites**: Python 3.13+, Docker.
 2. **AI Tools**: 프로젝트 루트의 `.cursorrules`와 `.github/instructions/`가 AI 도구에 의해 자동으로 인식됩니다.
 3. **Contribution**: 학습 및 연구 기록 시 [CONTRIBUTING.md](./.github/CONTRIBUTING.md)의 AI 정책을 준수하십시오.
 
@@ -44,7 +44,7 @@
 
 ---
 
-## Trobuleshooting
+## Troubleshooting
 
 ### 1. `pre-commit run --all-files` 실행 시 `pyproject.toml` 파일 인코딩 오류
 
