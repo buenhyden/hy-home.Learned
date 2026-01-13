@@ -31,7 +31,7 @@
 4. **Test**: 모든 테스트가 통과하는지 확인합니다. (Ensure all tests pass.)
 5. **PR**: 상세한 설명과 함께 PR을 제출합니다. (Submit a PR with a detailed description.)
 
-## 🤖 IDE 및 AI 도구 가이드 (IDE & AI Tools Guide - 2025 Q4)
+## 🤖 IDE 및 AI 도구 가이드 (IDE & AI Tools Guide - 2026 Q1)
 
 이 프로젝트는 **VS Code** 환경에서 **AI 도구**를 활용하여 개발 효율성을 극대화하는 것을 권장합니다.
 (This project recommends maximizing development efficiency using **AI tools** within the **VS Code** environment.)

@@ -15,8 +15,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    # reviewers:
-    #   - "buenhyden"
+    reviewers:
+      - "buenhyden"
 
   # npm (Node.js)
   # - package-ecosystem: "npm"

@@ -6,8 +6,8 @@
 *       @buenhyden
 
 # Backend
-/agent/rules/200-Backend/    @buenhyden
+/.agent/rules/200-Backend/    @buenhyden
 /infra/                      @buenhyden
 
 # Frontend
-/agent/rules/100-Frontend/   @buenhyden
+/.agent/rules/100-Frontend/   @buenhyden

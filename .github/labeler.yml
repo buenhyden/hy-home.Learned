@@ -22,7 +22,6 @@
 # Agent & Rules
 "agent":
   - ".agent/**/*"
-  - "agent/**/*"
 
 # Infrastructure
 "infra":
