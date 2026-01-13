@@ -1,2 +1,15 @@
 .agent/workflows/
 .agent/rules/
+.history/
+.venv/
+node_modules/
+dist/
+build/
+Studies/
+TIL/
+References/
+infra/
+*.log
+.env
+.env.*
+!.env.example
