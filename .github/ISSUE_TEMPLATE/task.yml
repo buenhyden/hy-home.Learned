@@ -45,7 +45,6 @@ body:
     id: context
     attributes:
       label: 📝 참고 자료 (References)
-      description:
-        참고할 문서나 링크가 있다면 남겨주세요. (Leave links or docs if any.)
+      description: 참고할 문서나 링크가 있다면 남겨주세요. (Leave links or docs if any.)
     validations:
       required: false

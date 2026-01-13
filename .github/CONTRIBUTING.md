@@ -75,7 +75,7 @@ VS Code의 `Remote - Containers` 확장을 사용하여 즉시 개발 환경을 
 - **Pre-commit Hooks**: 커밋 전 코드 품질을 자동 검사합니다. (Automatically check code quality before commit.)
 
     ```bash
-    pip install pre-commit && pre-commit install
+    uv add pre-commit && pre-commit install
     ```
 
 - **Linting & Formatting**: 프로젝트 표준을 준수하세요. (Adhere to project standards.)
@@ -89,7 +89,7 @@ VS Code의 `Remote - Containers` 확장을 사용하여 즉시 개발 환경을 
 - **DRY**: 중복 코드를 피하세요. (Don't Repeat Yourself.)
 
 ---
-<!-- 
+<!--
 [CUSTOMIZE]
 - [OWNER]: buenhyden (chochyjj@gmail.com)
 - [REPO]: 저장소 이름 (Repository Name)

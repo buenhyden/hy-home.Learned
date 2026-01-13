@@ -21,7 +21,7 @@ Based on `016-core-bug-fix-workflow-specific.md`.
 
 3. **Implementation**
    - Modify code to fix the bug.
-   - Run the test again to confirm PASSS.
+   - Run the test again to confirm PASS.
 
 4. **Regression Testing**
    - Run the full test suite for the affected module.

@@ -1,6 +1,5 @@
 name: 🚀 기능 요청 (Feature Request)
-description:
-  새로운 기능이나 개선사항을 제안해주세요. (Suggest a new feature or
+description: 새로운 기능이나 개선사항을 제안해주세요. (Suggest a new feature or
   improvement.)
 title: "[Feat]: "
 labels: ["enhancement", "triage"]
@@ -16,8 +15,7 @@ body:
   - type: textarea
     id: problem
     attributes:
-      label:
-        🤔 어떤 문제를 해결하고 싶나요? (What problem do you want to solve?)
+      label: 🤔 어떤 문제를 해결하고 싶나요? (What problem do you want to solve?)
       description:
         이 기능이 필요한 이유나 배경을 설명해주세요. (Explain the reason or
         context for this feature.)

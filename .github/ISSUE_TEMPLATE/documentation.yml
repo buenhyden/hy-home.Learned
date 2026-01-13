@@ -17,8 +17,7 @@ body:
     id: doc-type
     attributes:
       label: 📖 문서 유형 (Document Type)
-      description:
-        개선이 필요한 문서의 유형을 선택해주세요. (Select the type of document.)
+      description: 개선이 필요한 문서의 유형을 선택해주세요. (Select the type of document.)
       # [옵션/Options]: 프로젝트에 맞게 옵션을 수정하세요.
       options:
         - README.md

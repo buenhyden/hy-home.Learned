@@ -1,0 +1,128 @@
+# .pre-commit-config.yaml
+fail_fast: true
+default_stages: [pre-commit]
+
+repos:
+  # --- 1. 파일 시스템 및 기본 형식 검사 ---
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-ast
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-added-large-files
+        args: [--maxkb=500]
+      - id: check-merge-conflict
+      - id: debug-statements
+  - repo: https://github.com/abravalheri/validate-pyproject
+    rev: v0.24.1
+    hooks:
+      - id: validate-pyproject
+
+  - repo: https://github.com/rbubley/mirrors-prettier
+    rev: v3.7.4
+    hooks:
+      - id: prettier
+        types: [yaml]
+  # --- 2. 코드 스타일 및 고속 린팅 (Ruff) ---
+  - repo: local
+    hooks:
+      - id: ruff-lint
+        name: ruff (lint)
+        entry: uv run ruff check --fix --exit-non-zero-on-fix
+        language: system
+        types: [python]
+      - id: ruff-format
+        name: ruff (format)
+        entry: uv run ruff format
+        language: system
+        types: [python]
+
+  # --- 3. 정적 타입 검사 계층화 (Ty & Mypy) ---
+  - repo: local
+    hooks:
+      - id: ty-check
+        name: ty (fast type check)
+        entry: uv run ty check
+        language: system
+        types: [python]
+        pass_filenames: false
+      - id: mypy-check
+        name: mypy (strict check)
+        entry: uv run mypy app/
+        language: system
+        types: [python]
+        pass_filenames: false
+
+  # --- 4. 보안 감사 (Security) ---
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ["--baseline", ".secrets.baseline"]
+        exclude: uv.lock
+
+  - repo: local
+    hooks:
+      - id: bandit
+        name: bandit (security scan)
+        entry: uv run bandit -r app/ -c pyproject.toml
+        language: system
+        pass_filenames: false
+      - id: pip-audit
+        name: pip-audit (dependency scan)
+        entry: uv run pip-audit --desc --strict
+        language: system
+        files: ^pyproject\.toml$
+        pass_filenames: false
+
+  # --- 5. 인프라 및 도커 검사 (Infrastructure) ---
+  # - repo: https://github.com/zizmorcore/zizmor-pre-commit
+  #   rev: v1.20.0
+  #   hooks:
+  #     - id: zizmor
+  # - repo: https://github.com/hadolint/hadolint
+  #   rev: v2.12.0
+  #   hooks:
+  #     - id: hadolint-docker
+  #     - id: hadolint
+
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.36.0
+    hooks:
+      - id: check-github-workflows
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.10
+    hooks:
+      - id: actionlint # GitHub Actions 워크플로우 검사
+
+  # --- 6. 문서 및 정합성 검사 (Content) ---
+  - repo: https://github.com/crate-ci/typos
+    rev: v1.28.4
+    hooks:
+      - id: typos # 오타 검사
+
+  - repo: local
+    hooks:
+      - id: docstr-coverage
+        name: docstr-coverage (90%+)
+        entry: uv run docstr-coverage app/ --fail-under=90
+        language: system
+        files: ^app/.*\.py$
+        pass_filenames: false
+      - id: uv-lock-check
+        name: uv-lock check
+        entry: uv lock --check
+        language: system
+        files: ^(pyproject\.toml|uv\.lock)$
+        pass_filenames: false
+
+  # --- 7. 커밋 및 메시지 (Release) ---
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v4.11.1
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]

@@ -41,3 +41,58 @@
 - **License**: [MIT License](./LICENSE)
 - **Author**: buenhyden ([chochyjj@gmail.com](mailto:chochyjj@gmail.com))
 - **Links**: [GitHub Discussions](https://github.com/buenhyden/hy-home.Learned/discussions)
+
+---
+
+## Trobuleshooting
+
+### 1. `pre-commit run --all-files` 실행 시 `pyproject.toml` 파일 인코딩 오류
+
+이 에러는 윈도우(Windows) 환경에서 파이썬(Python)이 `pyproject.toml` 파일을 읽을 때, 시스템 기본 인코딩인 **CP949**를 사용하여 **UTF-8**로 작성된 문자를 해석하려다 발생한 전형적인 **인코딩 충돌(Encoding Mismatch)** 문제.
+
+`pyproject.toml` 표준 스펙은 반드시 **UTF-8** 인코딩을 사용해야 하지만, 일부 윈도우 환경의 도구들이 이를 무시하고 시스템 설정을 따르기 때문에 발생한다.
+
+#### 해결책
+
+1. 파이썬 UTF-8 모드 강제 활성화:
+    파이썬 3.7 이상부터 지원하는 **UTF-8 모드**를 활성화하면, 시스템 설정과 상관없이 모든 입출력을 UTF-8로 처리한다. 터미널(PowerShell 또는 CMD)에서 아래 명령어를 입력하여 환경 변수를 설정.
+    1. PowerShell (현재 세션 적용)
+
+        ```powershell
+        $env:PYTHONUTF8 = "1"
+        # 이후 다시 실행
+        pre-commit run --all-files
+
+        ```
+
+    2. 시스템 환경 변수 설정 (영구 적용)
+        1. `윈도우 키 + R` -> `sysdm.cpl` 입력 -> [확인]
+        2. [고급] 탭 -> [환경 변수] 클릭
+        3. [시스템 변수] 섹션에서 [새로 만들기] 클릭
+        4. 변수 이름: `PYTHONUTF8`, 변수 값: `1` 입력 후 확인
+
+2. `pyproject.toml` 파일 인코딩 확인
+    파일 내부에 한글 주석이나 특수 문자가 포함되어 있을 경우, 실제 파일 저장 형식이 UTF-8이 아닐 수 있다.
+    1. **VS Code** 사용 시: 우측 하단 상태 표시줄의 인코딩이 `UTF-8`인지 확인한다. 만약 `CP949`나 `EUC-KR`로 되어 있다면 클릭하여 `Save with Encoding` -> `UTF-8`을 선택한다.
+    2. **BOM 제거:** UTF-8(with BOM) 형식이 아닌 **UTF-8(without BOM)** 형식을 사용해야 한다.
+
+3. 해결 방법 3: pre-commit hook 설정 보완
+    만약 특정 훅(hook)에서만 문제가 발생한다면, `PYTHONUTF8=1` 환경 변수를 훅 실행 시점에 직접 전달하도록 시도할 수 있다. 하지만 일반적으로 **방법 1**이 가장 권장된다.
+
+    ```yaml
+    # .pre-commit-config.yaml 예시
+    - repo: https://github.com/abravalheri/validate-pyproject
+    rev: v0.15
+    hooks:
+        - id: validate-pyproject
+        # 특정 환경에서만 문제가 된다면 훅 설정을 점검할 수 있으나,
+        # 근본적인 해결은 환경 변수 설정입니다.
+
+    ```
+
+**참고 문헌 (References):**
+
+- [Python 3.7+ UTF-8 Mode (PEP 540)](https://peps.python.org/pep-0540/)
+- [pyproject.toml Specification (PEP 518)](https://peps.python.org/pep-0518/)
+
+---
