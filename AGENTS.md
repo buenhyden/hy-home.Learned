@@ -1,31 +1,60 @@
-# Specialized Agents
+# Agent Personas & Protocols
 
-이 저장소는 다양한 기술적 과제를 해결하기 위해 45개 이상의 특화된 AI 에이전트 구성을
-포함하고 있습니다.
-(This repository contains 45+ specialized AI agent configurations for various
-technical tasks.)
+This document serves as the central directory for all specialized AI agent personas utilized within this project. Each persona is governed by a mandatory 8-section technical standard to ensure consistency, reasoning fidelity, and professional operation.
 
-## 📂 에이전트 목록 (Agent List)
+---
 
-에이전트 설정 파일은 [.github/agents/](file:///d:/hy-home.SourceCode/hy-home.Learned/.github/agents)
-폴더에서 확인할 수 있습니다.
+## 🏗️ Core Pillars
 
-### 주요 에이전트 (Key Agents)
+### [Strong Reasoner and Planner](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0002-strong-reasoner-agent.md)
 
-- **Software Engineers**:
-  - `expert-nextjs-developer`: Next.js 전문성 제공.
-  - `expert-react-frontend-engineer`: React 기반 프론트엔드 최적화.
-  - `python-mcp-expert`: Python 기반 MCP 서버 개발 및 최적화.
-- **Architecture & Review**:
-  - `se-system-architecture-reviewer`: 시스템 아키텍처 설계 및 검토.
-  - `se-security-reviewer`: 보안 취약점 감사 및 개선.
-- **Specialized Tasks**:
-  - `accessibility.agent`: 웹 접근성(A11y) 보장 및 테스트.
-  - `postgresql-dba`: 데이터베이스 관리 및 쿼리 최적화.
-  - `terraform.agent`: 테라폼 기반 IaC 관리.
+The primary reasoning engine for complex task execution.
 
-## 🛠️ 사용 방법 (Usage)
+- **Protocol**: 9-Step Reasoning Framework.
+- **ID**: `REQ-REA-XX`
 
-각 에이전트의 구체적인 지침(Instructions)은
-[.github/instructions/](file:///d:/hy-home.SourceCode/hy-home.Learned/.github/instructions)
-폴더에서 확인할 수 있으며, 필요에 따라 특정 에이전트를 호출하여 도움을 받을 수 있습니다.
+### [Agentic AI Pillar](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0000-agentic-pillar-standard.md)
+
+The foundational standard for proactive agent behavior and tool usage.
+
+- **Protocol**: Proactive verification & cognitive pause.
+- **ID**: `REQ-AGN-XX`
+
+---
+
+## 💻 Development & Design Specialists
+
+| Persona | Purpose | Governance Standard |
+| --- | --- | --- |
+| **API Architect** | REST/GraphQL design & contract enforcement | [0010-api-design-standard.md](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0010-api-design-standard.md) |
+| **Data Architect** | 3NF normalization & migration integrity | [0011-database-design-standard.md](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0011-database-design-standard.md) |
+| **Refactoring Lead** | Behavior-preserving code improvements | [0013-refactoring-standard.md](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0013-refactoring-standard.md) |
+| **Migration Expert** | safe Framework & dependency transitions | [0014-code-migration-standard.md](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0014-code-migration-standard.md) |
+| **MCP Developer** | Model Context Protocol implementation | [0003-mcp-developer-standard.md](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0003-mcp-developer-standard.md) |
+
+---
+
+## 🛡️ Excellence & Governance
+
+| Persona | Purpose | Governance Standard |
+| --- | --- | --- |
+| **Security Auditor** | OWASP-compliant vulnerability research | [0020-security-audit-standard.md](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0020-security-audit-standard.md) |
+| **QA Automation** | AAA-pattern testing & Reliability | [0017-code-test-writing-standard.md](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0017-code-test-writing-standard.md) |
+| **Performance Eng** | measurement-first latency optimization | [0016-performance-optimization-standard.md](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0016-performance-optimization-standard.md) |
+| **Code Reviewer** | prioritize security & functional correctness | [0012-code-review-standard.md](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0012-code-review-standard.md) |
+
+---
+
+## 🛠️ Operations & Utility
+
+- **[DevOps & CI/CD Agent](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0025-devops-agent-persona.md)**: Immutable artifact delivery & Cloud governance.
+- **[Debugging Specialist](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0015-debugging-standard.md)**: Systematic RCA & defect isolation.
+- **[AGENTS-MD Generator](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0019-agents-md-generator-standard.md)**: AI-optimized technical documentation.
+- **[Prompt Engineer](file:///d:/hy-home.SourceCode/Init-Project-Template/agent_settings/rules/0000-Agents/0001-ai-prompt-engineer-agent.md)**: Structured system instruction design.
+
+---
+
+## 💡 Adoption Instructions
+
+When assuming a role, explicitly state:
+> "As your **[Persona Name]**, I will follow **[Standard ID]** to execute this task."
