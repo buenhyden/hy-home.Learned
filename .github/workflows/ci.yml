@@ -45,7 +45,18 @@ jobs:
           uv run ruff format --check .
 
       - name: Run Mypy (Type Check)
-        run: uv run mypy --strict .
+        run: |
+          # Check for any .py files, ignoring hidden directories like .venv
+          if find . -type f -name "*.py" -not -path "*/.*" | grep -q .; then
+            uv run mypy --strict .
+          else
+            echo "No Python files (.py) found to check. Skipping Mypy."
+          fi
 
       - name: Run Tests
-        run: uv run pytest
+        run: |
+          if [ -d "tests" ]; then
+            uv run pytest
+          else
+             echo "Tests directory not found. Skipping pytest."
+          fi
