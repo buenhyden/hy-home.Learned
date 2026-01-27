@@ -1,25 +1,25 @@
 ---
 name: Feature Request
-about: Suggest an idea for this project
+about: Suggest an idea or improvement
 title: "[FEAT] "
 labels: enhancement
-assignees: ''
+assignees: 'buenhyden'
 ---
 
-## 1. Problem Statement
+## 🚀 Feature Overview
 
-Is your feature request related to a problem? Please describe.
-*Ex: I'm always frustrated when...*
+What is the proposed feature or improvement?
 
-## 2. Proposed Solution
+## 📝 Problem Statement
 
-Describe the solution you'd like.
-*Ref: See PRD Template [REQ-PRD-xxx]*
+Why is this feature needed?
 
-## 3. Alternatives Considered
+## 🛠️ Proposed Solution
 
-Describe alternatives you've considered.
+Briefly describe the implementation idea.
 
-## 4. Success Metrics
+## ✅ Success Metrics
 
-- **[REQ-MET-01]** ...
+How will we evaluate the success of this feature?
+
+- [ ]

@@ -1,36 +1,26 @@
 ---
 name: Bug Report
-about: Create a report to help us improve
+about: Report a bug or anomaly
 title: "[BUG] "
 labels: bug
-assignees: ''
+assignees: 'buenhyden'
 ---
 
-## 1. Description
+## 🐞 Description
 
-A clear and concise description of what the bug is.
+Briefly describe the bug.
 
-## 2. Reproduction Steps
+## 🔄 Reproduction Steps
 
-Please link to a minimal reproduction (see `workflow-bug-fix.md`) or list steps:
+How can this be reproduced?
+1.
 
-1. Go to '...'
-2. Click on '...'
-3. Scroll down to '...'
-4. See error
+## 🎯 Expected Behavior
 
-## 3. Expected Behavior
+What should have happened?
 
-A clear and concise description of what you expected to happen.
-
-## 4. Environment
-
-- **OS**: [e.g. Windows]
-- **Browser**: [e.g. Chrome, Safari]
-- **Version**: [e.g. 22]
-
-## 5. Logs / Evidence
+## 📊 Evidence / Logs
 
 ```text
-Paste logs here
+Paste logs or error messages here
 ```

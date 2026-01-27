@@ -1,43 +1,52 @@
 # System Architecture
 
-This document serves as the project-level source of truth for high-level design, structural principles, and technology stack alignment.
+## 1. Context
 
-## 1. System Context
-
-We utilize the C4 modeling pattern to visualize system boundaries and interactions.
+`hy-home-learned` acts as a **Personal Knowledge Operating System**, bridging the gap between raw information and executable wisdom.
 
 ```mermaid
 C4Context
-    title "AI-Optimized Project Template Context"
+    title "System Context: Knowledge Workspace"
 
-    Person(dev, "Developer", "Uses the template to build applications")
-    System(template, "Init-Project-Template", "Core structural & governance system")
-    System_Ext(agents, "AI Agents", "Coding assistants (Gemini, Claude, GPT)")
+    Person(user, "User / Developer", "Curates and synthesizes knowledge")
+    System(workspace, "hy-home-learned", "The Repository")
+    System_Ext(external, "The Internet", "Raw References, Lectures, Docs")
 
-    Rel(dev, template, "Clones & Configures")
-    Rel(agents, template, "Analyzes Rules & Implements Code")
+    Rel(user, workspace, "Writes TILs, Configures Agents")
+    Rel(workspace, external, "Ingests References via Agents")
 ```
 
-## 2. Technology Stack
+## 2. Layered Architecture
 
-| Component | Standard | Governance |
-| --- | --- | --- |
-| **Orchestration** | Universal Scripts / Make | Language-Agnostic Setup |
-| **Pillars** | Markdown-based Rules | Human/Machine parseable standards |
-| **Workflows** | .agent/workflows | Declarative automation |
-| **Governance** | Coded Identifiers | Deterministic reasoning traceability |
+The system is composed of four strict layers:
 
-## 3. Structural Standards
+### Layer 1: The Brain (`.agent/`)
 
-All components MUST adhere to the [Architecture Standard (0130)](file:///d:/hy-home.SourceCode/Init-Project-Template/.agent/rules/0100-Standards/0130-architecture-standard.md):
+- **Responsibility**: Governance, Reasoning, and Automation.
+- **Components**:
+  - `rules/`: Immutable laws (Linting standards, Agent Personas).
+  - `workflows/`: Action scripts (e.g., "Summarize this PDF").
 
-- **Directional Dependency**: Presentation -> Domain -> Data.
-- **Zero Circularity**: Circular dependencies are prohibited.
-- **ADR Governance**: Significant decisions MUST be recorded in `docs/adr/`.
+### Layer 2: The Pipeline (`.github/`)
 
-## 4. Logical Layering
+- **Responsibility**: Verification and Delivery.
+- **Components**:
+  - `ci.yml`: Quality gates (Ruff, Mypy).
+  - `labeler.yml`: Automated triage.
 
-1. **Agent Layer**: Rule-driven autonomous execution.
-2. **Governance Layer**: Standardized skeletons and identifiers.
-3. **Application Layer**: Business logic and domain entities.
-4. **Infrastructure Layer**: Deployment & environment management.
+### Layer 3: The Manual (`docs/`)
+
+- **Responsibility**: Human-readable explanation.
+- **Components**: `index.md`, `project-mission.md`, ADRs.
+
+### Layer 4: The Knowledge (`TIL/` & `References/`)
+
+- **Responsibility**: The core value store.
+- **Components**:
+  - `References`: Raw inputs.
+  - `TIL`: Processed outputs.
+
+## 3. Key Decisions (ADRs)
+
+- **ADR-001**: Use `uv` for package management (Speed, Unity).
+- **ADR-002**: Structure `TIL` by Date (Chronological learning is easier to maintain than strict topical hierarchies).
