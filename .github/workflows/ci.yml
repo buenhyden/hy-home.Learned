@@ -53,6 +53,12 @@ jobs:
             echo "No Python files (.py) found to check. Skipping Mypy."
           fi
 
+      - name: Run Pip-Audit (Dependency Scan)
+        run: |
+          uv run pip-audit --desc --strict \
+            --ignore-vuln CVE-2026-0994 \
+            --ignore-vuln CVE-2017-14158
+
       - name: Run Tests
         run: |
           if [ -d "tests" ]; then

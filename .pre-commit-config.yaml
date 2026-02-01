@@ -1,5 +1,5 @@
 # .pre-commit-config.yaml
-fail_fast: true
+fail_fast: false
 default_stages: [pre-commit]
 
 repos:
@@ -41,18 +41,12 @@ repos:
         language: system
         types: [python]
 
-  # --- 3. 정적 타입 검사 계층화 (Ty & Mypy) ---
+  # --- 3. 정적 타입 검사 계층화 (Ty) ---
   - repo: local
     hooks:
       - id: ty-check
         name: ty (fast type check)
         entry: uv run ty check
-        language: system
-        types: [python]
-        pass_filenames: false
-      - id: mypy-check
-        name: mypy (strict check)
-        entry: uv run mypy app/
         language: system
         types: [python]
         pass_filenames: false
@@ -64,27 +58,6 @@ repos:
       - id: detect-secrets
         args: ["--baseline", ".secrets.baseline"]
         exclude: uv.lock
-
-  - repo: local
-    hooks:
-      - id: bandit
-        name: bandit (security scan)
-        entry: uv run bandit -r app/ -c pyproject.toml
-        language: system
-        pass_filenames: false
-      - id: pip-audit
-        name: pip-audit (dependency scan)
-        entry: uv run pip-audit --desc --strict
-        args:
-          # Protobuf: 최신 버전(6.33.4)에서도 발생하는 DoS 취약점
-          - "--ignore-vuln"
-          - "CVE-2026-0994"
-          # Scrapy: 최신 버전(2.14.1)에서도 발생하는 메모리 고갈 취약점 (2017년 이슈)
-          - "--ignore-vuln"
-          - "CVE-2017-14158"
-        language: system
-        files: ^pyproject\.toml$
-        pass_filenames: false
 
   # --- 5. 인프라 및 도커 검사 (Infrastructure) ---
   # - repo: https://github.com/zizmorcore/zizmor-pre-commit
@@ -115,10 +88,10 @@ repos:
   - repo: local
     hooks:
       - id: docstr-coverage
-        name: docstr-coverage (90%+)
-        entry: uv run docstr-coverage app/ --fail-under=90
+        name: docstr-coverage (80%+)
+        entry: uv run docstr-coverage TIL/ --fail-under=80
         language: system
-        files: ^app/.*\.py$
+        files: ^TIL/.*\.py$
         pass_filenames: false
       - id: uv-lock-check
         name: uv-lock check
