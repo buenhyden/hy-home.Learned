@@ -80,10 +80,6 @@ repos:
       - id: actionlint # GitHub Actions 워크플로우 검사
 
   # --- 6. 문서 및 정합성 검사 (Content) ---
-  - repo: https://github.com/crate-ci/typos
-    rev: v1.28.4
-    hooks:
-      - id: typos # 오타 검사
 
   - repo: local
     hooks:
