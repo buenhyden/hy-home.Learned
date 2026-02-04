@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: ["main"]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
@@ -18,14 +22,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: Lint GitHub Actions
         uses: reviewdog/action-actionlint@v1
-      - name: Download actionlint
-        id: get_actionlint
-        run: bash <(curl
-          https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
-        shell: bash
-      - name: Check workflow files
-        run: ${{ steps.get_actionlint.outputs.executable }} -color
-        shell: bash
+
   quality-checks:
     permissions:
       contents: read

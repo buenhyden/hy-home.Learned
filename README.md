@@ -1,18 +1,22 @@
 # hy-home-learned
 
-<div align="center">
+<p align="center">
 
 ![CI Status](https://github.com/buenhyden/hy-home.Learned/actions/workflows/ci.yml/badge.svg)
 ![Python Version](https://img.shields.io/badge/python-3.13%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Code Style](https://img.shields.io/badge/code%20style-ruff-000000.svg)
 
-**A Personal Knowledge Operating System**<br>
+</p>
+
+<p align="center">
+
+**A Personal Knowledge Operating System**
 *Optimized for AI-Human Collaboration*
 
 [**Explore Docs**](docs/index.md) • [**View Knowledge**](TIL/) • [**Agent Brain**](.agent/)
 
-</div>
+</p>
 
 ---
 

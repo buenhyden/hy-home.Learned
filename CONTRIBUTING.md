@@ -1,46 +1,67 @@
-# Contributing to hy-home-learned
+# Contributing to Init-Project-Template
 
-Thank you for contributing to this Personal Knowledge Operating System.
-This repository is not just code; it is a live knowledge base.
+Thank you for your interest in contributing to the **Init-Project-Template**!
+This project is designed to be an AI-optimized foundation for modern software
+development.
 
-## 🌟 The "Golden Rule"
+## 🤝 Code of Conduct
 
-> **Every commit must either ADD knowledge (TIL/Reference) or IMPROVE the system (Infra/Docs).**
+By participating in this project, you agree to abide by our Code of Conduct.
+We expect all contributors to treat others with respect and facilitate a
+collaborative, inclusive environment.
 
-## 🚀 How to Contribute
+## 🚀 Development Workflow
 
-### 1. Adding Knowledge (TIL)
+This project acts as a "Golden Master" template. Contributions should generally
+focus on improving the **governance pillars**, **agent rules**, or
+**infrastructure scripts**.
 
-1. Create a branch: `knowledge/topic-name`.
-2. Write your note in `TIL/YYYY/MM/YYYY-MM-DD-topic.md`.
-3. Ensure it is atomic and links to at least one Reference or existing TIL.
-4. Commit: `docs: add TIL about [topic]`.
+### 1. Planning & Design
 
-### 2. Adding Code / Experiments
+All significant changes must start with a plan.
 
-1. Create a branch: `feat/experiment-name`.
-2. Place code in a relevant directory (or `TIL` if it's a snippet).
-3. Ensure strict typing (`mypy`) and linting (`ruff`).
-4. Run tests: `uv run pytest`.
+* **Feature Request**: Open an issue using the [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.md).
+* **RFC / Spec**: For complex changes, create a new specification in `specs/`
+  using `templates/spec-template.md`.
 
-### 3. Improving Documentation
+### 2. The 4 Pillars of Governance
 
-1. Create a branch: `docs/improvement`.
-2. Update files in `docs/`.
-3. **Verify**: Check that `docs/index.md` links remain valid.
+Your code must adhere to the four technical pillars:
 
-## 🛠️ Development Workflow
+* **Standards (0100)**: Clean code, documentation, and architectural integrity.
+* **Workflows (0200)**: Git branching, commit messages, and PR flows.
+* **Security (0500)**: "Secure by Default" philosophy.
+* **Stack (1000)**: Strict typing and approved libraries.
 
-We use `uv` for all dependency management.
+### 3. Agent-Optimized Rules
 
-```bash
-# Setup
-uv sync
+If you are adding or modifying a Rule (`.agent/rules/`):
 
-# Quality Check
-uv run pre-commit run --all-files
-```
+* **Skeleton**: MUST follow the 8-section AI-parseable skeleton.
+* **ID**: MUST be assigned a unique `[REQ-XXX-NN]` identifier.
 
-## ⚖️ Standards
+## 🌿 Development Standards & Workflows
 
-All contributions must adhere to the **[Agent Protocols](docs/agent-protocols.md)** and **[Governance](docs/governance.md)**.
+To ensure consistency and high engineering excellence, we follow a strict set of
+standards for branching, commits, and quality gates.
+
+👉 **[Authorized Development Guide](docs/manuals/06-development-guide.md)**
+
+Please refer to the document above for the authoritative source on:
+
+* **Branching Strategy** (GitFlow-lite)
+* **Commit Messages** (Conventional Commits)
+* **Definition of Done** (Quality & Security gates)
+
+## 📦 Pull Requests
+
+1. **Template**: Fill out the [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md)
+   completely.
+2. **Linting & Tests**: Ensure all automated checks pass.
+3. **Traceability**: Link to the relevant Issue or PRD.
+
+## 🐛 Reporting Bugs
+
+Please use the [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.md) to
+report issues. Provide as much context as possible (logs, screenshots, steps to
+reproduce).

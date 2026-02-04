@@ -1,7 +1,0 @@
-{
-  "default": true,
-  "ignores": [".agent/workflows/**", ".agent/rules/**", ".history/**", ".venv/**", "node_modules/**", "dist/**", "build/**"],
-  "MD013": {
-    "line_length": 120
-  }
-}

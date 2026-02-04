@@ -1,5 +1,4 @@
 .agent/
-agent_settings/
 .git/
 .history/
 .mypy_cache/
