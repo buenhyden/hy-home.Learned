@@ -8,6 +8,8 @@ smart-chats/
 **/.venv
 **/**/**/.venv
 References/
+.mypy_cache/
+.ruff_cache/
 
 # Antigravity Rules
 .agent/rules/**/*
