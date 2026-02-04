@@ -2,12 +2,17 @@ name: CI
 
 on:
   push:
-    branches: [main, master]
+    branches: ["main"]
   pull_request:
-    branches: [main, master]
+    branches: ["main"]
+
+permissions:
+  contents: read
 
 jobs:
   lint-actions:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -22,6 +27,8 @@ jobs:
         run: ${{ steps.get_actionlint.outputs.executable }} -color
         shell: bash
   quality-checks:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
