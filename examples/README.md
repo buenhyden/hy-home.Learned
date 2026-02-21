@@ -1,13 +1,17 @@
-# Example Implementations
+# Example Implementations (`examples/`)
 
 This directory holds sample codes, mock configurations, and proof-of-concept setups demonstrating how to use the templates defined in `/templates/`.
 
-## Purpose
+## 1. Necessity and Purpose
+
+This directory is necessary to provide safe, isolated reference implementations without polluting production code or formal specifications.
 
 - Provide humans and AI models with tangible references for how specific components or integrations are expected to work in this architecture.
 - Isolate experimental code from the primary `/src` and specification paths.
 
-## Available Examples
+## 2. Required Content
+
+Examples must be completely self-contained and should not import live production databases or configurations.
 
 | Example File           | Template Used         | Purpose                                                  |
 | ---------------------- | --------------------- | -------------------------------------------------------- |
@@ -15,16 +19,16 @@ This directory holds sample codes, mock configurations, and proof-of-concept set
 | `example-prd.md`       | `prd-template.md`     | Product Requirements Document for authentication feature |
 | `example-runbook.md`   | `runbook-template.md` | Deployment runbook with rollback procedures              |
 
-## Related Examples
+*(Also see `specs/example-spec.md` for a complete feature specification example)*
 
-- `../specs/example-spec.md` - Complete feature specification example
+## 3. General Guidelines
 
-## Guidelines
-
-- All examples should include brief inline comments explaining their intended context.
+- All examples MUST include brief inline comments explaining their intended context.
 - Assume nothing in this folder will be deployed to production.
-- Examples follow the exact structure defined in their corresponding templates.
+- Examples MUST follow the exact structure defined in their corresponding templates.
 
-## AI Agent Guidelines
+## 4. AI Agent Guidelines & Anti-Patterns
 
-While these serve as "examples" to guide format and structure, any AI agent deriving actual project templates or creating new documents from these MUST ensure full compliance with the latest `.agent/rules/`. An "example" configuration seen here does not override a strict security or operational rule defined in the `.agent/rules/` boundary unless explicitly permitted by `docs/guides/`.
+While these serve as "examples" to guide format and structure, any AI agent deriving actual project templates or creating new documents from these MUST ensure full compliance with the latest `.agent/rules/`.
+
+- **Anti-Pattern**: Using outdated example configurations to override a strict security or operational rule defined in the `.agent/rules/`. Examples do *not* supersede official standards unless explicitly permitted by `docs/guides/`.

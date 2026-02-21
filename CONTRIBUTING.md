@@ -1,6 +1,13 @@
 # Contributing Guidelines
 
-First off, thank you for considering contributing to this project!
+## Necessity & Required Content
+
+This file is necessary to define the exact, mechanical steps a human must take to successfully merge code into this repository. While `COLLABORATING.md` outlines the high-level human-AI relationship, this file outlines the raw pre-requisites for Pull Requests.
+**What Must Be Written Here**:
+
+- Hard Code Quality Gates (Coverage, Linting).
+- Branch naming and Conventional Commit rules.
+- Spec-Driven PR referencing requirements.
 
 ## 1. Spec-Driven Core Rule
 
