@@ -10,16 +10,7 @@ smart-chats/
 References/
 .mypy_cache/
 .ruff_cache/
-
-# Antigravity Rules
-.agent/rules/**/*
-!.agent/rules/.gitkeep
-# Antigravity Skills
-.agent/skills/*
-!.agent/skills/.gitkeep
-# Antigravity Workflows
-.agent/workflows/*
-!.agent/workflows/.gitkeep
+.venv/
 
 # opencode Skills
 .opencode/skill/

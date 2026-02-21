@@ -1,67 +1,39 @@
-# Contributing to Init-Project-Template
+# Contributing Guidelines
 
-Thank you for your interest in contributing to the **Init-Project-Template**!
-This project is designed to be an AI-optimized foundation for modern software
-development.
+First off, thank you for considering contributing to this project!
 
-## 🤝 Code of Conduct
+## 1. Spec-Driven Core Rule
 
-By participating in this project, you agree to abide by our Code of Conduct.
-We expect all contributors to treat others with respect and facilitate a
-collaborative, inclusive environment.
+All new features **must** begin with a specification in the `specs/` folder. Pull Requests that add code without an approved, corresponding specification will be immediately rejected without review.
 
-## 🚀 Development Workflow
+## 2. Template Enforcement
 
-This project acts as a "Golden Master" template. Contributions should generally
-focus on improving the **governance pillars**, **agent rules**, or
-**infrastructure scripts**.
+If your contribution involves documentation (ADR, PRD, Runbook, etc.), you **MUST** use the predefined templates located in the `templates/` directory.
 
-### 1. Planning & Design
+- Do not invent your own format for Architecture Decision Records. Use `templates/architecture/adr-template.md`.
+- Ensure all sections are filled out before submitting.
 
-All significant changes must start with a plan.
+## 3. Local QA & Test Coverage (Pre-PR Gate)
 
-* **Feature Request**: Open an issue using the [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.md).
-* **RFC / Spec**: For complex changes, create a new specification in `specs/`
-  using `templates/spec-template.md`.
+We enforce strict Quality Assurance metrics. Before you pull request, you must successfully pass local checks:
 
-### 2. The 4 Pillars of Governance
+1. **Coverages**: The PR must meet or maintain the project coverage baseline (**> 80%**).
+2. **Test Layers**: Are Unit and Integration tests functioning as defined by the Spec and `.agent/rules/0700-testing-and-qa-standard.md`?
+3. **Linting**: No static typing or linting errors allowed.
+4. **Agent Rule Compliance**: All code MUST comply with the organizational standards in `.agent/rules/` (primarily `0140-engineering-excellence.md` and `2220-secure-coding.md`). The Reviewer Agent strictly evaluates PRs against these rules.
 
-Your code must adhere to the four technical pillars:
+## 4. Pull Request Process
 
-* **Standards (0100)**: Clean code, documentation, and architectural integrity.
-* **Workflows (0200)**: Git branching, commit messages, and PR flows.
-* **Security (0500)**: "Secure by Default" philosophy.
-* **Stack (1000)**: Strict typing and approved libraries.
+1. **Branch Naming**: Ensure your branch name follows the convention: `feature/XXX`, `fix/XXX`, or `docs/XXX`.
+2. **Commit Messages**: Use Conventional Commits.
+3. **Traceability**: Your PR description **must** reference the specific file in `specs/` it addresses.
 
-### 3. Agent-Optimized Rules
+## 5. Multi Sub-Agent Interaction
 
-If you are adding or modifying a Rule (`.agent/rules/`):
+As part of the PR process, an AI Reviewer Agent may automatically review your PR. You must address their automated feedback before a human maintainer reviews the code. Do not dismiss AI-generated comments unless they hallucinate a requirement not in the original Spec.
 
-* **Skeleton**: MUST follow the 8-section AI-parseable skeleton.
-* **ID**: MUST be assigned a unique `[REQ-XXX-NN]` identifier.
+## 6. Required References
 
-## 🌿 Development Standards & Workflows
-
-To ensure consistency and high engineering excellence, we follow a strict set of
-standards for branching, commits, and quality gates.
-
-👉 **[Authorized Development Guide](docs/manuals/06-development-guide.md)**
-
-Please refer to the document above for the authoritative source on:
-
-* **Branching Strategy** (GitFlow-lite)
-* **Commit Messages** (Conventional Commits)
-* **Definition of Done** (Quality & Security gates)
-
-## 📦 Pull Requests
-
-1. **Template**: Fill out the [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md)
-   completely.
-2. **Linting & Tests**: Ensure all automated checks pass.
-3. **Traceability**: Link to the relevant Issue or PRD.
-
-## 🐛 Reporting Bugs
-
-Please use the [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.md) to
-report issues. Provide as much context as possible (logs, screenshots, steps to
-reproduce).
+- AI System roles: `AGENTS.md`
+- Collaboration Hand-offs: `COLLABORATING.md`
+- Code of Conduct: `CODE_OF_CONDUCT.md`
