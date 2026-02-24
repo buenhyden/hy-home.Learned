@@ -31,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Introduce a comprehensive set of agent rules, workflows, documentation, and templates, while updating core project files.
 - Establish repository governance, automation, and issue management with new workflows, policies, and YAML templates, while updating core documentation and configurations.
 - Implement automated changelog generation using git-cliff and a GitHub Actions workflow.
+- Add mypy, pip-audit, and pytest pre-commit hooks.
 
 ### Documentation
 
@@ -67,5 +68,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update multiple package versions, remove anthropic, and enhance platform-specific dependency resolution in uv.lock.chore: Update multiple package versions, remove anthropic, and enhance platform-specific dependency resolution in uv.lock.
 - **deps:** Bump cryptography in the uv group across 1 directory
 - **deps:** Bump langchain-core in the uv group across 1 directory
+- **release:** Update CHANGELOG.md [skip ci]
 
 
