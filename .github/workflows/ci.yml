@@ -34,13 +34,10 @@ jobs:
       - name: Install Dependencies
         run: uv sync --all-extras --dev
 
-      - name: Run pre-commit hooks
-        run: uv run pre-commit run --all-files --show-diff-on-failure
+      - name: Run fast checks (commit stage)
+        run: uv run pre-commit run --all-files --hook-stage commit
+          --show-diff-on-failure
 
-      - name: Run Tests
-        run: |
-          if [ -d "tests" ]; then
-            uv run pytest
-          else
-             echo "Tests directory not found. Skipping pytest."
-          fi
+      - name: Run heavy checks (pre-push stage)
+        run: uv run pre-commit run --all-files --hook-stage pre-push
+          --show-diff-on-failure
