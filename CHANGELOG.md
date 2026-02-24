@@ -4,7 +4,6 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
 ## [Unreleased]
 
 ### Added
@@ -37,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Consolidate CI quality checks into pre-commit hooks and standardize quote usage across configuration files.
+- Restructure CI workflow to use pre-commit hook stages for fast and heavy checks.
 
 ### Documentation
 
@@ -74,3 +74,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **deps:** Bump cryptography in the uv group across 1 directory
 - **deps:** Bump langchain-core in the uv group across 1 directory
 - **release:** Update CHANGELOG.md [skip ci]
+- **release:** Update CHANGELOG.md [skip ci]
+- Remove trailing blank lines from CHANGELOG.md.
+- **release:** Update CHANGELOG.md [skip ci]
+
+
