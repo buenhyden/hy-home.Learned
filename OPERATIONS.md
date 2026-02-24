@@ -8,11 +8,11 @@ This document is the central index for operational readiness in repositories cre
 
 All operational procedures must use `templates/operations/runbook-template.md`. Below is the index of standard runbooks included in the `runbooks/` directory.
 
-| Runbook           | Status | Location                                 | Purpose                              |
-|-------------------|--------|------------------------------------------|--------------------------------------|
-| Deployment        | Active | `runbooks/deployment-runbook.md`         | Staging/Production release steps     |
-| Incident Response | Active | `runbooks/incident-response-runbook.md`  | SEV-1/SEV-2 incident mitigation      |
-| Monitoring        | Active | `runbooks/monitoring-runbook.md`         | Threshold checks and alerting config |
+| Runbook           | Status | Location                                | Purpose                              |
+| ----------------- | ------ | --------------------------------------- | ------------------------------------ |
+| Deployment        | Active | `runbooks/deployment-runbook.md`        | Staging/Production release steps     |
+| Incident Response | Active | `runbooks/incident-response-runbook.md` | SEV-1/SEV-2 incident mitigation      |
+| Monitoring        | Active | `runbooks/monitoring-runbook.md`        | Threshold checks and alerting config |
 
 > **Note:** If a specific operational procedure (e.g. database migration, failover) is missing from this index, the DevOps Agent should proactively create a new runbook based on `templates/operations/runbook-template.md` and link it here.
 

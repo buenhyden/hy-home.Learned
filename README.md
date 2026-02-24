@@ -12,7 +12,7 @@
 <p align="center">
 
 **A Personal Knowledge Operating System**
-*Optimized for AI-Human Collaboration*
+_Optimized for AI-Human Collaboration_
 
 [**Explore Docs**](docs/index.md) • [**View Knowledge**](TIL/) • [**Agent Brain**](.agent/)
 
@@ -33,13 +33,13 @@
 
 ## 🧭 Directory Map
 
-| Directory | Description |
-| --- | --- |
-| [**`docs/`**](docs/index.md) | **The Manual**. Start here. Contains Mission, Guides, and Inventory. |
-| [**`TIL/`**](TIL/) | **The Knowledge**. Chronological learning nodes (2024-2026). |
-| [**`References/`**](References/) | **The Library**. Raw external inputs (Books, Lectures). |
-| [**`.agent/`**](.agent/) | **The Brain**. Governance rules and workflow automation scripts. |
-| [**`.github/`**](.github/) | **The Pipeline**. CI/CD, Issue Templates, and Automation. |
+| Directory                        | Description                                                          |
+| -------------------------------- | -------------------------------------------------------------------- |
+| [**`docs/`**](docs/index.md)     | **The Manual**. Start here. Contains Mission, Guides, and Inventory. |
+| [**`TIL/`**](TIL/)               | **The Knowledge**. Chronological learning nodes (2024-2026).         |
+| [**`References/`**](References/) | **The Library**. Raw external inputs (Books, Lectures).              |
+| [**`.agent/`**](.agent/)         | **The Brain**. Governance rules and workflow automation scripts.     |
+| [**`.github/`**](.github/)       | **The Pipeline**. CI/CD, Issue Templates, and Automation.            |
 
 ## 🛠️ Getting Started
 

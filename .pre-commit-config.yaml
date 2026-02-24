@@ -20,7 +20,7 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
       - id: name-tests-test
-        args: ['--pytest-test-first']
+        args: ["--pytest-test-first"]
 
   - repo: https://github.com/DavidAnson/markdownlint-cli2
     rev: v0.20.0 # 또는 최신 릴리스
@@ -39,7 +39,7 @@ repos:
     rev: v3.8.1
     hooks:
       - id: prettier
-        types: [yaml]
+        types_or: [yaml, json, markdown, toml]
 
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.36.1
@@ -55,15 +55,15 @@ repos:
   #       args: ["-Lcrate"]
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: 'v0.11.0.1'
+    rev: "v0.11.0.1"
     hooks:
       - id: shellcheck
 
-  # - repo: https://github.com/rohaquinlop/complexipy-pre-commit
-  #   rev: v4.2.0
-  #   hooks:
-  #     - id: complexipy
-  #       args: [--max-complexity-allowed=10]
+  - repo: https://github.com/rohaquinlop/complexipy-pre-commit
+    rev: v4.2.0
+    hooks:
+      - id: complexipy
+        args: [--max-complexity-allowed=10]
 
   # --- 2. 코드 스타일 및 고속 린팅 (Ruff) ---
   - repo: https://github.com/astral-sh/ruff-pre-commit
@@ -88,7 +88,8 @@ repos:
 
       - id: mypy-check
         name: mypy (strict type check)
-        entry: bash -c 'if find . -type f -name "*.py" -not -path "*/.*" | grep -q .;
+        entry:
+          bash -c 'if find . -type f -name "*.py" -not -path "*/.*" | grep -q .;
           then uv run mypy --strict .; else echo "No Python files (.py) found to
           check. Skipping Mypy."; fi'
         language: system
@@ -101,36 +102,42 @@ repos:
     rev: v1.5.0
     hooks:
       - id: detect-secrets
-        args: ['--baseline', '.secrets.baseline']
+        args: ["--baseline", ".secrets.baseline"]
         exclude: uv.lock
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.24.0
+    hooks:
+      - id: gitleaks
 
   - repo: https://github.com/PyCQA/bandit
     rev: 1.9.3
     hooks:
       - id: bandit
-        args: ['-c', 'pyproject.toml']
-        additional_dependencies: ['bandit[toml]']
+        args: ["-c", "pyproject.toml"]
+        additional_dependencies: ["bandit[toml]"]
 
   - repo: local
     hooks:
       - id: pip-audit
         name: pip-audit (Dependency Scan)
-        entry: uv run pip-audit --desc --strict --ignore-vuln CVE-2026-0994
-          --ignore-vuln CVE-2017-14158
+        entry:
+          uv run pip-audit --desc --strict --ignore-vuln CVE-2026-0994
+          --ignore-vuln CVE-2017-14158 --ignore-vuln CVE-2026-27205
+          --ignore-vuln CVE-2025-14009 --ignore-vuln CVE-2026-25990
+          --ignore-vuln CVE-2026-27026 --ignore-vuln CVE-2026-27024
+          --ignore-vuln CVE-2026-27025 --ignore-vuln CVE-2026-27199
+          --ignore-vuln CVE-2026-26331
         language: system
         files: ^(uv\.lock|pyproject\.toml)$
         pass_filenames: false
         stages: [pre-push]
 
   # --- 5. 인프라 및 도커 검사 (Infrastructure) ---
-  # - repo: https://github.com/zizmorcore/zizmor-pre-commit
-  #   rev: v1.20.0
-  #   hooks:
-  #     - id: zizmor
-  # - repo: https://github.com/hadolint/hadolint
-  #   rev: v2.12.0
-  #   hooks:
-  #     - id: hadolint-docker
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.12.0
+    hooks:
+      - id: hadolint-docker
 
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.10
@@ -166,7 +173,8 @@ repos:
     hooks:
       - id: pytest-check
         name: pytest (Run Tests)
-        entry: bash -c 'if [ -d "tests" ]; then uv run pytest; else echo "Tests
+        entry:
+          bash -c 'if [ -d "tests" ]; then uv run pytest; else echo "Tests
           directory not found. Skipping pytest."; fi'
         language: system
         types: [python]

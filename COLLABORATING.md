@@ -2,7 +2,7 @@
 
 ## Necessity & Required Content
 
-This file is absolutely necessary to establish the operational handoffs between Human Developers and the Multi Sub-Agent System. While `AGENTS.md` defines what the AI does, this file defines how the *Human* manages the AI.
+This file is absolutely necessary to establish the operational handoffs between Human Developers and the Multi Sub-Agent System. While `AGENTS.md` defines what the AI does, this file defines how the _Human_ manages the AI.
 **What Must Be Written Here**:
 
 - Workflow handoff rules across Pre-Dev, During-Dev, and Post-Dev phases.
