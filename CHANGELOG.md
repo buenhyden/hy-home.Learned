@@ -70,5 +70,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **deps:** Bump cryptography in the uv group across 1 directory
 - **deps:** Bump langchain-core in the uv group across 1 directory
 - **release:** Update CHANGELOG.md [skip ci]
-
-
