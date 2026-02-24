@@ -4,8 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
-## [0.0.1]
+## [Unreleased]
 
 ### Added
 
@@ -33,11 +32,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Establish repository governance, automation, and issue management with new workflows, policies, and YAML templates, while updating core documentation and configurations.
 - Implement automated changelog generation using git-cliff and a GitHub Actions workflow.
 - Add mypy, pip-audit, and pytest pre-commit hooks.
+- Release version 0.0.1 by updating the changelog.
 
 ### Changed
 
 - Consolidate CI quality checks into pre-commit hooks and standardize quote usage across configuration files.
 - Restructure CI workflow to use pre-commit hook stages for fast and heavy checks.
+- Relocate `zizmor.yml` configuration and standardize project documentation, templates, and development dependencies.
 
 ### Documentation
 
@@ -78,3 +79,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **release:** Update CHANGELOG.md [skip ci]
 - Remove trailing blank lines from CHANGELOG.md.
 - **release:** Update CHANGELOG.md [skip ci]
+- **release:** Update CHANGELOG.md [skip ci]
+
+
