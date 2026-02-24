@@ -86,6 +86,16 @@ repos:
         types: [python]
         pass_filenames: false
 
+      - id: mypy-check
+        name: mypy (strict type check)
+        entry:
+          bash -c 'if find . -type f -name "*.py" -not -path "*/.*" | grep -q .;
+          then uv run mypy --strict .; else echo "No Python files (.py) found to
+          check. Skipping Mypy."; fi'
+        language: system
+        types: [python]
+        pass_filenames: false
+
   # --- 4. 보안 감사 (Security) ---
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.5.0
@@ -100,6 +110,17 @@ repos:
       - id: bandit
         args: ["-c", "pyproject.toml"]
         additional_dependencies: ["bandit[toml]"]
+
+  - repo: local
+    hooks:
+      - id: pip-audit
+        name: pip-audit (Dependency Scan)
+        entry:
+          uv run pip-audit --desc --strict --ignore-vuln CVE-2026-0994
+          --ignore-vuln CVE-2017-14158
+        language: system
+        files: ^(uv\.lock|pyproject\.toml)$
+        pass_filenames: false
 
   # --- 5. 인프라 및 도커 검사 (Infrastructure) ---
   # - repo: https://github.com/zizmorcore/zizmor-pre-commit
@@ -139,3 +160,16 @@ repos:
     hooks:
       - id: commitizen
         stages: [commit-msg]
+
+  # --- 8. 테스트 실행 (Testing) ---
+  - repo: local
+    hooks:
+      - id: pytest-check
+        name: pytest (Run Tests)
+        entry:
+          bash -c 'if [ -d "tests" ]; then uv run pytest; else echo "Tests
+          directory not found. Skipping pytest."; fi'
+        language: system
+        types: [python]
+        pass_filenames: false
+        stages: [push]
