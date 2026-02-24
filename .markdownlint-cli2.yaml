@@ -12,16 +12,16 @@ config:
       - p
   MD024: false
 ignores:
-  - ".agent/"
-  - ".git/"
-  - ".history/"
-  - ".mypy_cache/"
-  - ".vscode/"
-  - "node_modules/"
-  - ".sisyphus/"
-  - "dist/"
-  - "coverage/"
-  - "storybook-static/"
+  - '.agent/'
+  - '.git/'
+  - '.history/'
+  - '.mypy_cache/'
+  - '.vscode/'
+  - 'node_modules/'
+  - '.sisyphus/'
+  - 'dist/'
+  - 'coverage/'
+  - 'storybook-static/'
 # 자동 고침 활성화
 fix: true
 # 출력 포맷(선택)

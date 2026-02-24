@@ -20,7 +20,7 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
       - id: name-tests-test
-        args: ["--pytest-test-first"]
+        args: ['--pytest-test-first']
 
   - repo: https://github.com/DavidAnson/markdownlint-cli2
     rev: v0.20.0 # 또는 최신 릴리스
@@ -55,7 +55,7 @@ repos:
   #       args: ["-Lcrate"]
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: "v0.11.0.1"
+    rev: 'v0.11.0.1'
     hooks:
       - id: shellcheck
 
@@ -88,39 +88,39 @@ repos:
 
       - id: mypy-check
         name: mypy (strict type check)
-        entry:
-          bash -c 'if find . -type f -name "*.py" -not -path "*/.*" | grep -q .;
+        entry: bash -c 'if find . -type f -name "*.py" -not -path "*/.*" | grep -q .;
           then uv run mypy --strict .; else echo "No Python files (.py) found to
           check. Skipping Mypy."; fi'
         language: system
         types: [python]
         pass_filenames: false
+        stages: [pre-push]
 
   # --- 4. 보안 감사 (Security) ---
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.5.0
     hooks:
       - id: detect-secrets
-        args: ["--baseline", ".secrets.baseline"]
+        args: ['--baseline', '.secrets.baseline']
         exclude: uv.lock
 
   - repo: https://github.com/PyCQA/bandit
     rev: 1.9.3
     hooks:
       - id: bandit
-        args: ["-c", "pyproject.toml"]
-        additional_dependencies: ["bandit[toml]"]
+        args: ['-c', 'pyproject.toml']
+        additional_dependencies: ['bandit[toml]']
 
   - repo: local
     hooks:
       - id: pip-audit
         name: pip-audit (Dependency Scan)
-        entry:
-          uv run pip-audit --desc --strict --ignore-vuln CVE-2026-0994
+        entry: uv run pip-audit --desc --strict --ignore-vuln CVE-2026-0994
           --ignore-vuln CVE-2017-14158
         language: system
         files: ^(uv\.lock|pyproject\.toml)$
         pass_filenames: false
+        stages: [pre-push]
 
   # --- 5. 인프라 및 도커 검사 (Infrastructure) ---
   # - repo: https://github.com/zizmorcore/zizmor-pre-commit
@@ -166,10 +166,9 @@ repos:
     hooks:
       - id: pytest-check
         name: pytest (Run Tests)
-        entry:
-          bash -c 'if [ -d "tests" ]; then uv run pytest; else echo "Tests
+        entry: bash -c 'if [ -d "tests" ]; then uv run pytest; else echo "Tests
           directory not found. Skipping pytest."; fi'
         language: system
         types: [python]
         pass_filenames: false
-        stages: [push]
+        stages: [pre-push]
