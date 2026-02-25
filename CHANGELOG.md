@@ -84,5 +84,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update pre-commit hook versions for various tools.
 - **release:** Update CHANGELOG.md [skip ci]
 - **deps:** Bump the uv group across 1 directory with 4 updates
+- **release:** Update CHANGELOG.md [skip ci]
+- **deps:** Bump the actions group across 1 directory with 3 updates
 
 
