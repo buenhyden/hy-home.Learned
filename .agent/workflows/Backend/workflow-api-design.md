@@ -499,7 +499,7 @@ description: Design RESTful API with OpenAPI specification and best practices
         const newUser = {
           email: 'test@example.com',
           name: 'Test User',
-          password: 'password123', # pragma: allowlist secret
+          password: 'password123',
         };
 
         const response = await request(app)
@@ -514,7 +514,7 @@ description: Design RESTful API with OpenAPI specification and best practices
         const invalidUser = {
           email: 'invalid-email',
           name: 'Test',
-          password: 'pass123', # pragma: allowlist secret
+          password: 'pass123',
         };
 
         await request(app)

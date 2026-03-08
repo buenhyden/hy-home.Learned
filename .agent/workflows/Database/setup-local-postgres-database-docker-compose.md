@@ -38,7 +38,7 @@ description: Quick setup for a local Postgres database using Docker
      - Host: `localhost`
      - Port: `5432`
      - User: `myuser`
-     - Password: `mypassword` # pragma: allowlist secret
+     - Password: `mypassword`
      - Database: `mydatabase`
 
 5. **Pro Tips**:

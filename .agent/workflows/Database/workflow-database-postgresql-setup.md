@@ -44,7 +44,7 @@ description: Setup PostgreSQL database with migrations, indexes, and connection 
 
     DATABASE_URL = os.getenv(
         "DATABASE_URL",
-        "postgresql://user:password@localhost:5432/mydb" # pragma: allowlist secret
+        "postgresql://user:password@localhost:5432/mydb"
     )
 
     engine = create_engine(
@@ -95,7 +95,7 @@ description: Setup PostgreSQL database with migrations, indexes, and connection 
 
     ```bash
     # .env
-    DATABASE_URL=postgresql://username:password@localhost:5432/dbname # pragma: allowlist secret
+    DATABASE_URL=postgresql://username:password@localhost:5432/dbname
 
     # Development
     DB_HOST=localhost
@@ -125,7 +125,7 @@ description: Setup PostgreSQL database with migrations, indexes, and connection 
     Update `alembic.ini`:
 
     ```ini
-    sqlalchemy.url = postgresql://user:password@localhost:5432/mydb # pragma: allowlist secret
+    sqlalchemy.url = postgresql://user:password@localhost:5432/mydb
     ```
 
     Better: Use environment variable in `migrations/env.py`:
