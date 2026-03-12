@@ -2,7 +2,17 @@
 
 This is the shared, vendor-neutral entrypoint for AI assistants working in
 `hy-home-learned`. Start here, then load the repository docs hub and the
-model-specific runtime file for the active session.
+model-specific runtime file for the active session. Keep the root entrypoints
+minimal; `.claude/` is the authoritative detail layer.
+
+## Quick Reference
+
+- **Environment:** Python 3.13+, `uv`
+- **Sync deps:** `uv sync --dev`
+- **Lint:** `uv run ruff check .`
+- **Typecheck:** `uv run mypy .`
+- **Test:** `uv run pytest`
+- **Hooks:** `uv run pre-commit install`
 
 ## Required Reading Order
 

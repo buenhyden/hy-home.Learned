@@ -23,6 +23,7 @@ This directory stores execution plans for approved work.
 | Plan | Status | Scope | Last Updated |
 | ---- | ------ | ----- | ------------ |
 | [2026-03-12-agent-instruction-refactor.md](2026-03-12-agent-instruction-refactor.md) | In Progress | repository | 2026-03-12 |
+| [2026-03-12-root-instruction-entrypoint-refinement.md](2026-03-12-root-instruction-entrypoint-refinement.md) | Completed | domain | 2026-03-12 |
 
 ---
 _Last Updated: March 2026_
