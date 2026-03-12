@@ -35,6 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Release version 0.0.1 by updating the changelog.
 - Significantly expand README
 - Refine root instruction entrypoints
+- Introduce a repository operating guide and integrate
 
 ### Changed
 
@@ -97,6 +98,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 - **deps:** Bump the uv group across 1 directory with 2 updates
+- **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
