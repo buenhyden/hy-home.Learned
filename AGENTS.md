@@ -10,7 +10,7 @@ minimal; `.claude/` is the authoritative detail layer.
 - **Environment:** Python 3.13+, `uv`
 - **Sync deps:** `uv sync --dev`
 - **Lint:** `uv run ruff check .`
-- **Typecheck:** `uv run mypy .`
+- **Typecheck:** `uv run ty check`
 - **Test:** `uv run pytest`
 - **Hooks:** `uv run pre-commit install`
 
@@ -18,7 +18,8 @@ minimal; `.claude/` is the authoritative detail layer.
 
 1. [Documentation Hub](docs/README.md)
 2. [Shared Agent Governance](.claude/shared-governance.md)
-3. One model runtime entrypoint:
+3. [Repository Operating Guide](.claude/repository-guide.md)
+4. One model runtime entrypoint:
    - [Claude Code](CLAUDE.md)
    - [Gemini](GEMINI.md)
 
@@ -47,6 +48,9 @@ minimal; `.claude/` is the authoritative detail layer.
 - Follow lazy loading: read index documents first, then load only the specific
   file needed for the current task.
 - Keep execution surgical. Do not expand scope without an explicit request.
+- Use `docs/runbooks/` and `docs/operations/` for operational records. Do not
+  reintroduce stale parallel paths such as top-level `specs/` or `runbooks/`
+  unless the repository structure changes first.
 
 ---
 _Last Updated: March 2026_

@@ -4,6 +4,7 @@ This file is the Gemini CLI context entrypoint for `hy-home-learned`. Keep it
 import-first and keep detailed Gemini guidance in `.claude/`.
 
 @./.claude/shared-governance.md
+@./.claude/repository-guide.md
 @./.claude/gemini-models.md
 
 ## Quick Reference

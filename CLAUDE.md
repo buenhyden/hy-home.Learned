@@ -4,6 +4,7 @@ This file is the Claude Code runtime entrypoint for `hy-home-learned`. Keep it
 import-first and keep detailed Claude guidance in `.claude/`.
 
 @./.claude/shared-governance.md
+@./.claude/repository-guide.md
 @./.claude/claude-code.md
 
 ## Quick Reference
