@@ -1,31 +1,52 @@
 # Documentation Hub (`docs/`)
 
-This directory contains long-term, human-readable project documentation used across planning, design, and reference delivery.
+This directory is the long-term, human-readable knowledge base for the
+`hy-home-learned` repository.
 
-## 1. Necessity and Purpose
+## Purpose
 
-This directory acts as the stable knowledge base for the `hy-home-learned` ecosystem. It isolates product/design knowledge ("Why" and "What") from executable logic, operational scripts, and AI automation logic.
+- Give humans and agents a stable navigation layer before they open individual
+  documents.
+- Separate requirements, architecture, implementation contracts, execution
+  plans, and operational records.
+- Support lazy loading by making each document family discoverable through a
+  small index file first.
 
-- **Human Developers**: Primary reference for understanding overarching system constraints.
-- **AI Agents**: Source of truth for planning and design validation via **Lazy Loading**.
+## Knowledge Map
 
-## 2. Knowledge Map (Lazy Loading)
+- [ADRs](adr/README.md) for architecture decisions
+- [ARDs](ard/README.md) for system structure and domain boundaries
+- [PRDs](prd/README.md) for requirements and success criteria
+- [Specs](specs/README.md) for implementation contracts
+- [Plans](plans/README.md) for active execution plans
+- [Runbooks](runbooks/README.md) for operational procedures
+- [Operations](operations/README.md) for incidents and postmortems
 
-Documents created here MUST use their respective templates from the `templates/` folder and adhere to [**AGENTS.md**](../AGENTS.md) navigation rules.
+## Lazy Loading Protocol
 
-- [**ADRs (Architecture Decisions)**](adr/README.md) — Rationale for technical choices.
-- [**ARDs (Architecture References)**](ard/README.md) — Domain models and structural diagrams.
-- [**PRDs (Product Requirements)**](prd/README.md) — Business goals and user stories.
-- [**Guides (Lifecycle)**](guides/README.md) — Procedures for Pre/During/Post-Dev phases.
-- [**Manuals (Non-Technical)**](manuals/README.md) — Collaboration and operations agreements.
+1. Start from this hub.
+2. Open the relevant section index.
+3. Read only the specific document needed for the active task.
+4. Return to the index when you need a different document family.
 
-## 3. Explicit Boundaries & Anti-Patterns
+## Documentation Rules
 
-1. **NO RUNBOOKS ALLOWED**: All playbooks and incident response guides MUST go in the root `/runbooks/` directory.
-2. **NO SPECS ALLOWED**: All feature-specific implementation blueprints and plans belong in `/specs/` or `/docs/plans/`.
-3. **NO AI WORKFLOWS ALLOWED**: Behavioral guidelines and prompts belong strictly in `.agent/workflows/`.
-4. **TEMPLATE MANDATORY**: New ADRs, ARDs, and PRDs MUST be generated from the `templates/` directory.
-5. **LOCALE ADHERENCE**: Follow [**Korean Overview Protocol**](.agent/rules/2500-Localization/) for all major docs.
+- Use the matching template in [../templates/](../templates/) when creating a
+  new document.
+- Keep links repository-relative.
+- Keep index files short and specific.
+- Do not treat this directory as a dumping ground for ad-hoc notes or agent
+  prompts.
+
+## Template Map
+
+- [ADR Template](../templates/adr-template.md)
+- [ARD Template](../templates/ard-template.md)
+- [PRD Template](../templates/prd-template.md)
+- [Spec Template](../templates/spec-template.md)
+- [Plan Template](../templates/plan-template.md)
+- [Runbook Template](../templates/runbook-template.md)
+- [Incident Template](../templates/incident-template.md)
 
 ---
 _Last Updated: March 2026_

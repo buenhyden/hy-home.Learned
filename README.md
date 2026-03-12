@@ -14,37 +14,41 @@
 **A Personal Knowledge Operating System**
 _Optimized for AI-Human Collaboration_
 
-[**Explore Docs**](docs/index.md) • [**View Knowledge**](TIL/) • [**Agent Brain**](AGENTS.md)
+[**Explore Docs**](docs/README.md) • [**View Knowledge**](TIL/) • [**Agent Brain**](AGENTS.md)
 
 </p>
 
 ---
 
-## 🚀 Overview
+## Overview
 
-**hy-home-learned** is a structured workspace designed to bridge the gap between "Learning" and "Doing". It integrates proactive AI agents, strict governance (Mypy/Ruff), and a layered architecture to turn raw references into executable knowledge.
+**hy-home-learned** is a structured workspace designed to bridge the gap
+between learning and doing. It combines proactive AI agents, repository
+governance, and layered documentation to turn raw references into reusable
+knowledge.
 
 ### Key Features
 
-- **🤖 Agentic Core**: Built-in personas for Reasoning, Coding, and Reviewing (`.agent/`).
-- **🧠 Atomic Knowledge**: "Today I Learned" (TIL) system for verifying understanding.
-- **🛡️ Strict Governance**: Automated CI/CD pipelines ensuring code quality.
-- **⚡ Modern Stack**: Powered by `uv` for lightning-fast Python management.
+- **Agentic Core**: Built-in personas, rules, and workflows under `.agent/`
+- **Atomic Knowledge**: A TIL system for verified learning notes
+- **Documentation Chain**: Requirements, architecture, specs, plans, and
+  runbooks under `docs/`
+- **Modern Python Tooling**: `uv`, `ruff`, `mypy`, `pytest`, and `pre-commit`
 
-## 🧭 Directory Map
+## Directory Map
 
-| Directory                        | Description                                                          |
-| -------------------------------- | -------------------------------------------------------------------- |
-| [**`docs/`**](docs/index.md)     | **The Manual**. Start here. Contains Mission, Guides, and Inventory. |
-| [**`TIL/`**](TIL/)               | **The Knowledge**. Chronological learning nodes (2024-2026).         |
-| [**`References/`**](References/) | **The Library**. Raw external inputs (Books, Lectures).              |
-| [**`AGENTS.md`**](AGENTS.md)     | **The Master Guide**. Agent roles, personas, and navigation map. |
-| [**`GEMINI.md`**](GEMINI.md)     | **Reasoning Engine**. Directives for Gemini models.                |
-| [**`CLAUDE.md`**](CLAUDE.md)     | **Command Center**. Directives for Claude/Claude Code models.      |
-| [**`.agent/`**](.agent/)         | **The Brain**. Governance rules and workflow automation scripts.     |
-| [**`.github/`**](.github/)       | **The Pipeline**. CI/CD, Issue Templates, and Automation.            |
+| Directory | Description |
+| --------- | ----------- |
+| [**`docs/`**](docs/README.md) | Documentation hub for requirements, architecture, specs, plans, runbooks, and operations |
+| [**`TIL/`**](TIL/) | Chronological knowledge notes |
+| [**`AGENTS.md`**](AGENTS.md) | Shared agent entrypoint |
+| [**`GEMINI.md`**](GEMINI.md) | Gemini runtime entrypoint |
+| [**`CLAUDE.md`**](CLAUDE.md) | Claude Code runtime entrypoint |
+| [**`.claude/`**](.claude/README.md) | Shared human-facing agent manuals |
+| [**`.agent/`**](.agent/) | Rules, workflows, and automation assets |
+| [**`.github/`**](.github/) | CI/CD and repository automation |
 
-## 🛠️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -54,24 +58,22 @@ _Optimized for AI-Human Collaboration_
 ### Quick Setup
 
 ```bash
-# 1. Clone
 git clone https://github.com/buenhyden/hy-home.Learned
 cd hy-home-learned
-
-# 2. Sync Dependencies
 uv sync
-
-# 3. Install Hooks
 uv run pre-commit install
 ```
 
-Detailed instructions in [**Development Setup Guide**](docs/development-setup-guide.md).
+For repository navigation, start with [docs/README.md](docs/README.md) and
+[AGENTS.md](AGENTS.md).
 
-## 🤝 Contributing
+## Contributing
 
-We welcome contributions that add knowledge or improve wisdom.
-Please read [**CONTRIBUTING.md**](CONTRIBUTING.md) and [**Agent Protocols**](docs/agent-protocols.md) before starting.
+We welcome contributions that add knowledge or improve the repository.
+Please read [**CONTRIBUTING.md**](CONTRIBUTING.md), [**AGENTS.md**](AGENTS.md),
+and [**docs/README.md**](docs/README.md) before starting.
 
-## 📜 License
+## License
 
-Distributed under the MIT License. See [**LICENSE**](LICENSE) for more information.
+This checkout advertises MIT license terms in repository metadata. If a
+published `LICENSE` file is added later, link it here.

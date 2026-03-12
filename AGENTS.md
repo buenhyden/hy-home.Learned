@@ -1,40 +1,42 @@
 # AI Agents Master Guide
 
-This is the shared entrypoint for AI assistants working in `hy-home-learned`.
-Start here, then load the shared governance manual and the model-specific
-overlay for the active session.
+This is the shared, vendor-neutral entrypoint for AI assistants working in
+`hy-home-learned`. Start here, then load the repository docs hub and the
+model-specific runtime file for the active session.
 
 ## Required Reading Order
 
-1. [Shared Governance](.claude/shared-governance.md)
-2. [Development Guides](docs/guides/README.md)
-3. One model overlay:
+1. [Documentation Hub](docs/README.md)
+2. [Shared Agent Governance](.claude/shared-governance.md)
+3. One model runtime entrypoint:
    - [Claude Code](CLAUDE.md)
    - [Gemini](GEMINI.md)
 
-## Quick Links
+## Knowledge Navigation
 
-- [Agent Governance Index](.claude/README.md)
-- [Collaboration Guide](docs/manuals/collaboration-guide.md)
 - [ADRs](docs/adr/README.md)
 - [ARDs](docs/ard/README.md)
 - [PRDs](docs/prd/README.md)
-- [Specs](docs/specs/)
-- [Plans](docs/plans/)
-- [Runbooks](docs/runbooks/)
-- [Operations](docs/operations/)
+- [Specs](docs/specs/README.md)
+- [Plans](docs/plans/README.md)
+- [Runbooks](docs/runbooks/README.md)
+- [Operations](docs/operations/README.md)
+- [Shared `.claude` Index](.claude/README.md)
 
 ## Non-Negotiables
 
-- State the active persona explicitly using the format required by
+- State the active persona explicitly using the sentence required by
   [0018-specialized-agent-personas-standard.md](.agent/rules/0000-Agents/0018-specialized-agent-personas-standard.md).
-- Do not start code changes without approved planning and specification context
-  from `docs/prd/`, `docs/adr/`, `docs/specs/`, and `docs/plans/`.
-- Identify the relevant `.agent/rules/`, `.agent/workflows/`, and active skills
-  before execution.
-- Use lazy loading: read README or index files first, then only the documents
-  needed for the active task.
-- Keep changes surgical. Do not expand scope without an explicit request.
+- Do not begin code changes without approved context from `docs/prd/`,
+  `docs/adr/`, `docs/specs/`, and `docs/plans/`, as required by
+  [0120-requirements-and-specifications-standard.md](.agent/rules/0100-Standards/0120-requirements-and-specifications-standard.md).
+- Identify the relevant `.agent/rules/`, `.agent/workflows/`, and skills before
+  execution.
+- Skills are not restricted by this file. Agents must choose the skills that fit
+  the task instead of forcing a narrow whitelist.
+- Follow lazy loading: read index documents first, then load only the specific
+  file needed for the current task.
+- Keep execution surgical. Do not expand scope without an explicit request.
 
 ---
 _Last Updated: March 2026_

@@ -1,189 +1,85 @@
-# Agent Instruction Refactor Implementation Plan
+# Agent Instruction Refactor Plan
 
-> **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
+> **Status**: Completed
+> **Scope**: historical
+> **Related PRD**: `N/A`
+> **Related Architecture**: `[../ard/README.md](../ard/README.md)`
+> **Decision Record**: `N/A`
 
-**Goal:** Refactor `AGENTS.md`, `CLAUDE.md`, and `GEMINI.md` into minimal entrypoints backed by shared, linked documentation under `.claude/`.
+**Overview (KR):** 이 계획은 루트 agent entrypoint와 `.claude` 공유 매뉴얼, 그리고 `docs/` 인덱스 체계를 실제 저장소 구조에 맞게 재정렬하기 위해 작성되었다. 구현 결과는 import 기반 runtime entrypoint, 복구된 lazy-loading 문서 체계, 그리고 정리된 README navigation으로 수렴한다.
 
-**Architecture:** Keep the three root files as stable discovery points because other repository docs already reference them. Move reusable governance and model-specific detail into `.claude/`, then make each root file point to the shared manual set with corrected relative links.
+## Context & Introduction
 
-**Tech Stack:** Markdown, repository-relative links, `.agent/rules/`, `.agent/workflows/`, `.claude/`, `docs/guides/`
+The repository had already started moving agent guidance into `.claude/`, but
+the active instruction chain still referenced removed legacy documentation
+paths. The `docs/` indexes also drifted away from the actual repository
+layout, which broke the lazy-loading contract for ADRs, ARDs, PRDs, Specs,
+Plans, Runbooks, and Operations records.
 
----
+This plan captured the required refactor and now serves as the historical
+record of what was implemented.
 
-### Task 1: Capture the current documentation defects
+## Tasks
 
-**Files:**
-- Modify: `AGENTS.md`
-- Modify: `CLAUDE.md`
-- Create: `GEMINI.md`
-- Test: `python3` inline link-check script
+| Task | Description | Files Affected | Validation Criteria |
+| ---- | ----------- | -------------- | ------------------- |
+| TASK-001 | Refactor root instruction entrypoints | `AGENTS.md`, `CLAUDE.md`, `GEMINI.md` | Root files follow the new runtime and navigation contract |
+| TASK-002 | Rewrite shared `.claude` manuals | `.claude/README.md`, `.claude/shared-governance.md`, `.claude/claude-code.md`, `.claude/gemini-models.md` | Shared docs contain only valid paths and current governance structure |
+| TASK-003 | Rebuild docs lazy-loading indexes | `docs/README.md`, `docs/adr/README.md`, `docs/ard/README.md`, `docs/prd/README.md`, `docs/specs/README.md`, `docs/plans/README.md`, `docs/runbooks/README.md`, `docs/operations/README.md` | Each document family has a valid index and template reference |
+| TASK-004 | Repair top-level repository navigation | `README.md` | Broken documentation links are removed or replaced |
+| TASK-005 | Record the implemented architecture | `docs/plans/2026-03-12-agent-instruction-refactor.md` | Historical plan reflects the final contract and verification |
 
-**Step 1: Record the broken references before refactoring**
+## Implemented Contract
 
-Run:
+### Root Entry Points
 
-```bash
-python3 - <<'PY'
-from pathlib import Path
-import re
+- [AGENTS.md](../../AGENTS.md) remains the vendor-neutral open-format entrypoint.
+- [CLAUDE.md](../../CLAUDE.md) is now a thin runtime entrypoint that imports:
+  - [`.claude/shared-governance.md`](../../.claude/shared-governance.md)
+  - [`.claude/claude-code.md`](../../.claude/claude-code.md)
+- [GEMINI.md](../../GEMINI.md) is now a thin runtime entrypoint that imports:
+  - [`.claude/shared-governance.md`](../../.claude/shared-governance.md)
+  - [`.claude/gemini-models.md`](../../.claude/gemini-models.md)
 
-for file in ["AGENTS.md", "CLAUDE.md", "GEMINI.md"]:
-    text = Path(file).read_text()
-    links = re.findall(r"\[[^\]]+\]\(([^)]+)\)", text)
-    missing = [link for link in links if not link.startswith(("http", "#")) and not Path(link).exists()]
-    print(file, missing)
-PY
-```
+### Shared Governance
 
-Expected:
-- `AGENTS.md` reports the missing `runbooks/` path.
-- `CLAUDE.md` reports the missing `.agent/workflows/tdd-workflow.md` path.
-- `GEMINI.md` reports the missing `.agent/rules/0120-requirements-and-specifications-standard.md` path.
+- [`.claude/shared-governance.md`](../../.claude/shared-governance.md) now
+  owns persona adoption, spec/plan gate language, rule/workflow/skill triage,
+  and the repository lazy-loading sequence.
+- The shared manuals no longer reference removed legacy documentation paths.
 
-**Step 2: Confirm the shared-content candidates**
+### Docs Navigation
 
-Review:
-- shared governance and persona adoption rules in `AGENTS.md`
-- model-only directives in `CLAUDE.md`
-- model-only directives in `GEMINI.md`
+- [docs/README.md](../README.md) is now the single docs hub.
+- Section indexes now exist for:
+  - [ADRs](../adr/README.md)
+  - [ARDs](../ard/README.md)
+  - [PRDs](../prd/README.md)
+  - [Specs](../specs/README.md)
+  - [Plans](README.md)
+  - [Runbooks](../runbooks/README.md)
+  - [Operations](../operations/README.md)
 
-Expected:
-- shared rules are separated from Claude-only and Gemini-only overlays.
+## Verification
 
-### Task 2: Create the shared governance manual set in `.claude`
+- `[VAL-001]` Run a relative-link check across the root instruction files,
+  `.claude/*.md`, docs hubs, and this plan file.
+- `[VAL-002]` Run `rg` for stale path leakage covering removed legacy docs
+  paths, old template subdirectories, and obsolete top-level rule links.
+- `[VAL-003]` Confirm that `docs/specs/README.md`, `docs/plans/README.md`,
+  `docs/runbooks/README.md`, and `docs/operations/README.md` exist.
 
-**Files:**
-- Create: `.claude/README.md`
-- Create: `.claude/shared-governance.md`
-- Create: `.claude/claude-code.md`
-- Create: `.claude/gemini-models.md`
+## Outcome
 
-**Step 1: Create the index**
+- Root instruction files are concise and role-correct.
+- `.claude/` is the authoritative shared instruction source.
+- The docs hub and section indexes match the actual repository structure.
+- The old broken references are removed from the active instruction chain.
 
-Add a short README that explains:
-- root files remain the canonical entrypoints
-- the directory contains the detailed governance and model overlays
-- which file to open next for each model
+## References
 
-**Step 2: Create shared governance**
-
-Document:
-- persona adoption requirement
-- spec and planning gate
-- rule/workflow/skill triage requirement
-- lazy-loading navigation order
-- current repository knowledge map using existing paths
-
-**Step 3: Create the Claude overlay**
-
-Document only Claude-specific guidance:
-- workflow order
-- Python/tooling validation expectations
-- when to use `next-devtools`, `context7`, and testing workflows
-
-**Step 4: Create the Gemini overlay**
-
-Document only Gemini-specific guidance:
-- planning-first behavior
-- `task.md` / `implementation_plan.md` expectations
-- `sequential-thinking` usage
-- long-context usage with lazy loading
-
-### Task 3: Reduce the three root files to entrypoints
-
-**Files:**
-- Modify: `AGENTS.md`
-- Modify: `CLAUDE.md`
-- Modify: `GEMINI.md`
-
-**Step 1: Refactor `AGENTS.md`**
-
-Keep:
-- short project description
-- non-negotiable shared rules
-- links to the shared manual set
-
-Remove:
-- detailed model-specific content
-- duplicated navigation detail that now lives in the shared manual
-
-**Step 2: Refactor `CLAUDE.md`**
-
-Keep:
-- short Claude-specific entrypoint
-- load order
-- link to the detailed Claude manual
-
-Remove:
-- broken link to `tdd-workflow`
-- nonexistent `skills/` reference
-- tool names that do not belong in a generic root entrypoint
-
-**Step 3: Refactor `GEMINI.md`**
-
-Keep:
-- short Gemini-specific entrypoint
-- load order
-- link to the detailed Gemini manual
-
-Remove:
-- broken standards link
-- duplicated governance that now belongs in shared docs
-
-### Task 4: Verify the new structure
-
-**Files:**
-- Test: `AGENTS.md`
-- Test: `CLAUDE.md`
-- Test: `GEMINI.md`
-- Test: `.claude/*.md`
-
-**Step 1: Re-run the relative link check**
-
-Run:
-
-```bash
-python3 - <<'PY'
-from pathlib import Path
-import re
-
-files = [
-    "AGENTS.md",
-    "CLAUDE.md",
-    "GEMINI.md",
-    ".claude/README.md",
-    ".claude/shared-governance.md",
-    ".claude/claude-code.md",
-    ".claude/gemini-models.md",
-]
-
-for file in files:
-    text = Path(file).read_text()
-    links = re.findall(r"\[[^\]]+\]\(([^)]+)\)", text)
-    missing = [link for link in links if not link.startswith(("http", "#")) and not (Path(file).parent / link).resolve().exists()]
-    print(file, missing)
-PY
-```
-
-Expected:
-- every file prints an empty missing-link list
-
-**Step 2: Review for scope control**
-
-Check:
-- only the requested three root files and the new shared manual files were changed
-- no unrelated template or guide content was rewritten
-
-**Step 3: Remove the deprecated location**
-
-Check:
-- deprecated instruction directories have been removed from the active
-  documentation chain
-- there are no remaining instruction-chain references to removed paths
-
-**Step 4: Commit**
-
-```bash
-git add AGENTS.md CLAUDE.md GEMINI.md docs/plans/2026-03-12-agent-instruction-refactor.md .claude
-git commit -m "docs(agent): refactor model instruction entrypoints"
-```
+- [AGENTS.md](../../AGENTS.md)
+- [CLAUDE.md](../../CLAUDE.md)
+- [GEMINI.md](../../GEMINI.md)
+- [`.claude/README.md`](../../.claude/README.md)
+- [docs/README.md](../README.md)
