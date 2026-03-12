@@ -54,6 +54,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Refactor project documentation by deleting specific AI guides, rewriting the README, and adding contribution guidelines, alongside general project and dependency updates.
 - Remove obsolete API references section from README.
 - Update and refine numerous agent rules and workflows across various domains, and adjust the gitignore.
+- Establish new doc categories
 
 ### Miscellaneous
 
@@ -93,6 +94,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 - **deps:** Bump the uv group across 1 directory with 2 updates
+- **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 
