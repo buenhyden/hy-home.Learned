@@ -40,6 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Restructure CI workflow to use pre-commit hook stages for fast and heavy checks.
 - Relocate `zizmor.yml` configuration and standardize project documentation, templates, and development dependencies.
 - Consolidate runbooks, specifications, and plans into a unified `docs/` directory, updating agent rules and workflows to reflect the new paths.
+- Consolidate documentation and templates
 
 ### Documentation
 
@@ -92,6 +93,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 - **deps:** Bump the uv group across 1 directory with 2 updates
+- **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 
 
