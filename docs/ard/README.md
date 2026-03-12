@@ -1,52 +1,43 @@
-# Architecture Requirements Documents (ARD)
+# Architecture Reference Documents (ARD)
 
-This directory contains Architecture Requirements Documents that define the technical requirements and constraints for system architecture.
+This directory contains Architecture Reference Documents that define the high-level structural models and global behavioral flows of the `hy-home-learned` ecosystem.
 
-## What is an ARD?
+## 1. Role in Documentation Hierarchy
 
-An Architecture Requirements Document (ARD) captures the "how" of system architecture - the technical requirements, constraints, and non-functional requirements that shape the system design. Unlike ADRs which capture decisions, ARDs capture requirements.
+ARDs serve as the structural blueprint for the system. They provide the "How it works globally" context, sitting between high-level requirements and low-level source code.
 
-### ARD vs ADR
+- **Upstream**: [**docs/prd/**](../prd/) (Requirements) -> [**docs/adr/**](../adr/) (Decisions)
+- **Mapping**: Adheres to [**Architecture Design Standards**](../../.agent/rules/0130-architecture-standard.md).
 
-| Document | Focus        | Question Answered          |
-| -------- | ------------ | -------------------------- |
-| **ADR**  | Decisions    | "Why did we choose X?"     |
-| **ARD**  | Requirements | "What must the system do?" |
+## 2. Navigation Protocol (Lazy Loading)
 
-## When to Create an ARD
+AI Agents MUST follow the **Lazy Loading** pattern defined in [**AGENTS.md**](../../AGENTS.md):
 
-Create an ARD when:
+1. Use this `README.md` to find the relevant domain or system diagram.
+2. Load only the specific ARD file required for the current task (e.g., `ard/data-model.md`).
 
-- Starting a new project or major feature
-- Defining technical constraints and NFRs
-- Documenting system boundaries and scope
-- Establishing performance/security requirements
+## 3. Reference Standards
 
-## How to Create an ARD
+Documents here MUST contain:
 
-1. **Determine Domain/Feature**: ARDs MUST be placed inside a specific business domain folder (e.g., `docs/ard/auth/`, `docs/ard/payments/`).
-2. **Use the Template**: Copy `templates/architecture/ard-template.md` to this directory
-3. **Name Convention**: `[system]-requirements.md` (e.g., `payment-service-requirements.md`)
-4. **Fill All Sections**: Business goals, scope, functional/non-functional requirements, constraints
+- **Structural Diagrams**: C4 Model (Context, Container) preferred.
+- **Domain Models**: Entity relationships and core logic flows.
+- **Cross-Links**: Direct links to governing ADRs and downstream Specs.
 
-```bash
-# Example workflow
-mkdir -p docs/ard/users
-cp templates/architecture/ard-template.md docs/ard/users/user-service-requirements.md
-# Edit the file with your requirements
-```
+## 4. Index of References
 
-## ARD Template
+| System / Domain | Title | Status | Last Updated |
+| :--- | :--- | :--- | :--- |
+| - | _No ARDs yet_ | - | - |
 
-All ARDs MUST use `templates/architecture/ard-template.md`. The template includes:
-
-| Section                         | Purpose                                         |
+---
+_Last Updated: March 2026_
+                                         |
 | ------------------------------- | ----------------------------------------------- |
 | **Introduction**                | High-level overview                             |
 | **Business Goals**              | Top-level objectives                            |
 | **Scope**                       | System boundaries                               |
 | **Functional Requirements**     | Core technical capabilities                     |
-| **Non-Functional Requirements** | Performance, scalability, reliability, security |
 | **Constraints**                 | External limitations                            |
 
 ## Key Sections

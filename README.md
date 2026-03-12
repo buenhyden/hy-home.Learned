@@ -14,7 +14,7 @@
 **A Personal Knowledge Operating System**
 _Optimized for AI-Human Collaboration_
 
-[**Explore Docs**](docs/index.md) • [**View Knowledge**](TIL/) • [**Agent Brain**](.agent/)
+[**Explore Docs**](docs/index.md) • [**View Knowledge**](TIL/) • [**Agent Brain**](AGENTS.md)
 
 </p>
 
@@ -38,6 +38,9 @@ _Optimized for AI-Human Collaboration_
 | [**`docs/`**](docs/index.md)     | **The Manual**. Start here. Contains Mission, Guides, and Inventory. |
 | [**`TIL/`**](TIL/)               | **The Knowledge**. Chronological learning nodes (2024-2026).         |
 | [**`References/`**](References/) | **The Library**. Raw external inputs (Books, Lectures).              |
+| [**`AGENTS.md`**](AGENTS.md)     | **The Master Guide**. Agent roles, personas, and navigation map. |
+| [**`GEMINI.md`**](GEMINI.md)     | **Reasoning Engine**. Directives for Gemini models.                |
+| [**`CLAUDE.md`**](CLAUDE.md)     | **Command Center**. Directives for Claude/Claude Code models.      |
 | [**`.agent/`**](.agent/)         | **The Brain**. Governance rules and workflow automation scripts.     |
 | [**`.github/`**](.github/)       | **The Pipeline**. CI/CD, Issue Templates, and Automation.            |
 

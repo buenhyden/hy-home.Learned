@@ -79,7 +79,9 @@ This project follows an AI-Agent-managed, Spec-Driven Development structure:
 ├── specs/              # Implementation Plans, Specs, and API Contracts
 ├── templates/          # Markdown templates for engineering and product
 ├── tests/              # Unit and Integration test suites
-├── AGENTS.md           # Multi-Agent governance and persona guide
+├── AGENTS.md           # Master Agent governance and persona guide
+├── GEMINI.md           # Reasoning directives for Gemini models
+├── CLAUDE.md           # Command directives for Claude/Claude Code
 ├── ARCHITECTURE.md     # High-level system blueprints and principles
 ├── OPERATIONS.md       # Target environment and deployment baseline
 ├── llms.txt            # System context for prompt construction
@@ -112,6 +114,8 @@ This project follows an AI-Agent-managed, Spec-Driven Development structure:
 Ensure you read the governance files before contributing or generating code via AI Agents:
 
 - [🤖 Multi-Agent Governance](./AGENTS.md)
+- [♊ Gemini Directives](./GEMINI.md)
+- [🛡️ Claude Directives](./CLAUDE.md)
 - [🏛️ System Architecture](./ARCHITECTURE.md)
 - [⚙️ Operations Baseline](./OPERATIONS.md)
 - [📝 Specifications & API Contracts](./specs/)

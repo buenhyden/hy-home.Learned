@@ -1,84 +1,38 @@
 # Product Requirements Documents (PRD)
 
-This directory contains Product Requirements Documents that define the "what" of product features - the business requirements, user stories, and success metrics.
+This directory contains Product Requirements Documents that define the "What" and "Why" of product features in the `hy-home-learned` ecosystem.
 
-## What is a PRD?
+## 1. Role in Documentation Hierarchy
 
-A Product Requirements Document (PRD) captures the business perspective of a feature:
+PRDs are the starting point for the **Spec-Driven Development** (SDD) workflow. They capture business goals and user needs.
 
-- **What** the product should do
-- **Why** it's being built
-- **Who** it's for
-- **How** success will be measured
+- **Next Step**: [**Architecture Decisions (ADR)**](../adr/) or [**Implementation Specs**](../../specs/).
+- **Mapping**: Adheres to [**Requirements Standards**](../../.agent/rules/0120-requirements-and-specifications-standard.md).
 
-PRDs are the starting point for the Spec-Driven Development workflow.
+## 2. Navigation Protocol (Lazy Loading)
 
-## When to Create a PRD
+AI Agents MUST follow the **Lazy Loading** pattern defined in [**AGENTS.md**](../../AGENTS.md):
 
-Create a PRD when:
+1. Use this `README.md` to identify the relevant feature or domain epic.
+2. Load only the specific PRD file required (e.g., `prd/auth-system.md`).
 
-- Starting a new feature or product
-- Defining user requirements and business goals
-- Before creating implementation specifications
-- Communicating product decisions to stakeholders
+## 3. Reference Standards
 
-## How to Create a PRD
+Documents here MUST contain:
 
-1. **Determine Domain/Feature**: PRDs MUST be placed inside a specific business domain folder (e.g., `docs/prd/auth/`, `docs/prd/payments/`). Do NOT place PRDs directly in the root of `docs/prd/`.
-2. **Use the Template**: Copy `templates/product/prd-template.md` to this directory
-3. **Name Convention**: `[feature]-prd.md` (e.g., `user-authentication-prd.md`)
-4. **Fill All Sections**: Overview, audience, metrics, user stories, scope
-5. **Get Approval**: PRD must be approved before specs are created
+- **Vision**: Clear outcome-based goal statement.
+- **Measurable Metrics**: Quantifiable success criteria (KPIs).
+- **User Stories (GWT)**: Acceptance criteria in Given-When-Then format.
+- **Out of Scope**: Explicit boundaries for the implementation phase.
 
-```bash
-# Example workflow
-mkdir -p docs/prd/payments
-cp templates/product/prd-template.md docs/prd/payments/payment-integration-prd.md
-# Edit the file with your requirements
-# Get human approval before proceeding to specs/
-```
+## 4. Index of Requirements
 
-## PRD Template
+| Feature / Epic | Title | Status | Target Version |
+| :--- | :--- | :--- | :--- |
+| - | _No PRDs yet_ | - | - |
 
-All PRDs MUST use `templates/product/prd-template.md`. The template includes:
-
-| Section                     | Purpose                               |
-| --------------------------- | ------------------------------------- |
-| **Product Overview**        | What and why                          |
-| **Target Audience**         | User personas                         |
-| **Success Metrics**         | Measurable goals                      |
-| **User Stories & Features** | Requirements with acceptance criteria |
-| **Out of Scope**            | Explicit exclusions                   |
-| **Dependencies**            | External requirements                 |
-
-## User Story Format
-
-Use the standard format:
-
-```text
-As a [persona], I want to [action] so that [benefit].
-```
-
-Each user story must include:
-
-- **Title**: Short descriptor
-- **Description**: Detailed explanation
-- **Acceptance Criteria**: Specific, testable conditions
-
-### Example
-
-```markdown
-**Feature**: User Login with Email
-
-As a returning user, I want to log in with my email so that I can access my account quickly.
-
-**Acceptance Criteria**:
-
-- Email and password fields are visible on login page
-- "Forgot Password" link is available
-- Error message shown for invalid credentials
-- Redirect to dashboard on successful login
-```
+---
+_Last Updated: March 2026_
 
 ## Success Metrics
 
@@ -88,7 +42,6 @@ Define quantifiable and measurable success criteria as mandated by `[REQ-SPT-01]
 | ------------- | ------------------------------ |
 | **Business**  | Increase conversion by 5%      |
 | **User**      | Reduce time-to-complete by 30% |
-| **Technical** | API response time < 200ms      |
 
 ## Relationship to Other Documents
 
