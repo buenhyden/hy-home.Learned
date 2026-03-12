@@ -34,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add mypy, pip-audit, and pytest pre-commit hooks.
 - Release version 0.0.1 by updating the changelog.
 - Significantly expand README
+- Refine root instruction entrypoints
 
 ### Changed
 
@@ -56,6 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove obsolete API references section from README.
 - Update and refine numerous agent rules and workflows across various domains, and adjust the gitignore.
 - Establish new doc categories
+- Update README
 
 ### Miscellaneous
 
@@ -95,6 +97,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 - **deps:** Bump the uv group across 1 directory with 2 updates
+- **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
 - **release:** Update CHANGELOG.md [skip ci]
