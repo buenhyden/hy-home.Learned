@@ -1,12 +1,12 @@
 ---
-title: "[API Name / Feature] API Specification"
-status: "Draft | Proposed | Approved | Deprecated"
-version: "v1.x.x"
-base_url: "https://api.example.com/v1"
-prd_reference: "[Link to PRD]"
-spec_reference: "[Link to Tech Spec]"
-adr_reference: "[Link to ADR]"
-tags: ["api", "contract", "specification"]
+title: '[API Name / Feature] API Specification'
+status: 'Draft | Proposed | Approved | Deprecated'
+version: 'v1.x.x'
+base_url: 'https://api.example.com/v1'
+prd_reference: '[Link to PRD]'
+spec_reference: '[Link to Tech Spec]'
+adr_reference: '[Link to ADR]'
+tags: ['api', 'contract', 'specification']
 ---
 
 # API Specification Template ([API Name / Feature])

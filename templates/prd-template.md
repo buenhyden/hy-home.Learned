@@ -3,6 +3,7 @@
 > Use this template for `docs/<category>/prd/<feature-or-system>-prd.md`.
 >
 > Repository-derived contract:
+>
 > - Use exactly one meaningful H1.
 > - Use relative links only.
 > - Remove every placeholder before saving.
@@ -13,6 +14,7 @@
 > - Add exactly one `Overview (KR)` summary near the top. That overview summary alone should be written in Korean.
 >
 > Shape guidance:
+>
 > - Use the extended form for `content/` and `vault/` system PRDs.
 > - Use the compact form for active-chain `web/` PRDs where the requirements are already narrowed by adjacent ADR/ARD/spec docs.
 
@@ -96,15 +98,15 @@ Use these when the PRD needs full product framing, personas, milestones, or acce
 
 ## 3. Success Metrics (Quantitative)
 
-| ID | Metric Name | Baseline (Current) | Target (Success) | Measurement Period |
-| -- | ----------- | ------------------ | ---------------- | ------------------ |
-| **REQ-PRD-MET-01** | [Metric] | [Current] | [Target] | [Window] |
-| **REQ-PRD-MET-02** | [Metric] | [Current] | [Target] | [Window] |
+| ID                 | Metric Name | Baseline (Current) | Target (Success) | Measurement Period |
+| ------------------ | ----------- | ------------------ | ---------------- | ------------------ |
+| **REQ-PRD-MET-01** | [Metric]    | [Current]          | [Target]         | [Window]           |
+| **REQ-PRD-MET-02** | [Metric]    | [Current]          | [Target]         | [Window]           |
 
 ## 4. Key Use Cases & Acceptance Criteria (GWT)
 
-| ID | User Story (INVEST) | Acceptance Criteria (Given-When-Then) |
-| -- | ------------------- | ------------------------------------- |
+| ID           | User Story (INVEST)                                                 | Acceptance Criteria (Given-When-Then)                             |
+| ------------ | ------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | **STORY-01** | **As a** [Persona],<br>**I want** [action],<br>**So that** [value]. | **Given** [context],<br>**When** [action],<br>**Then** [outcome]. |
 | **STORY-02** | **As a** [Persona],<br>**I want** [action],<br>**So that** [value]. | **Given** [context],<br>**When** [action],<br>**Then** [outcome]. |
 

@@ -21,16 +21,16 @@ independent of vendor or runtime.
 
 ## Persona Map
 
-| Phase | Persona | Governing Rule |
-| :--- | :--- | :--- |
-| Pre-Development | Product Manager | [`0120`](../.agent/rules/0100-Standards/0120-requirements-and-specifications-standard.md) |
-| Pre-Development | System Architect | [`0130`](../.agent/rules/0100-Standards/0130-architecture-standard.md) |
-| During-Development | Senior Software Engineer | [`0140`](../.agent/rules/0100-Standards/0140-engineering-excellence.md) |
-| During-Development | UI/UX Designer | [`1020`](../.agent/rules/1000-Frontend/1020-ui-ux-standard.md) |
-| Post-Development | QA Automation / SDET | [`0700`](../.agent/rules/0700-Testing_and_QA/0700-testing-and-qa-standard.md) |
-| Post-Development | Security Auditor | [`2200`](../.agent/rules/2200-Security/2200-security-pillar.md) |
-| Ops and Governance | SRE / Operations Owner | [`0301`](../.agent/rules/0300-DevOps_and_Infrastructure/0301-operations-blueprint-standard.md) |
-| Ops and Governance | AI Ethics Officer / Safety Lead | [`0510`](../.agent/rules/0500-AI_and_ML/0510-ai-safety.md) |
+| Phase              | Persona                         | Governing Rule                                                                                 |
+| :----------------- | :------------------------------ | :--------------------------------------------------------------------------------------------- |
+| Pre-Development    | Product Manager                 | [`0120`](../.agent/rules/0100-Standards/0120-requirements-and-specifications-standard.md)      |
+| Pre-Development    | System Architect                | [`0130`](../.agent/rules/0100-Standards/0130-architecture-standard.md)                         |
+| During-Development | Senior Software Engineer        | [`0140`](../.agent/rules/0100-Standards/0140-engineering-excellence.md)                        |
+| During-Development | UI/UX Designer                  | [`1020`](../.agent/rules/1000-Frontend/1020-ui-ux-standard.md)                                 |
+| Post-Development   | QA Automation / SDET            | [`0700`](../.agent/rules/0700-Testing_and_QA/0700-testing-and-qa-standard.md)                  |
+| Post-Development   | Security Auditor                | [`2200`](../.agent/rules/2200-Security/2200-security-pillar.md)                                |
+| Ops and Governance | SRE / Operations Owner          | [`0301`](../.agent/rules/0300-DevOps_and_Infrastructure/0301-operations-blueprint-standard.md) |
+| Ops and Governance | AI Ethics Officer / Safety Lead | [`0510`](../.agent/rules/0500-AI_and_ML/0510-ai-safety.md)                                     |
 
 ## Working Sequence
 
@@ -58,4 +58,5 @@ independent of vendor or runtime.
 - [workflow-agent-post-development.md](../.agent/workflows/workflow-agent-post-development.md)
 
 ---
+
 _Last Updated: March 2026_

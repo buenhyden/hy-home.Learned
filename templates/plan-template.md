@@ -3,6 +3,7 @@
 > Use this template for `docs/<category>/plans/YYYY-MM-DD-<feature-name>.md`.
 >
 > Repository-derived contract:
+>
 > - Use exactly one meaningful H1.
 > - Use relative links only.
 > - Remove every placeholder before saving.
@@ -13,6 +14,7 @@
 > - Add exactly one `Overview (KR)` summary near the top. That overview summary alone should be written in Korean.
 >
 > Shape guidance:
+>
 > - Use the extended task-and-verification form for `content/` and `vault/`.
 > - Use the compact implementation form when the plan is mainly a phased task ledger, as in the active `docs/web` V2 chain.
 
@@ -60,10 +62,10 @@ Use either a phase list or a traceability table.
 
 ### Traceability-style task table
 
-| Task | Description | Files Affected | Target REQ | Validation Criteria |
-| ---- | ----------- | -------------- | ---------- | ------------------- |
-| TASK-001 | [Action] | `path/to/file` | REQ-001 | [Pass/fail evidence] |
-| TASK-002 | [Action] | `path/to/file` | REQ-002 | [Pass/fail evidence] |
+| Task     | Description | Files Affected | Target REQ | Validation Criteria  |
+| -------- | ----------- | -------------- | ---------- | -------------------- |
+| TASK-001 | [Action]    | `path/to/file` | REQ-001    | [Pass/fail evidence] |
+| TASK-002 | [Action]    | `path/to/file` | REQ-002    | [Pass/fail evidence] |
 
 ## Verification
 
@@ -108,24 +110,24 @@ List the commands, manual checks, or evidence collection steps required before t
 
 ## 5. Work Breakdown (Tasks & Traceability)
 
-| Task | Description | Files Affected | Target REQ | Validation Criteria |
-| ---- | ----------- | -------------- | ---------- | ------------------- |
-| TASK-001 | [Action] | `path/to/file` | REQ-001 | [Pass/fail evidence] |
-| TASK-002 | [Action] | `path/to/file` | REQ-002 | [Pass/fail evidence] |
+| Task     | Description | Files Affected | Target REQ | Validation Criteria  |
+| -------- | ----------- | -------------- | ---------- | -------------------- |
+| TASK-001 | [Action]    | `path/to/file` | REQ-001    | [Pass/fail evidence] |
+| TASK-002 | [Action]    | `path/to/file` | REQ-002    | [Pass/fail evidence] |
 
 ## 6. Verification Plan
 
-| ID | Level | Description | Command / How to Run | Pass Criteria |
-| -- | ----- | ----------- | -------------------- | ------------- |
-| VAL-PLN-001 | Structural | [Document or architecture check] | [Manual or command] | [Pass condition] |
-| VAL-PLN-002 | Build / Test / Link | [What is being verified] | [Command] | [Pass condition] |
-| VAL-PLN-003 | Manual / Operational | [Manual validation or walkthrough] | [How to inspect] | [Pass condition] |
+| ID          | Level                | Description                        | Command / How to Run | Pass Criteria    |
+| ----------- | -------------------- | ---------------------------------- | -------------------- | ---------------- |
+| VAL-PLN-001 | Structural           | [Document or architecture check]   | [Manual or command]  | [Pass condition] |
+| VAL-PLN-002 | Build / Test / Link  | [What is being verified]           | [Command]            | [Pass condition] |
+| VAL-PLN-003 | Manual / Operational | [Manual validation or walkthrough] | [How to inspect]     | [Pass condition] |
 
 ## 7. Risks & Mitigations
 
-| Risk | Impact | Mitigation |
-| ---- | ------ | ---------- |
-| [Risk title] | [High | Medium | Low] | [Mitigation] |
+| Risk         | Impact | Mitigation |
+| ------------ | ------ | ---------- | ---- | ------------ |
+| [Risk title] | [High  | Medium     | Low] | [Mitigation] |
 
 ## 8. Completion Criteria
 

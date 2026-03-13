@@ -3,6 +3,7 @@
 > Use this template for `docs/<category>/operations/incidents/YYYY-MM-DD-<slug>.md`.
 >
 > Repository-derived contract:
+>
 > - Use exactly one meaningful H1.
 > - Use relative links only.
 > - Remove every placeholder before saving.
@@ -13,6 +14,7 @@
 > - Add exactly one `Overview (KR)` summary near the top. That overview summary alone should be written in Korean.
 >
 > Shape guidance:
+>
 > - The repository currently uses both a compact active-incident form and a more detailed response-ledger form.
 > - The core sections below are mandatory in both cases.
 > - Add the optional response-roster and communication sections when the incident is long-running, multi-step, or handoff-heavy.
@@ -45,16 +47,16 @@ tags:
 
 ## Incident Metadata
 
-| Field | Value |
-| ----- | ----- |
-| **Incident ID** | `INC-YYYYMMDD-XXX` |
-| **Severity** | `[SEV-1 | SEV-2 | SEV-3]` |
-| **Status** | `[Investigating | Identified | Mitigating | Monitoring | Resolved | Closed]` |
-| **Detection Time** | `YYYY-MM-DD HH:MM UTC` |
-| **Primary Service** | [Affected service or workflow] |
-| **Affected Dependencies** | [Key dependency or `N/A`] |
-| **Evidence Source** | [CI log, local command output, dashboard, user report] |
-| **Runbook Link** | `[../../runbooks/<related-runbook>.md]` |
+| Field                     | Value                                                                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Incident ID**           | `INC-YYYYMMDD-XXX`                                                                                                       |
+| **Severity**              | `[SEV-1                                                \| SEV-2      \| SEV-3]`                                          |
+| **Status**                | `[Investigating                                        \| Identified \| Mitigating \| Monitoring \| Resolved \| Closed]` |
+| **Detection Time**        | `YYYY-MM-DD HH:MM UTC`                                                                                                   |
+| **Primary Service**       | [Affected service or workflow]                                                                                           |
+| **Affected Dependencies** | [Key dependency or `N/A`]                                                                                                |
+| **Evidence Source**       | [CI log, local command output, dashboard, user report]                                                                   |
+| **Runbook Link**          | `[../../runbooks/<related-runbook>.md]`                                                                                  |
 
 ## Incident Summary
 
@@ -67,12 +69,12 @@ tags:
 
 ## Timeline
 
-| Time (UTC) | Actor | Detail |
-| ---------- | ----- | ------ |
-| HH:MM | [Name] | **[Detection]** [What was observed] |
-| HH:MM | [Name] | **[Investigation]** [What was learned] |
-| HH:MM | [Name] | **[Mitigation]** [What action reduced impact] |
-| HH:MM | [Name] | **[Verification]** [What proved the current state] |
+| Time (UTC) | Actor  | Detail                                             |
+| ---------- | ------ | -------------------------------------------------- |
+| HH:MM      | [Name] | **[Detection]** [What was observed]                |
+| HH:MM      | [Name] | **[Investigation]** [What was learned]             |
+| HH:MM      | [Name] | **[Mitigation]** [What action reduced impact]      |
+| HH:MM      | [Name] | **[Verification]** [What proved the current state] |
 
 ## Detection and Response or Root Cause and Resolution
 
@@ -99,11 +101,11 @@ Use the heading that best matches the current state of the incident.
 
 ## Response Roster
 
-| Role | Name | Contact |
-| ---- | ---- | ------- |
-| **Incident Commander** | [Name] | [Handle or local session] |
+| Role                    | Name   | Contact                   |
+| ----------------------- | ------ | ------------------------- |
+| **Incident Commander**  | [Name] | [Handle or local session] |
 | **Communications Lead** | [Name] | [Handle or local session] |
-| **Operations Lead** | [Name] | [Handle or local session] |
+| **Operations Lead**     | [Name] | [Handle or local session] |
 
 ## Latest Status Update
 

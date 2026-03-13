@@ -28,11 +28,12 @@ repository.
 
 ## Index
 
-| Feature / Epic | Title | Status | Target Version |
-| -------------- | ----- | ------ | -------------- |
-| - | _No PRDs yet_ | - | - |
+| Feature / Epic | Title         | Status | Target Version |
+| -------------- | ------------- | ------ | -------------- |
+| -              | _No PRDs yet_ | -      | -              |
 
 > Add entries to this index as PRDs are created.
 
 ---
+
 _Last Updated: March 2026_

@@ -27,11 +27,12 @@ domains connect.
 
 ## Index
 
-| System / Domain | Title | Status | Last Updated |
-| --------------- | ----- | ------ | ------------ |
-| - | _No ARDs yet_ | - | - |
+| System / Domain | Title         | Status | Last Updated |
+| --------------- | ------------- | ------ | ------------ |
+| -               | _No ARDs yet_ | -      | -            |
 
 > Add entries to this index as ARDs are created.
 
 ---
+
 _Last Updated: March 2026_

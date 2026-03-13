@@ -33,7 +33,7 @@ tests/.tmp*/
 tests/tmp*/
 tests/_tmp_*/
 tests/_tmp_*
-
+.complexipy_cache/
 # IDE
 .vscode/
 !.vscode/extensions.json

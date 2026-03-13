@@ -35,4 +35,5 @@ This file contains Gemini-specific operating detail. The root
   evidence-based verification.
 
 ---
+
 _Last Updated: March 2026_

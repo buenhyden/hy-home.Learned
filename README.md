@@ -32,16 +32,16 @@ This repository is not:
 
 ## Tech Stack
 
-| Category | Technology |
-| --- | --- |
-| Language | Python 3.13+ |
-| Package and runtime tooling | `uv` |
-| Quality tooling | Ruff, MyPy, pytest, coverage, pre-commit, Ty |
-| Governance and docs | `.agent/`, `.claude/`, `docs/`, `templates/` |
-| Representative ecosystem support | FastAPI, Django, Celery, Dagster, dbt, LangChain, LangGraph, LlamaIndex |
-| Databases and data systems | PostgreSQL, Neo4j, InfluxDB, Cassandra, Valkey, DuckDB |
-| CI | GitHub Actions |
-| Deployment posture | Operational baseline only; no concrete Docker, Kubernetes, Vercel, Railway, or Terraform deployment config detected in the repository |
+| Category                         | Technology                                                                                                                            |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Language                         | Python 3.13+                                                                                                                          |
+| Package and runtime tooling      | `uv`                                                                                                                                  |
+| Quality tooling                  | Ruff, MyPy, pytest, coverage, pre-commit, Ty                                                                                          |
+| Governance and docs              | `.agent/`, `.claude/`, `docs/`, `templates/`                                                                                          |
+| Representative ecosystem support | FastAPI, Django, Celery, Dagster, dbt, LangChain, LangGraph, LlamaIndex                                                               |
+| Databases and data systems       | PostgreSQL, Neo4j, InfluxDB, Cassandra, Valkey, DuckDB                                                                                |
+| CI                               | GitHub Actions                                                                                                                        |
+| Deployment posture               | Operational baseline only; no concrete Docker, Kubernetes, Vercel, Railway, or Terraform deployment config detected in the repository |
 
 ## Prerequisites
 
@@ -135,9 +135,9 @@ After setup, read the repository in this order:
 
 The root repository currently documents one shared environment variable.
 
-| Variable | Required | Default | Allowed Values | Description |
-| --- | --- | --- | --- | --- |
-| `APP_STAGE` | Yes | `dev` | `dev`, `staging`, `prod` | Selects the active repository execution profile and environment context |
+| Variable    | Required | Default | Allowed Values           | Description                                                             |
+| ----------- | -------- | ------- | ------------------------ | ----------------------------------------------------------------------- |
+| `APP_STAGE` | Yes      | `dev`   | `dev`, `staging`, `prod` | Selects the active repository execution profile and environment context |
 
 Feature-specific or service-specific variables should be documented alongside the relevant spec, service module, or operational guide instead of being guessed into the root README.
 
@@ -213,18 +213,18 @@ Operational policy and procedure are intentionally separated:
 
 Use the following validated commands from the repository root.
 
-| Command | Purpose |
-| --- | --- |
-| `uv sync` | Install the base project environment |
-| `uv sync --dev` | Install the project environment plus development dependencies |
-| `uv run pre-commit install` | Install repository git hooks locally |
-| `uv run pre-commit run --all-files --hook-stage commit` | Run the fast commit-stage checks across the repository |
-| `uv run pre-commit run --all-files --hook-stage pre-push` | Run the heavier pre-push checks across the repository |
-| `uv run ruff check .` | Run Ruff linting |
-| `uv run ruff format .` | Format supported files with Ruff |
-| `uv run mypy .` | Run static type checking |
-| `uv run pytest` | Run the configured pytest suite |
-| `uv run pytest --cov=.` | Run tests with coverage output |
+| Command                                                   | Purpose                                                       |
+| --------------------------------------------------------- | ------------------------------------------------------------- |
+| `uv sync`                                                 | Install the base project environment                          |
+| `uv sync --dev`                                           | Install the project environment plus development dependencies |
+| `uv run pre-commit install`                               | Install repository git hooks locally                          |
+| `uv run pre-commit run --all-files --hook-stage commit`   | Run the fast commit-stage checks across the repository        |
+| `uv run pre-commit run --all-files --hook-stage pre-push` | Run the heavier pre-push checks across the repository         |
+| `uv run ruff check .`                                     | Run Ruff linting                                              |
+| `uv run ruff format .`                                    | Format supported files with Ruff                              |
+| `uv run mypy .`                                           | Run static type checking                                      |
+| `uv run pytest`                                           | Run the configured pytest suite                               |
+| `uv run pytest --cov=.`                                   | Run tests with coverage output                                |
 
 ## Testing and Quality
 

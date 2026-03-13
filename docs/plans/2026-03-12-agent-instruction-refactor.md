@@ -21,13 +21,13 @@ record of what was implemented.
 
 ## Tasks
 
-| Task | Description | Files Affected | Validation Criteria |
-| ---- | ----------- | -------------- | ------------------- |
-| TASK-001 | Refactor root instruction entrypoints | `AGENTS.md`, `CLAUDE.md`, `GEMINI.md` | Root files follow the new runtime and navigation contract |
-| TASK-002 | Rewrite shared `.claude` manuals | `.claude/README.md`, `.claude/shared-governance.md`, `.claude/claude-code.md`, `.claude/gemini-models.md` | Shared docs contain only valid paths and current governance structure |
-| TASK-003 | Rebuild docs lazy-loading indexes | `docs/README.md`, `docs/adr/README.md`, `docs/ard/README.md`, `docs/prd/README.md`, `docs/specs/README.md`, `docs/plans/README.md`, `docs/runbooks/README.md`, `docs/operations/README.md` | Each document family has a valid index and template reference |
-| TASK-004 | Repair top-level repository navigation | `README.md` | Broken documentation links are removed or replaced |
-| TASK-005 | Record the implemented architecture | `docs/plans/2026-03-12-agent-instruction-refactor.md` | Historical plan reflects the final contract and verification |
+| Task     | Description                            | Files Affected                                                                                                                                                                             | Validation Criteria                                                   |
+| -------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------- |
+| TASK-001 | Refactor root instruction entrypoints  | `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`                                                                                                                                                      | Root files follow the new runtime and navigation contract             |
+| TASK-002 | Rewrite shared `.claude` manuals       | `.claude/README.md`, `.claude/shared-governance.md`, `.claude/claude-code.md`, `.claude/gemini-models.md`                                                                                  | Shared docs contain only valid paths and current governance structure |
+| TASK-003 | Rebuild docs lazy-loading indexes      | `docs/README.md`, `docs/adr/README.md`, `docs/ard/README.md`, `docs/prd/README.md`, `docs/specs/README.md`, `docs/plans/README.md`, `docs/runbooks/README.md`, `docs/operations/README.md` | Each document family has a valid index and template reference         |
+| TASK-004 | Repair top-level repository navigation | `README.md`                                                                                                                                                                                | Broken documentation links are removed or replaced                    |
+| TASK-005 | Record the implemented architecture    | `docs/plans/2026-03-12-agent-instruction-refactor.md`                                                                                                                                      | Historical plan reflects the final contract and verification          |
 
 ## Implemented Contract
 

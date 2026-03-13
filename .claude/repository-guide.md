@@ -52,11 +52,12 @@ uv run cz commit
 
 ## Automation Gates
 
-| Stage | Checks |
-| :--- | :--- |
+| Stage        | Checks                                                                                                           |
+| :----------- | :--------------------------------------------------------------------------------------------------------------- |
 | `pre-commit` | ruff, ty, detect-secrets, gitleaks, bandit, markdownlint, prettier, shellcheck, complexipy, hadolint, actionlint |
-| `pre-push` | mypy --strict, pip-audit, pytest |
-| `commit-msg` | commitizen |
+| `pre-push`   | mypy --strict, pip-audit, pytest                                                                                 |
+| `commit-msg` | commitizen                                                                                                       |
 
 ---
+
 _Last Updated: March 2026_

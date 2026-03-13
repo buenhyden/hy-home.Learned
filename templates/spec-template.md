@@ -3,6 +3,7 @@
 > Use this template for `docs/<category>/specs/YYYY-MM-DD-<feature-name>.md`.
 >
 > Repository-derived contract:
+>
 > - Use exactly one meaningful H1.
 > - Use relative links only.
 > - Remove every placeholder before saving.
@@ -14,6 +15,7 @@
 > - Add exactly one `Overview (KR)` summary near the top. That overview summary alone should be written in Korean.
 >
 > Shape guidance:
+>
 > - Use the extended technical form for `content/` and `vault/` specs.
 > - Use the compact contract form for active-chain `web/` specs that define platform baselines, archive rules, design-system direction, or other high-level implementation contracts.
 
@@ -86,9 +88,9 @@ Use these sections when the spec needs full implementation detail and traceabili
 
 ## 2. Coded Requirements (Traceability)
 
-| ID | Requirement Description | Priority | Parent PRD REQ |
-| -- | ----------------------- | -------- | -------------- |
-| **[REQ-SPC-001]** | [Technical requirement] | High | REQ-PRD-FUN-01 |
+| ID                | Requirement Description | Priority | Parent PRD REQ |
+| ----------------- | ----------------------- | -------- | -------------- |
+| **[REQ-SPC-001]** | [Technical requirement] | High     | REQ-PRD-FUN-01 |
 | **[REQ-SPC-002]** | [Technical requirement] | Critical | REQ-PRD-FUN-02 |
 
 ## 3. Data Modeling & Storage Strategy
@@ -111,7 +113,7 @@ interface ExampleContract {
 ### 4.2 Authority or Integration Model (Optional)
 
 ```typescript
-type DocumentationScope = "master" | "domain" | "historical";
+type DocumentationScope = 'master' | 'domain' | 'historical';
 ```
 
 ## 5. Component Breakdown

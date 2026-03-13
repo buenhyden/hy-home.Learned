@@ -21,11 +21,12 @@ repository.
 
 ## Index
 
-| Spec | Status | Scope | Last Updated |
-| ---- | ------ | ----- | ------------ |
-| - | _No specs indexed yet_ | - | - |
+| Spec | Status                 | Scope | Last Updated |
+| ---- | ---------------------- | ----- | ------------ |
+| -    | _No specs indexed yet_ | -     | -            |
 
 > Add entries to this index as specs are created.
 
 ---
+
 _Last Updated: March 2026_

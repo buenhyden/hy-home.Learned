@@ -21,11 +21,12 @@ architectural choice was made.
 
 ## Index
 
-| Number | Title | Status | Date |
-| ------ | ----- | ------ | ---- |
-| - | _No ADRs yet_ | - | - |
+| Number | Title         | Status | Date |
+| ------ | ------------- | ------ | ---- |
+| -      | _No ADRs yet_ | -      | -    |
 
 > Add entries to this index as ADRs are created.
 
 ---
+
 _Last Updated: March 2026_

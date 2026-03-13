@@ -20,11 +20,12 @@ This directory stores operational procedures and repeatable recovery workflows.
 
 ## Index
 
-| Runbook | Status | Last Reviewed |
-| ------- | ------ | ------------- |
-| [deployment-runbook.md](deployment-runbook.md) | Active | Unknown |
-| [incident-response-runbook.md](incident-response-runbook.md) | Active | Unknown |
-| [monitoring-runbook.md](monitoring-runbook.md) | Active | Unknown |
+| Runbook                                                      | Status | Last Reviewed |
+| ------------------------------------------------------------ | ------ | ------------- |
+| [deployment-runbook.md](deployment-runbook.md)               | Active | Unknown       |
+| [incident-response-runbook.md](incident-response-runbook.md) | Active | Unknown       |
+| [monitoring-runbook.md](monitoring-runbook.md)               | Active | Unknown       |
 
 ---
+
 _Last Updated: March 2026_

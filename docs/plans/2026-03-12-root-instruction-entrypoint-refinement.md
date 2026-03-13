@@ -18,12 +18,12 @@ more consistent across vendor-neutral and model-specific files.
 
 ## Tasks
 
-| Task | Description | Files Affected | Validation Criteria |
-| ---- | ----------- | -------------- | ------------------- |
-| TASK-001 | Add a minimal universal quick-reference block to the vendor-neutral root guide | `AGENTS.md` | Root file stays concise and documents the non-obvious repository command surface |
-| TASK-002 | Tighten Claude runtime entrypoint wording and shared-manual navigation | `CLAUDE.md` | Claude root remains import-first and points clearly to the shared manuals and repo map |
-| TASK-003 | Tighten Gemini runtime entrypoint wording and shared-manual navigation | `GEMINI.md` | Gemini root remains import-first and points clearly to the shared manuals and repo map |
-| TASK-004 | Index and verify this refinement pass | `docs/plans/README.md`, `docs/plans/2026-03-12-root-instruction-entrypoint-refinement.md` | Plan index is current and root-file links resolve |
+| Task     | Description                                                                    | Files Affected                                                                            | Validation Criteria                                                                    |
+| -------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| TASK-001 | Add a minimal universal quick-reference block to the vendor-neutral root guide | `AGENTS.md`                                                                               | Root file stays concise and documents the non-obvious repository command surface       |
+| TASK-002 | Tighten Claude runtime entrypoint wording and shared-manual navigation         | `CLAUDE.md`                                                                               | Claude root remains import-first and points clearly to the shared manuals and repo map |
+| TASK-003 | Tighten Gemini runtime entrypoint wording and shared-manual navigation         | `GEMINI.md`                                                                               | Gemini root remains import-first and points clearly to the shared manuals and repo map |
+| TASK-004 | Index and verify this refinement pass                                          | `docs/plans/README.md`, `docs/plans/2026-03-12-root-instruction-entrypoint-refinement.md` | Plan index is current and root-file links resolve                                      |
 
 ## Verification
 

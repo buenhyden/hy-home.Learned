@@ -3,6 +3,7 @@
 > Use this template for `docs/<category>/ard/<system-or-domain>-ard.md`.
 >
 > Repository-derived contract:
+>
 > - Use exactly one meaningful H1.
 > - Use relative links only.
 > - Remove every placeholder before saving.
@@ -14,6 +15,7 @@
 > - Add exactly one `Overview (KR)` summary near the top. That overview summary alone should be written in Korean.
 >
 > Shape guidance:
+>
 > - Use the extended architecture form for `content/` and `vault/` system documents.
 > - Use the compact architecture form for focused `web/` active-chain ARDs where the architecture boundary is intentionally compressed into summary, rules, and ownership.
 
@@ -164,14 +166,14 @@ flowchart TD
 
 ## 10. Source-of-Truth Map
 
-| Scope | Canonical Document | Role |
-| ----- | ------------------ | ---- |
-| master | `docs/<category>/ard/system-master-ard.md` | Top-level architecture authority |
-| domain | `docs/<category>/ard/domain-ard.md` | Subordinate domain architecture |
-| feature | `docs/<category>/specs/YYYY-MM-DD-feature.md` | Implementation detail |
+| Scope   | Canonical Document                            | Role                             |
+| ------- | --------------------------------------------- | -------------------------------- |
+| master  | `docs/<category>/ard/system-master-ard.md`    | Top-level architecture authority |
+| domain  | `docs/<category>/ard/domain-ard.md`           | Subordinate domain architecture  |
+| feature | `docs/<category>/specs/YYYY-MM-DD-feature.md` | Implementation detail            |
 
 ## 11. Legacy Document Traceability
 
-| Existing Document | New Relationship |
-| ----------------- | ---------------- |
+| Existing Document                       | New Relationship            |
+| --------------------------------------- | --------------------------- |
 | `docs/<category>/ard/old-system-ard.md` | Superseded by this document |

@@ -49,4 +49,5 @@ This directory is the long-term, human-readable knowledge base for the
 - [Incident Template](../templates/incident-template.md)
 
 ---
+
 _Last Updated: March 2026_

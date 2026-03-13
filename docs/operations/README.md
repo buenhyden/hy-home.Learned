@@ -20,11 +20,12 @@ This directory stores operational records such as incidents and postmortems.
 
 ## Index
 
-| Record | Type | Status | Last Updated |
-| ------ | ---- | ------ | ------------ |
-| - | _No operations records yet_ | - | - |
+| Record | Type                        | Status | Last Updated |
+| ------ | --------------------------- | ------ | ------------ |
+| -      | _No operations records yet_ | -      | -            |
 
 > Add incident and postmortem entries to this index as records are created.
 
 ---
+
 _Last Updated: March 2026_

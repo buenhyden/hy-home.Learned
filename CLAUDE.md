@@ -14,4 +14,5 @@ import-first and keep detailed Claude guidance in `.claude/`.
 - [Documentation hub](docs/README.md)
 
 ---
+
 _Last Updated: March 2026_

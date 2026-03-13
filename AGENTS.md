@@ -53,4 +53,5 @@ minimal; `.claude/` is the authoritative detail layer.
   unless the repository structure changes first.
 
 ---
+
 _Last Updated: March 2026_

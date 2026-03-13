@@ -35,4 +35,5 @@ This file contains Claude-specific operating detail. The root
 - Do not limit skill choice unless a task explicitly requires a narrower path.
 
 ---
+
 _Last Updated: March 2026_
