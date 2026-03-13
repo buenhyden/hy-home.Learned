@@ -35,12 +35,6 @@ repos:
     hooks:
       - id: validate-pyproject
 
-  - repo: https://github.com/rbubley/mirrors-prettier
-    rev: v3.8.1
-    hooks:
-      - id: prettier
-        types_or: [yaml, json, markdown, toml]
-
   - repo: https://github.com/python-jsonschema/check-jsonschema
     rev: 0.37.0
     hooks:
