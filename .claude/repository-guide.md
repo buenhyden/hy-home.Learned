@@ -47,8 +47,6 @@ uv run cz commit
 - Operational procedures live in `docs/runbooks/`; incident and postmortem
   records live in `docs/operations/`.
 - Use [templates/](../templates/) when creating governed repository documents.
-- Do not reintroduce stale parallel paths such as top-level `specs/` or
-  `runbooks/` unless the repository structure is intentionally changed first.
 
 ## Automation Gates
 

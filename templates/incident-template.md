@@ -1,6 +1,6 @@
 # Incident: INC-YYYYMMDD-XXX / [Short Incident Title]
 
-> Use this template for `docs/<category>/operations/incidents/YYYY-MM-DD-<slug>.md`.
+> Use this template for `docs/operations/incidents/YYYY-MM-DD-<slug>.md`.
 >
 > Repository-derived contract:
 >
@@ -8,6 +8,7 @@
 > - Use relative links only.
 > - Remove every placeholder before saving.
 > - Allowed incident status values: `Investigating | Identified | Mitigating | Monitoring | Resolved | Closed`.
+> - Allowed scope values layer values: `common | architecture | backend | frontend | infra | mobile | product | qa | security`
 > - Prefer UTC timestamps, and include local time only if it helps the maintainer.
 > - This document tracks live or recently resolved response work, not blameless analysis.
 > - Keep all structural and narrative content in English.
@@ -31,7 +32,8 @@ severity: 'SEV-3'
 owner: '[Incident Commander or Responsible Maintainer]'
 tags:
   - incident
-  - operations
+  - operation
+layer: '<layer>'
 ---
 ```
 
@@ -47,16 +49,17 @@ tags:
 
 ## Incident Metadata
 
-| Field                     | Value                                                                                                                    |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **Incident ID**           | `INC-YYYYMMDD-XXX`                                                                                                       |
-| **Severity**              | `[SEV-1                                                \| SEV-2      \| SEV-3]`                                          |
-| **Status**                | `[Investigating                                        \| Identified \| Mitigating \| Monitoring \| Resolved \| Closed]` |
-| **Detection Time**        | `YYYY-MM-DD HH:MM UTC`                                                                                                   |
-| **Primary Service**       | [Affected service or workflow]                                                                                           |
-| **Affected Dependencies** | [Key dependency or `N/A`]                                                                                                |
-| **Evidence Source**       | [CI log, local command output, dashboard, user report]                                                                   |
-| **Runbook Link**          | `[../../runbooks/<related-runbook>.md]`                                                                                  |
+| Field                     | Value                                                  |
+| ------------------------- | ------------------------------------------------------ | ---------- | ---------- | ---------- | -------- | -------- |
+| **Incident ID**           | `INC-YYYYMMDD-XXX`                                     |
+| **Severity**              | `[SEV-1                                                | SEV-2      | SEV-3]`    |
+| **Status**                | `[Investigating                                        | Identified | Mitigating | Monitoring | Resolved | Closed]` |
+| **Detection Time**        | `YYYY-MM-DD HH:MM UTC`                                 |
+| **Primary Service**       | [Affected service or workflow]                         |
+| **Affected Dependencies** | [Key dependency or `N/A`]                              |
+| **Evidence Source**       | [CI log, local command output, dashboard, user report] |
+| **Runbook Link**          | `[../../runbooks/<related-runbook>.md]`                |
+| **layer:** |  [common \| architecture \| backend \| frontend \| infra \| mobile \| product \| qa \| security]|
 
 ## Incident Summary
 

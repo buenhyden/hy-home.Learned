@@ -1,6 +1,6 @@
 # [Feature or Component] Plan
 
-> Use this template for `docs/<category>/plans/YYYY-MM-DD-<feature-name>.md`.
+> Use this template for `docs/plans/YYYY-MM-DD-<feature-name>.md`.
 >
 > Repository-derived contract:
 >
@@ -9,6 +9,7 @@
 > - Remove every placeholder before saving.
 > - Allowed plan status values: `Planned | In Progress | Completed | Superseded | Deprecated`.
 > - Allowed scope values where your doc set uses them: `master | domain | historical`.
+> - Allowed scope values layer values: `common | architecture | backend | frontend | infra | mobile | product | qa | security`
 > - Every active plan must include explicit verification criteria.
 > - Keep all structural and narrative content in English.
 > - Add exactly one `Overview (KR)` summary near the top. That overview summary alone should be written in Korean.
@@ -31,6 +32,7 @@ status: '[Planned | In Progress | Completed | Superseded | Deprecated]'
 scope: '[master | domain | historical]'
 tags: ['implementation', 'planning']
 stack: '[nextjs | node | python | go | rust | java]'
+layer: '<layer>'
 ---
 ```
 
@@ -40,6 +42,7 @@ stack: '[nextjs | node | python | go | rust | java]'
 
 > **Status**: [Planned | In Progress | Completed | Superseded | Deprecated]
 > **Scope**: [master | domain | historical]
+> **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
 > **Parent Master Plan**: `[./YYYY-MM-DD-system-master-plan.md]` (Optional for `domain`)
 
 **Overview (KR):** [Write a 1-2 sentence Korean summary of why this work exists, where it sits in the document hierarchy, and what this plan is trying to complete.]

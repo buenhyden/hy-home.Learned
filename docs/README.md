@@ -1,52 +1,30 @@
 # Documentation Hub (`docs/`)
 
-This directory is the long-term, human-readable knowledge base for the
-`hy-home-learned` repository.
+This directory is the long-term, human-readable knowledge base for the `hy-home-learned` repository.
 
 ## Purpose
 
-- Give humans and agents a stable navigation layer before they open individual
-  documents.
-- Separate requirements, architecture, implementation contracts, execution
-  plans, and operational records.
-- Support lazy loading by making each document family discoverable through a
-  small index file first.
+- Provide a stable navigation layer for all project documentation.
+- Maintain separate contexts for requirements, architecture, implementation, and operations.
+- Support lazy loading by providing indexed category documents.
 
-## Knowledge Map
+## Knowledge Map (by Category)
 
-- [ADRs](adr/README.md) for architecture decisions
-- [ARDs](ard/README.md) for system structure and domain boundaries
-- [PRDs](prd/README.md) for requirements and success criteria
-- [Specs](specs/README.md) for implementation contracts
-- [Plans](plans/README.md) for active execution plans
-- [Runbooks](runbooks/README.md) for operational procedures
-- [Operations](operations/README.md) for incidents and postmortems
-
-## Lazy Loading Protocol
-
-1. Start from this hub.
-2. Open the relevant section index.
-3. Read only the specific document needed for the active task.
-4. Return to the index when you need a different document family.
+- [ADRs](adr/0001-documentation-restructuring.md) for architecture decisions
+- [ARDs](ard/system-structure.md) for system blueprints
+- [PRDs](prd/documentation-system-prd.md) for product requirements
+- [Specs](specs/2026-03-14-documentation-spec.md) for implementation contracts
+- [Plans](plans/2026-03-14-restructure-plan.md) for execution records
+- [Runbooks](runbooks/operational-procedures.md) for operational procedures
+- [Operations](operations/README.md) for incident records
+- [Agentic](agentic/README.md) for AI Agent instructions
 
 ## Documentation Rules
 
-- Use the matching template in [../templates/](../templates/) when creating a
-  new document.
-- Keep links repository-relative.
-- Keep index files short and specific.
-- Do not treat this directory as a dumping ground for ad-hoc notes or agent
-  prompts.
-
-## Template Map
-
-- [ADR Template](../templates/adr-template.md)
-- [ARD Template](../templates/ard-template.md)
-- [PRD Template](../templates/prd-template.md)
-- [Spec Template](../templates/spec-template.md)
-- [Plan Template](../templates/plan-template.md)
-- [Runbook Template](../templates/runbook-template.md)
-- [Incident Template](../templates/incident-template.md)
+- **Metadata mandatory**: Each file must contain `Layer: <layer_name>` metadata at the top.
+- **Flattened structure**: All individual documentation files live in this root `docs/` directory.
+- **Templates**: Use matching templates in [../templates/](../templates/).
+- **Links**: Keep links repository-relative.
 
 ---
 

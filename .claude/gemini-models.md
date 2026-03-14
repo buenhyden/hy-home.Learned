@@ -6,21 +6,15 @@ This file contains Gemini-specific operating detail. The root
 ## Planning Expectations
 
 - For multi-file work, deep refactors, or architectural changes, keep planning
-  artifacts current in the active session and in [docs/plans/README.md](../docs/plans/README.md).
-- Align planning behavior with
-  [0120-requirements-and-specifications-standard.md](../.agent/rules/0100-Standards/0120-requirements-and-specifications-standard.md)
-  and the
-  [workflow-agent-pre-development.md](../.agent/workflows/workflow-agent-pre-development.md)
-  contract.
-- Use `sequential-thinking` for architectural analysis, deep debugging, or any
-  task where the reasoning chain needs to remain explicit.
+  artifacts current in the active session and in [docs/plans/](../docs/plans/).
+- Align planning behavior with [Requirements Standard](../docs/agentic/pillar.md).
 
 ## Context Handling
 
 - Gemini may hold large context, but it must still follow the repository's
   lazy-loading rules.
 - Start from [docs/README.md](../docs/README.md), then open only the relevant
-  section index and the specific target file.
+  index and the specific target file.
 - Treat external `task.md` and `implementation_plan.md` artifacts as working
   scratchpads, and mirror stable repository decisions into `docs/plans/`.
 

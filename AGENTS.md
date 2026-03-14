@@ -25,13 +25,14 @@ minimal; `.claude/` is the authoritative detail layer.
 
 ## Knowledge Navigation
 
-- [ADRs](docs/adr/README.md)
-- [ARDs](docs/ard/README.md)
-- [PRDs](docs/prd/README.md)
-- [Specs](docs/specs/README.md)
-- [Plans](docs/plans/README.md)
-- [Runbooks](docs/runbooks/README.md)
-- [Operations](docs/operations/README.md)
+- [ADRs](docs/adr/)
+- [ARDs](docs/ard/)
+- [PRDs](docs/prd/)
+- [Specs](docs/specs/)
+- [Plans](docs/plans/)
+- [Runbooks](docs/runbooks/)
+- [Operations](docs/operations/)
+- [Agentic](docs/agentic/README.md)
 - [Shared `.claude` Index](.claude/README.md)
 
 ## Non-Negotiables
@@ -40,7 +41,7 @@ minimal; `.claude/` is the authoritative detail layer.
   [0018-specialized-agent-personas-standard.md](.agent/rules/0000-Agents/0018-specialized-agent-personas-standard.md).
 - Do not begin code changes without approved context from `docs/prd/`,
   `docs/adr/`, `docs/specs/`, and `docs/plans/`, as required by
-  [0120-requirements-and-specifications-standard.md](.agent/rules/0100-Standards/0120-requirements-and-specifications-standard.md).
+  [Requirements Standard](docs/agentic/pillar.md).
 - Identify the relevant `.agent/rules/`, `.agent/workflows/`, and skills before
   execution.
 - Skills are not restricted by this file. Agents must choose the skills that fit
@@ -48,9 +49,7 @@ minimal; `.claude/` is the authoritative detail layer.
 - Follow lazy loading: read index documents first, then load only the specific
   file needed for the current task.
 - Keep execution surgical. Do not expand scope without an explicit request.
-- Use `docs/runbooks/` and `docs/operations/` for operational records. Do not
-  reintroduce stale parallel paths such as top-level `specs/` or `runbooks/`
-  unless the repository structure changes first.
+- Use `docs/runbooks/` and `docs/operations/` for operational records.
 
 ---
 
