@@ -37,7 +37,7 @@ This repository is not:
 | Language                         | Python 3.13+                                                                                                                          |
 | Package and runtime tooling      | `uv`                                                                                                                                  |
 | Quality tooling                  | Ruff, MyPy, pytest, coverage, pre-commit, Ty                                                                                          |
-| Governance and docs              | `.agent/`, `.claude/`, `docs/`, `templates/`                                                                                          |
+| Governance and docs              | `.agent/`, `docs/`, `templates/`                                                                                          |
 | Representative ecosystem support | FastAPI, Django, Celery, Dagster, dbt, LangChain, LangGraph, LlamaIndex                                                               |
 | Databases and data systems       | PostgreSQL, Neo4j, InfluxDB, Cassandra, Valkey, DuckDB                                                                                |
 | CI                               | GitHub Actions                                                                                                                        |
@@ -188,7 +188,7 @@ The docs hub at [`docs/README.md`](docs/README.md) is the entrypoint for this ch
 The repository’s governance path is intentionally layered:
 
 1. [`AGENTS.md`](AGENTS.md) defines the vendor-neutral agent entrypoint.
-2. [`.claude/shared-governance.md`](.claude/shared-governance.md) defines shared rules for all active runtimes.
+2. [`docs/agentic/shared-governance.md`](docs/agentic/shared-governance.md) defines shared rules for all active runtimes.
 3. Runtime entrypoints such as [`CLAUDE.md`](CLAUDE.md) and [`GEMINI.md`](GEMINI.md) add model-specific overlays.
 4. [`.agent/rules/`](.agent/rules) and [`.agent/workflows/`](.agent/workflows) provide enforceable standards and execution guidance.
 

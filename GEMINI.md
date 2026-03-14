@@ -1,15 +1,15 @@
 # Gemini Runtime Entrypoint
 
 This file is the Gemini CLI context entrypoint for `hy-home-learned`. Keep it
-import-first and keep detailed Gemini guidance in `.claude/`.
+import-first and keep detailed Gemini guidance in `docs/agentic/`.
 
-@./.claude/shared-governance.md
-@./.claude/repository-guide.md
-@./.claude/gemini-models.md
+@./docs/agentic/shared-governance.md
+@./docs/agentic/repository-guide.md
+@./docs/agentic/gemini-models.md
 
 ## Quick Reference
 
-- [Shared manuals](.claude/README.md)
+- [Shared manuals](docs/agentic/README.md)
 - [Vendor-neutral repo map](AGENTS.md)
 - [Documentation hub](docs/README.md)
 

@@ -3,7 +3,7 @@
 This is the shared, vendor-neutral entrypoint for AI assistants working in
 `hy-home-learned`. Start here, then load the repository docs hub and the
 model-specific runtime file for the active session. Keep the root entrypoints
-minimal; `.claude/` is the authoritative detail layer.
+minimal; `docs/agentic/` is the authoritative detail layer.
 
 ## Quick Reference
 
@@ -17,8 +17,8 @@ minimal; `.claude/` is the authoritative detail layer.
 ## Required Reading Order
 
 1. [Documentation Hub](docs/README.md)
-2. [Shared Agent Governance](.claude/shared-governance.md)
-3. [Repository Operating Guide](.claude/repository-guide.md)
+2. [Shared Agent Governance](docs/agentic/shared-governance.md)
+3. [Repository Operating Guide](docs/agentic/repository-guide.md)
 4. One model runtime entrypoint:
    - [Claude Code](CLAUDE.md)
    - [Gemini](GEMINI.md)
@@ -33,7 +33,7 @@ minimal; `.claude/` is the authoritative detail layer.
 - [Runbooks](docs/runbooks/)
 - [Operations](docs/operations/)
 - [Agentic](docs/agentic/README.md)
-- [Shared `.claude` Index](.claude/README.md)
+- [Shared AI Agent Index](docs/agentic/README.md)
 
 ## Non-Negotiables
 

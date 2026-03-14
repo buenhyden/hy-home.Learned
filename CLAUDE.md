@@ -1,15 +1,15 @@
 # Claude Code Runtime Entrypoint
 
 This file is the Claude Code runtime entrypoint for `hy-home-learned`. Keep it
-import-first and keep detailed Claude guidance in `.claude/`.
+import-first and keep detailed Claude guidance in `docs/agentic/`.
 
-@./.claude/shared-governance.md
-@./.claude/repository-guide.md
-@./.claude/claude-code.md
+@./docs/agentic/shared-governance.md
+@./docs/agentic/repository-guide.md
+@./docs/agentic/claude-code.md
 
 ## Quick Reference
 
-- [Shared manuals](.claude/README.md)
+- [Shared manuals](docs/agentic/README.md)
 - [Vendor-neutral repo map](AGENTS.md)
 - [Documentation hub](docs/README.md)
 

@@ -1,8 +1,8 @@
 # Shared Agent Manuals
 
 This directory is the authoritative shared instruction store behind the root
-entrypoints [AGENTS.md](../AGENTS.md), [CLAUDE.md](../CLAUDE.md), and
-[GEMINI.md](../GEMINI.md).
+entrypoints [AGENTS.md](../../../AGENTS.md), [CLAUDE.md](../../../CLAUDE.md), and
+[GEMINI.md](../../../GEMINI.md).
 
 ## Reading Order
 

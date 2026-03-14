@@ -43,14 +43,14 @@ independent of vendor or runtime.
 ## Knowledge Navigation
 
 - [Documentation Hub](../docs/README.md)
-- [ADRs](../docs/adr/) for architecture decisions
-- [ARDs](../docs/ard/) for system structure and domain modeling
-- [PRDs](../docs/prd/) for requirements and success metrics
-- [Specs](../docs/specs/) for implementation contracts
-- [Plans](../docs/plans/) for active execution plans
-- [Runbooks](../docs/runbooks/) for operational procedures
-- [Operations](../docs/operations/) for incidents and postmortems
-- [Agentic](../docs/agentic/README.md) for AI instructions and governance
+- [ADRs](../../adr/) for architecture decisions
+- [ARDs](../../ard/) for system structure and domain modeling
+- [PRDs](../../prd/) for requirements and success metrics
+- [Specs](../../specs/) for implementation contracts
+- [Plans](../../plans/) for active execution plans
+- [Runbooks](../../runbooks/) for operational procedures
+- [Operations](../../operations/) for incidents and postmortems
+- [Agentic](../README.md) for AI instructions and governance
 
 ## Execution Anchors
 
