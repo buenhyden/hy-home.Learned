@@ -2,19 +2,19 @@
 
 This document is the central index for operational readiness in repositories created from this template. It provides policy-level guidance and points to executable runbooks managed by the **DevOps Agent**.
 
-> **IMPORTANT:** Detailed operational procedures, deployment scripts, and incident guides are located exclusively in the `runbooks/` directory. **Never create `docs/runbook` or use an `operations/` folder.**
+> **IMPORTANT:** Detailed operational procedures, deployment scripts, and incident guides are located exclusively in the `docs/runbooks/` directory. 
 
 ## 1. Runbook Catalog
 
-All operational procedures must use `templates/operations/runbook-template.md`. Below is the index of standard runbooks included in the `runbooks/` directory.
+All operational procedures must use `templates/runbook-template.md`. Below is the index of standard runbooks included in the `docs/runbooks/` directory.
 
 | Runbook           | Status | Location                                | Purpose                              |
 | ----------------- | ------ | --------------------------------------- | ------------------------------------ |
-| Deployment        | Active | `runbooks/deployment-runbook.md`        | Staging/Production release steps     |
-| Incident Response | Active | `runbooks/incident-response-runbook.md` | SEV-1/SEV-2 incident mitigation      |
-| Monitoring        | Active | `runbooks/monitoring-runbook.md`        | Threshold checks and alerting config |
+| Deployment        | Active | `docs/runbooks/deployment-runbook.md`        | Staging/Production release steps     |
+| Incident Response | Active | `docs/runbooks/incident-response-runbook.md` | SEV-1/SEV-2 incident mitigation      |
+| Monitoring        | Active | `docs/runbooks/monitoring-runbook.md`        | Threshold checks and alerting config |
 
-> **Note:** If a specific operational procedure (e.g. database migration, failover) is missing from this index, the DevOps Agent should proactively create a new runbook based on `templates/operations/runbook-template.md` and link it here.
+> **Note:** If a specific operational procedure (e.g. database migration, failover) is missing from this index, the DevOps Agent should proactively create a new runbook based on `templates/runbook-template.md` and link it here.
 
 ## 2. Environment & Deployment Strategy
 
@@ -55,7 +55,7 @@ Code must not be deployed unless:
 
 ### Incident Priorities
 
-- **SEV-1 (Critical)**: Production offline. Immediate action via `runbooks/incident-response-runbook.md` and `.agent/rules/0380-incident-response.md`.
+- **SEV-1 (Critical)**: Production offline. Immediate action via `docs/runbooks/incident-response-runbook.md` and `.agent/rules/0380-incident-response.md`.
 - **SEV-2 (Major)**: Critical flow degraded.
 - **SEV-3 (Minor)**: Non-critical bugs.
 
@@ -66,4 +66,4 @@ Code must not be deployed unless:
 
 ---
 
-> **Note to AI Agents (DevOps Role):** Do not write operation steps directly in this index. For any operational change, modify or create a specific runbook inside `runbooks/` using the approved template.
+> **Note to AI Agents (DevOps Role):** Do not write operation steps directly in this index. For any operational change, modify or create a specific runbook inside `docs/runbooks/` using the approved template.
