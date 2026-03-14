@@ -13,7 +13,7 @@ This file is absolutely necessary to establish the operational handoffs between 
 
 Before any major development begins, the team MUST establish working agreements.
 
-- **Action**: Use `templates/collaboration-guide-template.md` to create `docs/manuals/collaboration-guide.md`.
+- **Action**: Use `templates/collaboration-guide-template.md` to create `docs/guides/collaboration-guide.md`.
 - **Requirement**: Answer all 11 items in the **Development Process & Collaboration Checklist** (e.g., Branching Strategy, SLA, DoD, Code Review rules).
 - **Enforcement**: AI Agents will verify the existence and completeness of this guide during project initialization.
 
