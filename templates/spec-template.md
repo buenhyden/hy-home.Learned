@@ -17,8 +17,8 @@
 >
 > Shape guidance:
 >
-> - Use the extended technical form for `content/` and `vault/` specs.
-> - Use the compact contract form for active-chain `web/` specs that define platform baselines, archive rules, design-system direction, or other high-level implementation contracts.
+> - Use the extended technical form for `TIL/` specs.
+> - Use the compact contract form for active-chain `TIL/` specs that define platform baselines, archive rules, design-system direction, or other high-level implementation contracts.
 
 ## Optional Frontmatter
 

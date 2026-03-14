@@ -16,8 +16,8 @@
 >
 > Shape guidance:
 >
-> - Use the extended form for `content/` and `vault/` system PRDs.
-> - Use the compact form for active-chain `web/` PRDs where the requirements are already narrowed by adjacent ADR/ARD/spec docs.
+> - Use the extended form for `TIL/` system PRDs.
+> - Use the compact form for active-chain `TIL/` PRDs where the requirements are already narrowed by adjacent ADR/ARD/spec docs.
 
 ## Optional Frontmatter
 

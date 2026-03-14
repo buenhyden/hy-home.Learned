@@ -17,8 +17,8 @@
 >
 > Shape guidance:
 >
-> - Use the extended architecture form for `content/` and `vault/` system documents.
-> - Use the compact architecture form for focused `web/` active-chain ARDs where the architecture boundary is intentionally compressed into summary, rules, and ownership.
+> - Use the extended architecture form for `TIL/` system documents.
+> - Use the compact architecture form for focused `TIL/` active-chain ARDs where the architecture boundary is intentionally compressed into summary, rules, and ownership.
 
 ## Optional Frontmatter
 
