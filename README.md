@@ -1,5 +1,7 @@
 # hy-home-learned
 
+> **layer:** common
+
 ![CI Status](https://github.com/buenhyden/hy-home.Learned/actions/workflows/ci.yml/badge.svg)
 ![Python Version](https://img.shields.io/badge/python-3.13%2B-blue)
 ![Version](https://img.shields.io/badge/version-0.1.1-orange)
@@ -125,11 +127,7 @@ After setup, read the repository in this order:
 1. [`AGENTS.md`](AGENTS.md)
 2. [`docs/README.md`](docs/README.md)
 3. [`README.md`](README.md)
-4. The relevant docs index for your task:
-   - [`docs/prd/README.md`](docs/prd/README.md)
-   - [`docs/specs/README.md`](docs/specs/README.md)
-   - [`docs/plans/README.md`](docs/plans/README.md)
-   - [`docs/runbooks/README.md`](docs/runbooks/README.md)
+4. Load the specific `docs/<category>/` index for your task.
 
 ## Environment Variables
 
@@ -151,7 +149,14 @@ hy-home.Learned/
 ├── .claude/            # Shared runtime manuals behind root AI entrypoints
 ├── .github/            # CI workflows and repository automation
 ├── TIL/                # Knowledge notes and learning artifacts
-├── docs/               # PRDs, ADRs, ARDs, specs, plans, runbooks, and operations indexes
+├── docs/               # Global Docs: adr, ard, prd, specs, plans, runbooks, operations
+│   ├── adr/            # Architecture Decision Records
+│   ├── ard/            # Architecture Reference Documents
+│   ├── prd/            # Product Requirements Documents
+│   ├── specs/          # Technical Specifications
+│   ├── plans/          # Execution Plans
+│   ├── runbooks/       # Operational Runbooks
+│   └── operations/     # Incident and Postmortem Records
 ├── examples/           # Example documents showing template usage
 ├── scripts/            # Utility and automation scripts
 ├── templates/          # Canonical Markdown templates for project artifacts
@@ -171,36 +176,9 @@ hy-home.Learned/
 
 ## How the System Works
 
-### Documentation Chain
+This repository follows a **spec-driven** and **agent-governed** workflow. All activities from requirements gathering to operational maintenance are managed through the centralized documentation chain.
 
-The repository is designed to move work through explicit documents instead of jumping straight into code:
-
-1. **PRD** defines the problem, scope, and success criteria.
-2. **ADR / ARD** records architectural decisions and structural boundaries.
-3. **Spec** defines the implementation contract.
-4. **Plan** breaks approved work into executable steps.
-5. **Implementation and Runbooks** carry the result into code and operations.
-
-The docs hub at [`docs/README.md`](docs/README.md) is the entrypoint for this chain.
-
-### Governance Chain
-
-The repository’s governance path is intentionally layered:
-
-1. [`AGENTS.md`](AGENTS.md) defines the vendor-neutral agent entrypoint.
-2. [`docs/agentic/shared-governance.md`](docs/agentic/shared-governance.md) defines shared rules for all active runtimes.
-3. Runtime entrypoints such as [`CLAUDE.md`](CLAUDE.md) and [`GEMINI.md`](GEMINI.md) add model-specific overlays.
-4. [`.agent/rules/`](.agent/rules) and [`.agent/workflows/`](.agent/workflows) provide enforceable standards and execution guidance.
-
-### Quality Gates
-
-Contributor quality is enforced in three places:
-
-- **Local hooks** via [`.pre-commit-config.yaml`](.pre-commit-config.yaml)
-- **Tool configuration** via [`pyproject.toml`](pyproject.toml)
-- **CI verification** via [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
-
-The current CI workflow installs Python 3.13, syncs dependencies with `uv`, then runs pre-commit checks at both the `commit` and `pre-push` stages across the repository.
+For a detailed walkthrough of the governance model, documentation standards, and AI Agent protocols, refer to the **[Documentation Hub](docs/README.md)**.
 
 ### Operational Model
 

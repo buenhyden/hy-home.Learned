@@ -1,5 +1,7 @@
 # Agentic Documentation (`docs/agentic/`)
 
+> **layer:** agentic
+
 This directory houses the authoritative instructions, protocols, and governance standards for AI Agents working in this repository.
 
 ## Core Pillars
@@ -8,6 +10,15 @@ This directory houses the authoritative instructions, protocols, and governance 
 - [Reasoning Standards](standards.md): Detailed 9-step deep execution protocol.
 - [Persona Standards](personas.md): Specialized role definitions (Architect, Security, DevOps).
 - [Instruction Management](management.md): Governance for versioning and scaling instructions.
+- [Standard Operating Procedures](standards/):
+  - [Engineering Standards](standards/engineering-standards.md)
+  - [Git Standards](standards/git-standards.md)
+  - [Architecture Standards](standards/architecture-standards.md)
+  - [Traceability Standards](standards/traceability.md)
+  - [Requirements & Specifications](standards/requirements-specs.md)
+  - [Engineering Excellence](standards/excellence.md)
+  - [API Design](standards/api-design.md)
+  - [Database Design](standards/database-design.md)
 
 ## Governing Principles
 

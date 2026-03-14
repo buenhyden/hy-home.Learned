@@ -17,8 +17,8 @@ minimal; `docs/agentic/` is the authoritative detail layer.
 ## Required Reading Order
 
 1. [Documentation Hub](docs/README.md)
-2. [Shared Agent Governance](docs/agentic/shared-governance.md)
-3. [Repository Operating Guide](docs/agentic/repository-guide.md)
+2. [Shared Agent Governance](docs/agentic/shared/shared-governance.md)
+3. [Repository Operating Guide](docs/agentic/shared/repository-guide.md)
 4. One model runtime entrypoint:
    - [Claude Code](CLAUDE.md)
    - [Gemini](GEMINI.md)
@@ -32,8 +32,7 @@ minimal; `docs/agentic/` is the authoritative detail layer.
 - [Plans](docs/plans/)
 - [Runbooks](docs/runbooks/)
 - [Operations](docs/operations/)
-- [Agentic](docs/agentic/README.md)
-- [Shared AI Agent Index](docs/agentic/README.md)
+- [Agentic Hub](docs/agentic/README.md)
 
 ## Non-Negotiables
 

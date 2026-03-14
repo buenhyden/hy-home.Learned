@@ -1,8 +1,8 @@
 # Operations Index
 
-This document is the central index for operational readiness in repositories created from this template. It provides policy-level guidance and points to executable runbooks managed by the **DevOps Agent**.
+> **layer:** infra
 
-> **IMPORTANT:** Detailed operational procedures, deployment scripts, and incident guides are located exclusively in the `docs/runbooks/` directory. 
+This document is the central index for operational readiness. It provides policy-level guidance and points to executable runbooks.
 
 ## 1. Runbook Catalog
 

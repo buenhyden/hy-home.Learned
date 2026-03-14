@@ -3,9 +3,9 @@
 This file is the Gemini CLI context entrypoint for `hy-home-learned`. Keep it
 import-first and keep detailed Gemini guidance in `docs/agentic/`.
 
-@./docs/agentic/shared-governance.md
-@./docs/agentic/repository-guide.md
-@./docs/agentic/gemini-models.md
+@./docs/agentic/shared/shared-governance.md
+@./docs/agentic/shared/repository-guide.md
+@./docs/agentic/shared/gemini-models.md
 
 ## Quick Reference
 

@@ -21,10 +21,10 @@ This directory is the long-term, human-readable knowledge base for the `hy-home-
 
 ## Documentation Rules
 
-- **Metadata mandatory**: Each file must contain `Layer: <layer_name>` metadata at the top.
-- **Flattened structure**: All individual documentation files live in this root `docs/` directory.
-- **Templates**: Use matching templates in [../templates/](../templates/).
-- **Links**: Keep links repository-relative.
+- **Metadata mandatory**: Each file must contain `layer: <layer_name>` metadata in frontmatter and callouts.
+- **Folder-based structure**: All documentation files are categorized into subdirectories (`adr/`, `prd/`, etc.).
+- **Templates**: Always use the predefined [templates](../templates/).
+- **Links**: Relative paths must be used for cross-references.
 
 ---
 

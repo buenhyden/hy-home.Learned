@@ -1,13 +1,6 @@
 # Contributor Covenant Code of Conduct
 
-## Necessity & Required Content
-
-This `CODE_OF_CONDUCT.md` file is necessary to outline the ethical and behavioral expectations for both human contributors and AI entities operating within the repository.
-**What Must Be Written Here**:
-
-- Human-to-human behavioral standards.
-- Human-to-AI prompt ethics and anti-harassment rules.
-- Reporting instructions for safety violations.
+> **layer:** common
 
 ## Our Pledge
 

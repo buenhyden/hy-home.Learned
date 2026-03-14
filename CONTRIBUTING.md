@@ -1,13 +1,10 @@
 # Contributing Guidelines
 
-## Necessity & Required Content
+> **layer:** common
 
-This file is necessary to define the exact, mechanical steps a human must take to successfully merge code into this repository. While `COLLABORATING.md` outlines the high-level human-AI relationship, this file outlines the raw pre-requisites for Pull Requests.
-**What Must Be Written Here**:
+## Guidelines
 
-- Hard Code Quality Gates (Coverage, Linting).
-- Branch naming and Conventional Commit rules.
-- Spec-Driven PR referencing requirements.
+This document defines the mechanical steps required to contribute to this repository.
 
 ## 1. Spec-Driven Core Rule
 
@@ -18,7 +15,7 @@ All new features **must** begin with a specification in the `docs/specs/` folder
 If your contribution involves documentation (ADR, PRD, Runbook, etc.), you **MUST** use the predefined templates located in the `templates/` directory.
 
 - Do not invent your own format for Architecture Decision Records. Use `templates/adr-template.md`.
-- Ensure all sections are filled out before submitting.
+- Ensure all sections are filled out before submitting, including the mandatory `layer:` metadata.
 
 ## 3. Local QA & Test Coverage (Pre-PR Gate)
 

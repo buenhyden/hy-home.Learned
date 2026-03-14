@@ -1,5 +1,7 @@
 # Shared Agent Governance
 
+> **layer:** agentic
+
 This manual applies to every AI assistant working in this repository,
 independent of vendor or runtime.
 

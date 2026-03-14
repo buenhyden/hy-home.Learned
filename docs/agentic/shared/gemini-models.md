@@ -1,5 +1,7 @@
 # Gemini Overlay
 
+> **layer:** agentic
+
 This file contains Gemini-specific operating detail. The root
 [GEMINI.md](../GEMINI.md) is the runtime entrypoint; reusable detail lives here.
 

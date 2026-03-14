@@ -1,5 +1,7 @@
 # Claude Code Overlay
 
+> **layer:** agentic
+
 This file contains Claude-specific operating detail. The root
 [CLAUDE.md](../CLAUDE.md) is the runtime entrypoint; reusable detail lives here.
 

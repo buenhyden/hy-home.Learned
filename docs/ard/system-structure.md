@@ -1,7 +1,18 @@
+---
+title: 'Global Architecture Reference Document (ARD)'
+status: 'Approved'
+date: '2026-03-14'
+owner: 'buenhyden'
+scope: 'master'
+tags: ['ard', 'architecture']
+layer: 'common'
+---
+
 # Global Architecture Reference Document (ARD)
 
 > **Status**: Approved
 > **Scope**: master
+> **layer:** common
 > **Related PRD**: `docs/prd/documentation-system-prd.md`
 
 **Overview (KR):** 프로젝트의 폴더링 기반 문서 구조와 각 레이어별 아키텍처 원칙을 정의하는 전역 참조 문서입니다.

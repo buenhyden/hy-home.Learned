@@ -1,5 +1,7 @@
 # Repository Operating Guide
 
+> **layer:** agentic
+
 This manual contains repository-specific operating detail reused across agent
 runtimes.
 

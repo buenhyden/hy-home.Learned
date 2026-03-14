@@ -1,13 +1,10 @@
 # Collaborating in this Framework
 
-## Necessity & Required Content
+> **layer:** common
 
-This file is absolutely necessary to establish the operational handoffs between Human Developers and the Multi Sub-Agent System. While `AGENTS.md` defines what the AI does, this file defines how the _Human_ manages the AI.
-**What Must Be Written Here**:
+## Establishing Agreements
 
-- Workflow handoff rules across Pre-Dev, During-Dev, and Post-Dev phases.
-- Conflict resolution tactics for AI Hallucinations.
-- Pointers to mandatory collaborative processes.
+This document defines the high-level operational handoffs between Human Developers and the Multi Sub-Agent System.
 
 ## 0. Mandatory Project Kickoff
 
@@ -23,7 +20,7 @@ When requesting new features, humans should primarily interact with the **Planne
 
 - **Human**: Defines the high-level business need in an Issue or a prompt.
 - **AI (Planner)**: Utilizes `templates/prd-template.md` to generate a PRD (`docs/prd/`).
-- **AI (Planner)**: Once the PRD is approved, it writes an Implementation Spec in `docs/specs/` using `templates/spec-template.md`.
+- **AI (Planner)**: Once the PRD is approved, it writes an Implementation Spec in `docs/specs/` using `templates/spec-template.md`. Each document must include the mandatory `layer:` metadata.
 - **Human**: MUST approve the final spec before any code is generated.
 
 ## 2. Code Implementation Workflow (During-Development)
@@ -53,5 +50,5 @@ If an AI Agent hallucinates or gets stuck in a loop:
 Standard Agent Rules live in `.agent/rules/`. Project-specific context lives in `docs/guides/`.
 
 1. **Project-Specific Overrides**: Humans can define overrides to global `.agent/rules/` within specific `docs/guides/`.
-2. **Global Rule Updates**: If a global standard needs to evolve, humans must update the corresponding markdown file in `.agent/rules/` to ensure all future Agents act upon the new intent.
-3. **Contradictions**: If human instructions contradict an established `.agent/rule/`, the Agent will flag the violation based on `.agent/rules/` and request explicit confirmation to bypass or update the rule.
+2. **Global Rule Updates**: If a global standard needs to evolve, humans must update the corresponding markdown file in `.agent/rules/` or the authorized detail layer in `docs/agentic/` to ensure all future Agents act upon the new intent.
+3. **Contradictions**: If human instructions contradict an established `.agent/rule/`, the Agent will flag the violation based on `.agent/rules/` and request explicit confirmation.

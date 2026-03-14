@@ -1,25 +1,18 @@
 # System Architecture
 
+> **layer:** architecture
+
 This document defines the high-level architecture of projects created from this template. It serves as a blueprint that should be customized for each new project.
 
-## 1. System Context & Necessity
+## 1. System Context
 
-This template provides a standardized foundation for building software projects.
-
-**Necessity**: This specific `ARCHITECTURE.md` file is absolutely essential as the global, unchanging architectural law of the repository. While `docs/adr/` handles specific component decisions over time and `docs/ard/` holds deep architectural diagrams, this root file holds the _highest-level constraints and checklists_ that must NEVER be violated by any human or AI agent without a formal override.
-
-**What Must Be Written Here**:
-
-- The overarching architecture style (Microservices vs Monolith).
-- The list of acceptable core tech stacks.
-- The Architectural Checklist that every new feature MUST pass before entering the `docs/specs/` phase.
+This template provides a standardized foundation for building spec-driven, agent-governed projects.
 
 ### Core Architecture Pillars
 
-- **Spec-Driven Development**: `docs/specs/` uniquely drives all implementation.
-- **AI-Assisted Development**: Multi Sub-Agent AI system phases (`AGENTS.md`).
-- **Template-Based Documentation**: Consistent output enforced via `templates/`.
-- **Strict Boundary Segregation**: Clear division of Knowledge (`docs/`), Implementation (`docs/specs/`, `web/`, `app/`, `server/`), and Operations (`docs/runbooks/`).
+- **Spec-Driven Development**: All code implementation is driven by verified specifications.
+- **AI-Assisted Governance**: A multi-agent system manages documentation and operations.
+- **Boundary Segregation**: Knowledge (`docs/`), Implementation (`docs/specs/`, modules), and Operations (`docs/operations/`).
 
 ## 2. Core Constraints & Decisions
 
@@ -27,11 +20,8 @@ This template provides a standardized foundation for building software projects.
 
 | Decision                | Rationale                                                                         |
 | ----------------------- | --------------------------------------------------------------------------------- |
-| **Spec-Driven Code**    | Eliminates AI hallucination by giving Coder Agents a hard, human-approved target. |
-| **Templates Mandatory** | Ensures parsing consistency for future AI tasks (PRDs, Specs, Runbooks).          |
-| **Dedicated Runbooks**  | Prevents ops scripts from getting lost in `docs/` hierarchies.                    |
 
-> See `docs/adr/` for detailed Architecture Decision Records that shaped this specific system logic.
+> See `docs/adr/` for detailed Architecture Decision Records that shaped this specific system logic. Each ADR is tagged with its functional `layer:`.
 
 ## 3. Architecture & Tech Stack Checklist
 
@@ -54,7 +44,7 @@ When starting a project or writing an Architecture Reference Document (ARD), the
 | **Pillar Alignment**      | Does the architecture align with the 6 Core Pillars (Security `2200`, Performance `2300`, Observability `2600`, Compliance `2400`, Documentation `2100`, Localization `2500`)? | **Mandatory** | See `.agent/rules/`.  |
 | **Agent Rule Compliance** | Does the tech stack selection comply with language/framework specific laws (e.g., `1200-Nextjs.md`) defined in `.agent/rules/`?                                                | **Mandatory** |                       |
 
-> **Process Enforcement**: The Planner Agent MUST explicitly answer all items of this checklist when creating an ARD, adhering to `.agent/rules/1910-architecture-documentation.md` and `.agent/rules/1901-architecture-rules.md`. The Reviewer Agent MUST verify that any code changes (e.g., in a PR) do not violate these agreed-upon decisions (such as unauthorized Tech Stack or DB changes) before merging.
+> **Process Enforcement**: The Planner Agent MUST explicitly answer all items of this checklist when creating an ARD, adhering to `docs/agentic/standards/architecture-standards.md`. The Reviewer Agent MUST verify that any code changes do not violate these decisions before merging. All documents MUST include the `layer:` metadata.
 
 ## 4. Reference Technology Stack (Template)
 

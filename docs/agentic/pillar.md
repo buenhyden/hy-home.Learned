@@ -1,6 +1,6 @@
 # Agentic AI Pillars
 
-> **Layer**: agentic
+> **layer:** agentic
 > **Status**: Authoritative
 
 This standard defines the core reasoning and autonomy required for project success. Detailed reasoning protocols and standards are found in [Reasoning Standards](standards.md).

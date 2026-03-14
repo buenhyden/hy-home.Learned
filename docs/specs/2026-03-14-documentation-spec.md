@@ -14,7 +14,7 @@ layer: 'common'
 
 > **Status**: Canonical
 > **Scope**: master
-> **layer:** common
+> **layer**: common
 > **Related PRD**: `../prd/documentation-system-prd.md`
 > **Related Architecture**: `../ard/system-structure.md`
 

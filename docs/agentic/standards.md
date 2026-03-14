@@ -1,7 +1,7 @@
 # Agentic Reasoning Standards
 
-> **Layer**: agentic
-> **Status**: Active Detail layer
+> **layer:** agentic
+> **Status:** Active Detail layer
 
 ## 1. 9-Step Execution Framework (Detail)
 
@@ -15,10 +15,17 @@
 8. **Persistence**: Retry transient failures intelligently.
 9. **Final Inhibition**: Last cognitive pause before critical execution.
 
-## 2. Advanced Error Handling
+## 3. Project-Level Architectural Law
 
-- **Tool Output Fidelity**: Report full output (STDOUT/STDERR) to enable subsequent reasoning transitions.
-- **Failure Analysis**: If a primary tool fails, reason about whether it's a project issue or a system failure before retrying.
+- **Spec-Driven Targets**: All implementation MUST be driven by a spec in `docs/specs/`. Hallucinations are mitigated by sticking to approved specs.
+- **Template Integrity**: All artifacts MUST use `templates/` to ensure structural consistency for future AI tasks.
+- **Boundary Segregation**: Maintain strict division between Knowledge (`docs/`), Implementation (`docs/specs/`, code), and Operations (`docs/runbooks/`).
+- **Checklist Compliance**: Every new feature ARD must address the mandatory items in the Architecture & Tech Stack Checklist (see root `ARCHITECTURE.md`).
+
+## 4. Engineering Excellence & QA Gates
+
+- **Hard Quality Gates**: Pull Requests strictly require > 80% coverage, zero linting/type errors, and compliance with organizational standards.
+- **Traceability**: All PRs must reference the corresponding specification file.
 
 ---
 _Managed under the [Agentic Pillars](pillar.md)._

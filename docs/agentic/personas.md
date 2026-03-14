@@ -1,5 +1,7 @@
 # Specialized Agent Personas
 
+> **layer:** agentic
+
 > **Layer**: agentic
 > **Status**: Active
 > **Source**: Refactored from `.agent/rules/0000-Agents/0018-specialized-agent-personas-standard.md`
