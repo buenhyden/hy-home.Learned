@@ -1,18 +1,22 @@
-# Claude Code Runtime Entrypoint
+# Claude Code Runtime File
 
-This file is the Claude Code runtime entrypoint for `hy-home-learned`. Keep it
-import-first and keep detailed Claude guidance in `docs/agentic/`.
+> **layer:** agentic
 
-@./docs/agentic/shared-governance.md
-@./docs/agentic/repository-guide.md
-@./docs/agentic/claude-code.md
+This file initiates the Claude Code runtime environment (March 2026 Edition).
 
-## Quick Reference
+## Runtime Activation
 
-- [Shared manuals](docs/agentic/README.md)
-- [Vendor-neutral repo map](AGENTS.md)
-- [Documentation hub](docs/README.md)
+You MUST lazily load the following layers upon session initialization:
+
+1. [Shared Governance](docs/agentic/shared/shared-governance.md)
+2. [Operating Guide](docs/agentic/shared/repository-guide.md)
+3. [Claude Overlay](docs/agentic/shared/claude-code.md)
+
+## Skill Policy
+
+Skill usage is governed purely by intent and task suitability. Refer to [Claude Overlay](docs/agentic/shared/claude-code.md#skills) for guidance.
 
 ---
-
-_Last Updated: March 2026_
+@./docs/agentic/shared/shared-governance.md
+@./docs/agentic/shared/repository-guide.md
+@./docs/agentic/shared/claude-code.md

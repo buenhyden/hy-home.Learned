@@ -1,55 +1,28 @@
-# AI Agents Master Guide
+# AI Agent Master Guide
 
-This is the shared, vendor-neutral entrypoint for AI assistants working in
-`hy-home-learned`. Start here, then load the repository docs hub and the
-model-specific runtime file for the active session. Keep the root entrypoints
-minimal; `docs/agentic/` is the authoritative detail layer.
+> **layer:** agentic
 
-## Quick Reference
+This document is the authoritative entrypoint for ALL AI assistants as of March 2026.
 
-- **Environment:** Python 3.13+, `uv`
-- **Sync deps:** `uv sync --dev`
-- **Lint:** `uv run ruff check .`
-- **Typecheck:** `uv run ty check`
-- **Test:** `uv run pytest`
-- **Hooks:** `uv run pre-commit install`
+## 1. Governance Rules
 
-## Required Reading Order
+- **Lazy Loading**: Read indices first (`docs/README.md`); load only specific files needed for the task.
+- **Skill Autonomy**: You are NOT restricted to specific tool whitelists. Choose the most effective tool for the task.
+- **Traceability**: Every code change MUST link to a requirement in `docs/prd/` or a contract in `docs/specs/`.
 
-1. [Documentation Hub](docs/README.md)
-2. [Shared Agent Governance](docs/agentic/shared/shared-governance.md)
-3. [Repository Operating Guide](docs/agentic/shared/repository-guide.md)
-4. One model runtime entrypoint:
-   - [Claude Code](CLAUDE.md)
-   - [Gemini](GEMINI.md)
+## 2. Navigation Hierarchy
 
-## Knowledge Navigation
+- **Requirements**: [PRDs](docs/prd/)
+- **Decisions**: [ADRs](docs/adr/) | [ARDs](docs/ard/)
+- **Operations**: [Incidents](docs/operations/incidents/) | [Runbooks](docs/runbooks/) | [Postmortems](docs/operations/postmortems/)
+- **Execution**: [Plans](docs/plans/) | [Specs](docs/specs/)
 
-- [ADRs](docs/adr/)
-- [ARDs](docs/ard/)
-- [PRDs](docs/prd/)
-- [Specs](docs/specs/)
-- [Plans](docs/plans/)
-- [Runbooks](docs/runbooks/)
-- [Operations](docs/operations/)
-- [Agentic Hub](docs/agentic/README.md)
+## 3. Runtime Selection
 
-## Non-Negotiables
+After reading this guide, immediately load your specific runtime context:
 
-- State the active persona explicitly using the sentence required by
-  [0018-specialized-agent-personas-standard.md](.agent/rules/0000-Agents/0018-specialized-agent-personas-standard.md).
-- Do not begin code changes without approved context from `docs/prd/`,
-  `docs/adr/`, `docs/specs/`, and `docs/plans/`, as required by
-  [Requirements Standard](docs/agentic/pillar.md).
-- Identify the relevant `.agent/rules/`, `.agent/workflows/`, and skills before
-  execution.
-- Skills are not restricted by this file. Agents must choose the skills that fit
-  the task instead of forcing a narrow whitelist.
-- Follow lazy loading: read index documents first, then load only the specific
-  file needed for the current task.
-- Keep execution surgical. Do not expand scope without an explicit request.
-- Use `docs/runbooks/` and `docs/operations/` for operational records.
+- [Claude Code](CLAUDE.md)
+- [Gemini](GEMINI.md)
 
 ---
-
-_Last Updated: March 2026_
+_Last Updated: 2026-03-15_

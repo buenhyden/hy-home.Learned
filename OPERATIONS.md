@@ -1,4 +1,4 @@
-# Operations Index
+# Operational Readiness Index
 
 > **layer:** infra
 
@@ -55,9 +55,13 @@ Code must not be deployed unless:
 
 ### Incident Priorities
 
-- **SEV-1 (Critical)**: Production offline. Immediate action via `docs/runbooks/incident-response-runbook.md` and `.agent/rules/0380-incident-response.md`.
+- **SEV-1 (Critical)**: Production offline. Immediate action via `docs/runbooks/incident-response-runbook.md` and `.agent/rules/0380-incident-response.md`. Record in `docs/operations/incidents/` using `templates/incident-template.md`.
 - **SEV-2 (Major)**: Critical flow degraded.
 - **SEV-3 (Minor)**: Non-critical bugs.
+
+### Postmortems
+
+All SEV-1 and SEV-2 incidents require a formal postmortem in `docs/operations/postmortems/` using `templates/postmortem-template.md`.
 
 ## 6. Security Baseline
 

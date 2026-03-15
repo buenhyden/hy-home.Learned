@@ -1,18 +1,22 @@
-# Gemini Runtime Entrypoint
+# Gemini Runtime File
 
-This file is the Gemini CLI context entrypoint for `hy-home-learned`. Keep it
-import-first and keep detailed Gemini guidance in `docs/agentic/`.
+> **layer:** agentic
 
+This file initiates the Gemini Advanced Agentic context (March 2026 Edition).
+
+## Runtime Activation
+
+You MUST lazily load the following layers upon session initialization:
+
+1. [Shared Governance](docs/agentic/shared/shared-governance.md)
+2. [Operating Guide](docs/agentic/shared/repository-guide.md)
+3. [Gemini Overlay](docs/agentic/shared/gemini-models.md)
+
+## Skill Policy
+
+Refer to [Agentic Pillars](docs/agentic/pillar.md#autonomy-principles) for core reasoning principles; no tool whitelist is enforced.
+
+---
 @./docs/agentic/shared/shared-governance.md
 @./docs/agentic/shared/repository-guide.md
 @./docs/agentic/shared/gemini-models.md
-
-## Quick Reference
-
-- [Shared manuals](docs/agentic/README.md)
-- [Vendor-neutral repo map](AGENTS.md)
-- [Documentation hub](docs/README.md)
-
----
-
-_Last Updated: March 2026_
