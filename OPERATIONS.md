@@ -61,7 +61,7 @@ Code must not be deployed unless:
 
 ### Postmortems
 
-All SEV-1 and SEV-2 incidents require a formal postmortem in `docs/operations/postmortems/` using `templates/postmortem-template.md`.
+All SEV-1 and SEV-2 incidents require a formal postmortem in `docs/operations/postmortems/` using `templates/postmortems-template.md`.
 
 ## 6. Security Baseline
 

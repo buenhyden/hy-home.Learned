@@ -1,7 +1,6 @@
 # Contributing Guidelines
 
 > **layer:** common
-> **layer:** common
 
 ## Guidelines
 

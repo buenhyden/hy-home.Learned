@@ -6,9 +6,9 @@ This document is the authoritative entrypoint for ALL AI assistants as of March 
 
 ## 1. Governance Rules
 
-- **Lazy Loading**: Read indices first (`docs/README.md`); load only specific files needed for the task.
-- **Skill Autonomy**: You are NOT restricted to specific tool whitelists. Choose the most effective tool for the task.
-- **Traceability**: Every code change MUST link to a requirement in `docs/prd/` or a contract in `docs/specs/`.
+- **Lazy Loading**: Read indices first (`docs/README.md`); load only specific files needed for the task. Use `list_dir` or `view_file_outline` to discover structure.
+- **Skill Autonomy**: You are NOT restricted to specific tool whitelists. Choose the most effective tool for the task based on intent and efficiency.
+- **Traceability**: Every code change MUST link to a requirement in `docs/prd/` or a contract in `docs/specs/` and be tracked in `docs/plans/`.
 
 ## 2. Navigation Hierarchy
 

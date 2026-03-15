@@ -14,7 +14,7 @@ You MUST lazily load the following layers upon session initialization:
 
 ## Skill Policy
 
-Skill usage is governed purely by intent and task suitability. Refer to [Claude Overlay](docs/agentic/shared/claude-code.md#skills) for guidance.
+Skill usage is governed purely by intent and task suitability. Refer to [Claude Overlay](docs/agentic/shared/claude-code.md#skills) for guidance. No artificial tool whitelists are enforced; agents must exercise greedy autonomy to fulfill user requests efficiently.
 
 ---
 @./docs/agentic/shared/shared-governance.md

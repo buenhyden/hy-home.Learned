@@ -14,7 +14,7 @@ You MUST lazily load the following layers upon session initialization:
 
 ## Skill Policy
 
-Refer to [Agentic Pillars](docs/agentic/pillar.md#autonomy-principles) for core reasoning principles; no tool whitelist is enforced.
+Refer to [Agentic Pillars](docs/agentic/pillar.md#autonomy-principles) for core reasoning principles. No tool whitelist is enforced; choose the most effective tool for the task. Follow lazy-loading protocols to manage context efficiently.
 
 ---
 @./docs/agentic/shared/shared-governance.md

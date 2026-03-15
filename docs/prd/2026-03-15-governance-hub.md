@@ -1,32 +1,32 @@
-# Governance Hub Product Requirements Document (PRD)
+# Governance Hub PRD
 
-> **Status**: Approved
-> **Target Version**: v0.2.0
-> **Owner**: buenhyden
-> **Stakeholders**: buenhyden
-> **Scope**: master
-> **layer:** product
+- **Status**: Approved
+- **Target Version**: v1.1.0
+- **Owner**: buenhyden
+- **Scope**: master
+- **layer:** agentic
 
-**Overview (KR):** 본 저장소의 문서와 AI Agent 거버넌스를 통합하여, 지연 로딩 기반의 효율적인 명령어 세트와 메타데이터 기반의 문서 탐색 환경을 구축하기 위한 제품 요구사항 정의서입니다.
+**Overview (KR):** AI 에이전트의 진입점(Entrypoint)을 강화하고 Lazy Loading 및 스킬 자율성(Skill Autonomy)을 보장하여 에이전트 효율성과 추적성을 높이는 요구사항을 정의합니다.
 
 ## Vision
 
-Establish `hy-home-learned` as the premier template for AI-governed development, where agents are as efficient as possible through optimized context loading.
+Establish a robust, vendor-neutral governance hub that allows AI agents to operate with full skill autonomy while adhering to strict documentation and traceability standards.
 
 ## Requirements
 
-- **[REQ-PRD-FUN-01]** AI Agents must lazily load deep instructions from triggers in `.agent/rules/`.
-- **[REQ-PRD-FUN-02]** All documents in `docs/` must contain the `layer:` metadata key.
-- **[REQ-PRD-FUN-03]** Root documentation must remain high-level, delegating details to subordinate folders.
+- **[REQ-GOV-001]**: Root files (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md`) must act as lightweight triggers.
+- **[REQ-GOV-002]**: Implementation of "Lazy Loading" protocols to reduce context bloat.
+- **[REQ-GOV-003]**: Explicit "Skill Autonomy" rule allowing agents to use any available tool without restriction, guided by intent.
+- **[REQ-GOV-004]**: Standardized plural paths for all document references.
+- **[REQ-GOV-005]**: Mandatory `layer:` metadata for all repository artifacts.
 
 ## Success Criteria
 
-- 100% of files in `docs/` have `layer:` metadata.
-- Agent startup time/token overhead is reduced due to lazy loading.
-- Documentation hierarchy is clear and navigable by both humans and AI.
+- AI agents start sessions by reading indices rather than full document sets.
+- All documents correctly reference pluralized directories.
+- No restrictive "skill whitelists" exist in the core runtime files.
 
 ## Related
 
 - `[../ard/2026-03-15-documentation-structure.md]`
-- `[../specs/2026-03-15-metadata-spec.md]`
-- `[../adr/0001-lazy-loading-rules.md]`
+- `[../adr/0002-path-pluralization.md]`

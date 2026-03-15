@@ -33,7 +33,7 @@ This file contains Claude-specific operating detail. The root
 ## Skills
 
 - Prefer the repository skill registry and [Agentic Docs](../docs/agentic/README.md) before inventing an ad-hoc workflow.
-- Do not limit skill choice unless a task explicitly requires a narrower path. Agents must choose the skill that best fits the intended purpose.
+- Do not limit skill choice. Agents MUST exercise greedy autonomy to select the most effective tool for the task based on intent.
 
 ---
 

@@ -1,49 +1,54 @@
-# Documentation Hub Architecture Reference Document
+# Documentation Structure ARD
 
 - **Status**: Approved
 - **Owner**: buenhyden
 - **Scope**: master
 - **layer:** common
 - **PRD Reference**: `[../prd/2026-03-15-governance-hub.md]`
-- **ADR References**: `[../adr/0001-lazy-loading-rules.md]`
+- **ADR References**: `[../adr/0002-path-pluralization.md]`
 
-**Overview (KR):** 본 저장소의 문서 구조를 4계층(Level 0-3)으로 정의하고, 각 문서의 역할과 위치를 명확히 하여 AI와 사람이 효율적으로 협업할 수 있는 구조를 설명합니다.
+**Overview (KR):** 프로젝트의 문서 계층 구조와 표준화된 메타데이터 형식을 정의하여, AI 에이전트와 인간 협업자가 일관된 방식으로 문서를 관리할 수 있도록 합니다.
 
 ## Summary
 
-This ARD defines the global documentation hierarchy for `hy-home-learned`, ensuring a standardized path from high-level policy to low-level implementation.
+This document defines the canonical directory structure and metadata requirements for all artifacts in this repository as of March 2026.
 
 ## Boundaries
 
-- **Owns**: Directory structure under `docs/` and root `.md` files.
-- **Consumes**: Metadata rules and agent instruction triggers.
-- **Does Not Own**: External third-party documentation.
+- **Owns**: Directory naming conventions and hierarchy within `docs/` and root.
+- **Consumes**: Requirements from `AGENTS.md` regarding lazy loading.
+- **Does Not Own**: Individual content within specific domain documents.
 
 ## Ownership
 
 - **Primary owner**: buenhyden
-- **Primary artifacts**: `docs/`, `ARCHITECTURE.md`, `README.md`
+- **Primary artifacts**: `[docs/]`, `[templates/]`
 - **Operational evidence**: `N/A`
 
-## 1. Component Architecture
+## 4. Architecture & Tech Stack Decisions
 
-The documentation is organized into 4 logical tiers:
+### 4.1 Component Architecture
 
-1. **Level 0 (Root)**: High-level entry points (`README.md`, `ARCHITECTURE.md`).
-2. **Level 1 (Indices)**: Governance and operational indices (`OPERATIONS.md`, `docs/agentic/README.md`).
-3. **Level 2 (Management)**: Standards and protocols (`docs/agentic/standards/`).
-4. **Level 3 (Execution)**: Temporal artifacts for specific tasks (`docs/specs/`, `docs/plans/`, `docs/adr/`).
+Standardized plural paths for documentation categories:
 
-## 10. Source-of-Truth Map
+- `docs/adr/`: Architecture Decision Records.
+- `docs/ard/`: Architecture Reference Documents.
+- `docs/prd/`: Product Requirements Documents.
+- `docs/specs/`: Technical Specifications.
+- `docs/plans/`: Execution and Implementation Plans.
+- `docs/runbooks/`: Operational and Maintenance Runbooks.
+- `docs/operations/incidents/`: Live incident records.
+- `docs/operations/postmortems/`: Post-incident blameless analysis.
 
-| Scope   | Canonical Document                            | Role                             |
-| ------- | --------------------------------------------- | -------------------------------- |
-| master  | `ARCHITECTURE.md`                             | Top-level architecture authority |
-| domain  | `docs/adr/`                                   | Implementation decisions          |
-| feature | `docs/specs/`                                 | Implementation detail            |
+### 4.2 Metadata Standard
+
+Every markdown file MUST include high-level metadata:
+
+- **`layer:`**: Specifies the functional layer (e.g., `common`, `architecture`, `backend`, `frontend`, `infra`, `mobile`, `product`, `qa`, `security`).
+- **Placement**: Usually as a top-level block quote or in YAML frontmatter.
 
 ## Related
 
 - `[../prd/2026-03-15-governance-hub.md]`
-- `[../specs/2026-03-15-metadata-spec.md]`
-- `[../adr/0001-lazy-loading-rules.md]`
+- `[../specs/2026-03-15-metadata-hardening.md]`
+- `[../adr/0002-path-pluralization.md]`

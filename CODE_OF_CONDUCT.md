@@ -1,7 +1,6 @@
 # Contributor Covenant Code of Conduct
 
 > **layer:** common
-> **layer:** common
 
 ## Our Pledge
 

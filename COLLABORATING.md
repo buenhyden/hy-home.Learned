@@ -1,7 +1,6 @@
 # Collaborating in this Framework
 
 > **layer:** common
-> **layer:** common
 
 ## Establishing Agreements
 
@@ -48,7 +47,7 @@ If an AI Agent hallucinates or gets stuck in a loop:
 
 ## 5. Evolving the Rules (Collaborating on Standards)
 
-Standard Agent Rules live in `.agent/rules/`. Project-specific context lives in `docs/guides/`.
+Standard Agent Rules live in `.agent/rules/`. Project-specific context lives in `docs/runbooks/` or dedicated guides.
 
 1. **Project-Specific Overrides**: Humans can define overrides to global `.agent/rules/` within specific `docs/guides/`.
 2. **Global Rule Updates**: If a global standard needs to evolve, humans must update the corresponding markdown file in `.agent/rules/` or the authorized detail layer in `docs/agentic/` to ensure all future Agents act upon the new intent.

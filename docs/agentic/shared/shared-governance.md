@@ -49,7 +49,7 @@ independent of vendor or runtime.
 - [ARDs](../../ard/) for system structure and domain modeling
 - [PRDs](../../prd/) for requirements and success metrics
 - [Specs](../../specs/) for implementation contracts
-- [Plans](../../plan/) for active execution plans
+- [Plans](../../plans/) for active execution plans
 - [Runbooks](../../runbooks/) for operational procedures
 - [Operations](../../operations/) for incidents and postmortems
 - [Agentic](../README.md) for AI instructions and governance
