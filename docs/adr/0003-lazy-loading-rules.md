@@ -1,9 +1,10 @@
-# ADR 0001: Lazy-Loading Agent Rules
+# ADR 0003: Lazy-Loading Agent Rules
 
-- **Status:** Accepted
-- **Date:** 2026-03-15
-- **Scope:** master
-- **layer:** agentic
+> **Status:** Accepted
+> **Date:** 2026-03-15
+> **Scope:** master
+> **layer:** agentic
+
 - **Authors:** buenhyden
 - **Deciders:** buenhyden
 
@@ -27,6 +28,6 @@ Current agent rules in `.agent/rules/` are flat and can lead to context bloat if
 
 ## Related
 
-- `[../ard/2026-03-15-documentation-structure.md]`
+- `[../ard/0001-documentation-hub-architecture.md]`
 - `[../prd/2026-03-15-governance-hub.md]`
-- `[../specs/2026-03-15-metadata-spec.md]`
+- `[../specs/2026-03-15-metadata-and-trigger-spec.md]`

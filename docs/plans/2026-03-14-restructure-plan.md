@@ -28,6 +28,12 @@ Fragmented documentation and incorrect structural interpretation required a pivo
 - [x] Update central navigation in `docs/README.md`.
 - [x] Cleanup obsolete root files and directories.
 
+## References
+
+- `[../prd/documentation-system-prd.md]`
+- `[../specs/2026-03-14-documentation-spec.md]`
+- `[../ard/0001-documentation-hub-architecture.md]`
+
 ---
 
 _Last Updated: March 2026_

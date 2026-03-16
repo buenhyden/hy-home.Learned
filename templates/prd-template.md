@@ -35,18 +35,16 @@ layer: '<layer>'
 ---
 ```
 
-## H1 and Metadata
-
 # [Feature or System Name] Product Requirements Document (PRD)
 
-> **Status**: [Approved | Superseded | Deprecated]
-> **Target Version**: [v1.0.0]
-> **Owner**: [Repository Owner]
-> **Stakeholders**: [Repository Owner, Frontend Engineer]
-> **Scope**: [master | domain | historical]
+> **Status:** [Approved | Superseded | Deprecated]
+> **Target Version:** [v1.0.0]
+> **Owner:** [Repository Owner]
+> **Stakeholders:** [Repository Owner, Frontend Engineer]
+> **Scope:** [master | domain | historical]
 > **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
-> **Parent Epic**: [N/A or parent PRD] (Optional)
-> **Parent Master PRD**: `[./system-master-prd.md]` (Optional for `domain`)
+> **Parent Epic:** [N/A or parent PRD] (Optional)
+> **Parent Master PRD:** `[./system-master-prd.md]` (Optional for `domain`)
 
 **Overview (KR):** [Write a 1-2 sentence Korean summary of the product intent, the problem space, and why this document matters.]
 

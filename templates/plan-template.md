@@ -36,14 +36,12 @@ layer: '<layer>'
 ---
 ```
 
-## H1 and Metadata
-
 # [Feature or Component] Plan
 
-> **Status**: [Planned | In Progress | Completed | Superseded | Deprecated]
-> **Scope**: [master | domain | historical]
+> **Status:** [Planned | In Progress | Completed | Superseded | Deprecated]
+> **Scope:** [master | domain | historical]
 > **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
-> **Parent Master Plan**: `[./YYYY-MM-DD-system-master-plan.md]` (Optional for `domain`)
+> **Parent Master Plan:** `[./YYYY-MM-DD-system-master-plan.md]` (Optional for `domain`)
 
 **Overview (KR):** [Write a 1-2 sentence Korean summary of why this work exists, where it sits in the document hierarchy, and what this plan is trying to complete.]
 
@@ -74,8 +72,8 @@ Use either a phase list or a traceability table.
 
 List the commands, manual checks, or evidence collection steps required before the work can be considered complete.
 
-- `[VAL-001]` [Verification step]
-- `[VAL-002]` [Verification step]
+- `[VAL-PLN-001]` [Verification step]
+- `[VAL-PLN-002]` [Verification step]
 
 ## References
 

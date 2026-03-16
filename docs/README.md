@@ -11,7 +11,7 @@ This directory is the long-term, human-readable knowledge base for the `hy-home-
 ## Knowledge Map (by Category)
 
 - [ADRs](adr/0001-documentation-restructuring.md) for architecture decisions
-- [ARDs](ard/system-structure.md) for system blueprints
+- [ARDs](ard/0001-documentation-hub-architecture.md) for system blueprints
 - [PRDs](prd/documentation-system-prd.md) for product requirements
 - [Specs](specs/2026-03-14-documentation-spec.md) for implementation contracts
 - [Plans](plans/2026-03-14-restructure-plan.md) for execution records

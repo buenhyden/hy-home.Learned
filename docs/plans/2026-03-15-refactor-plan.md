@@ -16,11 +16,11 @@
 
 ## Verification
 
-- `[VAL-001]` Grep for `layer:` in all `docs/` files.
-- `[VAL-002]` Verify links in `.agent/rules/` point to existing files in `docs/agentic/`.
+- `[VAL-REF-001]` Grep for `layer:` in all `docs/` files.
+- `[VAL-REF-002]` Verify links in `.agent/rules/` point to existing files in `docs/agentic/`.
 
 ## References
 
 - `[../prd/2026-03-15-governance-hub.md]`
-- `[../specs/2026-03-15-metadata-spec.md]`
-- `[../ard/2026-03-15-documentation-structure.md]`
+- `[../specs/2026-03-15-metadata-and-trigger-spec.md]`
+- `[../ard/0001-documentation-hub-architecture.md]`

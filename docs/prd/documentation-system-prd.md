@@ -38,6 +38,12 @@ Establish a robust, template-driven documentation hierarchy that facilitates rap
 - Documentation files are correctly placed within folders.
 - No loose category-type files exist in the `docs/` root (except README and agentic).
 
+## Related
+
+- `[../ard/0001-documentation-hub-architecture.md]`
+- `[../specs/2026-03-14-documentation-spec.md]`
+- `[../adr/0001-documentation-restructuring.md]`
+
 ---
 
 _Last Updated: March 2026_

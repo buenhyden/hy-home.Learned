@@ -28,8 +28,8 @@ This plan covers the mechanical work of moving files, updating cross-references,
 
 ## Verification
 
-- `[VAL-001]` Structural check of `docs/`.
-- `[VAL-002]` Link verification in root MD files.
+- `[VAL-MIG-001]` Structural check of `docs/`.
+- `[VAL-MIG-002]` Link verification in root MD files.
 
 ## References
 

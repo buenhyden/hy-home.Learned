@@ -38,10 +38,10 @@ layer: '<layer>'
 
 # Runbook: [Service or Workflow Name]
 
-- **Status**: [Active | Deprecated | Archived]
-- **Owner**: [Repository Owner or Responsible Maintainer]
-- **Last Reviewed**: [YYYY-MM-DD or `N/A`]
-- **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
+> **Status:** Active
+> **Owner:** [Repository Owner]
+> **Last Reviewed:** YYYY-MM-DD
+> **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
 
 **Overview (KR):** [Write a 1-2 sentence Korean summary of the operational problem this runbook addresses and when maintainers should use it.]
 

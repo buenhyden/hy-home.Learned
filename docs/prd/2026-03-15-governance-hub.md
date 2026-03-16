@@ -28,5 +28,5 @@ Establish a robust, vendor-neutral governance hub that allows AI agents to opera
 
 ## Related
 
-- `[../ard/2026-03-15-documentation-structure.md]`
+- `[../ard/0001-documentation-hub-architecture.md]`
 - `[../adr/0002-path-pluralization.md]`

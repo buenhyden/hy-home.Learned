@@ -10,14 +10,17 @@ tags: ['api', 'contract', 'specification']
 layer: '<layer>'
 ---
 
-# API Specification Template ([API Name / Feature])
+# [API Name / Feature] API Specification
 
-> **Status**: Draft / Proposed / Approved / Deprecated
-> **Version**: v1.x.x
-> **Base URL**: `https://api.example.com/v1`
-> **Related PRD**: [Link to PRD]
-> **Related Technical Spec**: [Link to Tech Spec]
-> **Related ADR**: [Link to ADR]
+> **Status:** [Draft | Proposed | Approved | Deprecated]
+> **Version:** v1.x.x
+> **Base URL:** `https://api.example.com/v1`
+> **layer:** [backend | common]
+> **Related PRD:** [Link to PRD]
+> **Related Technical Spec:** [Link to Tech Spec]
+> **Related ADR:** [Link to ADR]
+
+**Overview (KR):** [구현할 API의 목적, 주요 소비자, 그리고 해당 인터페이스가 해결하려는 핵심 비즈니스 로직에 대한 요약입니다.]
 
 > **Purpose**: Define the exact contract, data models, and security requirements for an API feature before implementation begins. This document must be approved by human developers before Coder Agents execute it.
 

@@ -37,17 +37,15 @@ layer: '<layer>'
 ---
 ```
 
-## H1 and Metadata
-
 # [Feature Name] Specification
 
-> **Status**: [Canonical | Implementation | Validated | Superseded | Deprecated]
-> **Scope**: [master | domain | historical]
+> **Status:** [Canonical | Implementation | Validated | Superseded | Deprecated]
+> **Scope:** [master | domain | historical]
 > **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
-> **Parent Master Spec**: `[./YYYY-MM-DD-system-master-spec.md]` (Optional for `domain`)
-> **Related PRD**: `[../prd/feature-or-system-prd.md]`
-> **Related Architecture**: `[../ard/system-or-domain-ard.md]`
-> **Decision Record**: `[../adr/NNNN-decision.md]` (Optional)
+> **Parent Master Spec:** `[./YYYY-MM-DD-system-master-spec.md]` (Optional for `domain`)
+> **Related PRD:** `[../prd/feature-or-system-prd.md]`
+> **Related Architecture:** `[../ard/system-or-domain-ard.md]`
+> **Decision Record:** `[../adr/NNNN-decision.md]` (Optional)
 
 **Overview (KR):** [Write a 1-2 sentence Korean summary of the technical baseline, the implementation boundary, and the main risk or contract this spec addresses.]
 

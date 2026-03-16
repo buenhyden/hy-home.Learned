@@ -29,6 +29,6 @@ To build a zero-drift, highly precise AI governance system where agent instructi
 
 ## Related
 
-- `[../ard/0001-documentation-hierarchy.md]`
+- `[../ard/0001-documentation-hub-architecture.md]`
 - `[../adr/0001-documentation-restructuring.md]`
 - `[../specs/2026-03-14-lazy-loading-implementation.md]`

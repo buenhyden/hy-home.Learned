@@ -39,11 +39,14 @@ layer: '<layer>'
 
 # [System or Domain Name] Architecture Reference Document
 
-- **Status**: [Approved | Superseded | Deprecated]
-- **Owner**: [Repository Owner]
-- **Scope**: [master | domain | historical]
-- **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
-- **Parent Master ARD**: `[../ard/system-master-ard.md]` (Optional for `master`)
+> **Status:** [Approved | Superseded | Deprecated]
+> **Date:** YYYY-MM-DD
+> **Owner:** [Repository Owner]
+> **Scope:** [master | domain | historical]
+> **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
+
+**Overview (KR):** [Write a 1-2 sentence Korean summary of the architecture boundary, the system role, and how it relates to the wider platform.]
+
 - **PRD Reference**: `[../prd/feature-or-system-prd.md]`
 - **ADR References**: `[../adr/NNNN-decision.md]`, `[../adr/NNNN-decision-2.md]`
 

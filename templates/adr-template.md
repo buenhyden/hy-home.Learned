@@ -35,16 +35,14 @@ layer: '<layer>'
 
 Use frontmatter when the surrounding doc set already uses it. Skip it when the active document family is intentionally compact.
 
-## H1 and Metadata
-
 # ADR NNNN: [Short Decision Title]
 
-- **Status:** [Accepted | Superseded | Deprecated]
-- **Date:** YYYY-MM-DD
-- **Scope:** [master | domain | historical]
-- **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
-- **Authors:** [Optional]
-- **Deciders:** [Optional]
+> **Status:** [Accepted | Superseded | Deprecated]
+> **Date:** YYYY-MM-DD
+> **Scope:** [master | domain | historical]
+> **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
+> **Authors:** [Optional]
+> **Deciders:** [Optional]
 
 **Overview (KR):** [Write a 1-2 sentence Korean summary of the decision intent, why it matters now, and what boundary it affects.]
 

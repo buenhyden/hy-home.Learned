@@ -1,9 +1,9 @@
 # ADR 0002: Path Pluralization Standard
 
-- **Status:** Accepted
-- **Date:** 2026-03-15
-- **Scope:** master
-- **layer:** common
+> **Status:** Accepted
+> **Date:** 2026-03-15
+> **Scope:** master
+> **layer:** common
 
 **Overview (KR):** 프로젝트 문서 디렉토리 경로를 복수형(plural)으로 표준화하여 일관성을 확보하고 탐색 효율성을 높이는 결정입니다.
 
@@ -30,5 +30,5 @@ The repository previously had a mix of singular and plural directory names for d
 
 ## Related
 
-- `[../ard/2026-03-15-documentation-structure.md]`
+- `[../ard/0001-documentation-hub-architecture.md]`
 - `[../plans/2026-03-15-refactor-execution.md]`

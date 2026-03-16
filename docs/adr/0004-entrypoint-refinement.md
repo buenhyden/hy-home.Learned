@@ -1,9 +1,10 @@
-# ADR 0002: AI Entrypoint Refinement
+# ADR 0004: AI Entrypoint Refinement
 
-- **Status:** Accepted
-- **Date:** 2026-03-15
-- **Scope:** master
-- **layer:** agentic
+> **Status:** Accepted
+> **Date:** 2026-03-15
+> **Scope:** master
+> **layer:** agentic
+
 - **Authors:** buenhyden
 - **Deciders:** buenhyden
 
@@ -28,6 +29,6 @@ Current root entrypoints are primarily informational. While they mention lazy lo
 
 ## Related
 
-- `[../ard/2026-03-15-documentation-structure.md]`
-- `[../adr/0001-lazy-loading-rules.md]`
+- `[../ard/0001-documentation-hub-architecture.md]`
+- `[../adr/0003-lazy-loading-rules.md]`
 - `[../prd/2026-03-15-entrypoint-refinement.md]`

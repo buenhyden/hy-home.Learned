@@ -1,8 +1,9 @@
 # QA & Security Guide
 
-_Description: This document defines the team's quantitative and qualitative standards for testing, code quality, and application security, as per the `0700-testing-and-qa-standard.md` and `2200-security-pillar` rules._
+> **Status:** Active
+> **layer:** [qa | security | common]
 
-- **layer:** [qa | security | common]
+**Overview (KR):** [테스트 범위, 품질 기준, 그리고 보안 정책에 대한 요약입니다. 이 가이드는 CI/CD 파이프라인의 핵심 검증 로직으로 활용됩니다.]
 
 ---
 

@@ -8,13 +8,21 @@
 
 ## Context & Introduction
 
-This plan executes the decisions recorded in `ADR 0002` and the requirements in `Governance Hub PRD`. It focuses on direct file modifications to achieve the March 2026 documentation hardening baseline.
+This plan executes the decisions recorded in Governance Hub PRD. It focuses on direct file modifications to achieve the March 2026 documentation hardening baseline.
+
+## Proposed Changes
+
+### Documentation (docs/)
+
+#### [MODIFY] [AGENTS.md](../../AGENTS.md)
+
+- Standardize Level 0 rules.
+- Add explicit lazy loading trigger points.
 
 ## Tasks
 
-### Phase 1: Artifact Creation (Mandatory)
+1. [x] Create ADR-0004 for entrypoint refinement.
 
-- [x] Create `ADR 0002` for path pluralization.
 - [x] Create Documentation Structure `ARD`.
 - [x] Create Governance Hub `PRD`.
 - [ ] Create Metadata Hardening `Spec`.
@@ -37,12 +45,12 @@ This plan executes the decisions recorded in `ADR 0002` and the requirements in 
 
 ## Verification
 
-- `[VAL-001]` All paths in `README.md` structure tree exist on disk.
-- `[VAL-002]` `grep -r "docs/plan/" .` returns zero results.
-- `[VAL-003]` `AGENTS.md` contains explicit lazy loading and skill autonomy instructions.
+- `[VAL-EXE-001]` All paths in `README.md` structure tree exist on disk.
+- `[VAL-EXE-002]` `grep -r "docs/plan/" .` returns zero results.
+- `[VAL-EXE-003]` `AGENTS.md` contains explicit lazy loading and skill autonomy instructions.
 
 ## Related
 
 - `[../prd/2026-03-15-governance-hub.md]`
-- `[../ard/2026-03-15-documentation-structure.md]`
+- `[../ard/0001-documentation-hub-architecture.md]`
 - `[../adr/0002-path-pluralization.md]`

@@ -27,5 +27,5 @@ Make `hy-home-learned` the gold standard for agent entrypoint design, where ever
 
 ## Related
 
-- `[../ard/2026-03-15-documentation-structure.md]`
-- `[../adr/0002-entrypoint-refinement.md]`
+- `[../ard/0001-documentation-hub-architecture.md]`
+- `[../adr/0004-entrypoint-refinement.md]`

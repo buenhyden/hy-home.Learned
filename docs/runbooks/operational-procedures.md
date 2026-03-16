@@ -27,6 +27,12 @@ Procedure for service changes.
 2. Trigger deployment.
 3. Monitor health.
 
+## Canonical References
+
+- `[../ard/0001-documentation-hub-architecture.md]`
+- `[../prd/documentation-system-prd.md]`
+- `[../specs/2026-03-14-documentation-spec.md]`
+
 ---
 
 ## [Layer: Incident] Incident Response SOP
