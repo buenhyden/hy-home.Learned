@@ -20,7 +20,7 @@ layer: '<layer>'
 > **Related Technical Spec:** [Link to Tech Spec]
 > **Related ADR:** [Link to ADR]
 
-**Overview (KR):** [구현할 API의 목적, 주요 소비자, 그리고 해당 인터페이스가 해결하려는 핵심 비즈니스 로직에 대한 요약입니다.]
+**Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 > **Purpose**: Define the exact contract, data models, and security requirements for an API feature before implementation begins. This document must be approved by human developers before Coder Agents execute it.
 

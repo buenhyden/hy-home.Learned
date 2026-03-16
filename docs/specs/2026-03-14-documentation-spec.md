@@ -4,7 +4,7 @@ status: 'Canonical'
 version: '1.0'
 owner: 'buenhyden'
 scope: 'master'
-prd_reference: '../prd/documentation-system-prd.md'
+prd_reference: '../prd/0000-documentation-hub-prd.md'
 arch_reference: '../ard/0001-documentation-hub-architecture.md'
 tags: ['spec','implementation']
 layer: 'common'
@@ -15,7 +15,7 @@ layer: 'common'
 > **Status**: Canonical
 > **Scope**: master
 > **layer**: common
-> **Related PRD**: `../prd/documentation-system-prd.md`
+> **Related PRD**: `../prd/0000-documentation-hub-prd.md`
 > **Related Architecture**: `../ard/0001-documentation-hub-architecture.md`
 
 **Overview (KR):** 폴더링 기반의 문서 구조를 구현하기 위한 파일 배치 규격, 메타데이터 표준 및 네비게이션 연결 방식을 정의하는 기술 명세입니다.
@@ -39,7 +39,7 @@ layer: 'common'
 
 ## Related
 
-- `[../prd/documentation-system-prd.md]`
+- `[../prd/0000-documentation-hub-prd.md]`
 - `[../ard/0001-documentation-hub-architecture.md]`
 - `[../adr/0001-documentation-restructuring.md]`
 

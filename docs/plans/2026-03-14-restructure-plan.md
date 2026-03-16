@@ -30,7 +30,7 @@ Fragmented documentation and incorrect structural interpretation required a pivo
 
 ## References
 
-- `[../prd/documentation-system-prd.md]`
+- `[../prd/0000-documentation-hub-prd.md]`
 - `[../specs/2026-03-14-documentation-spec.md]`
 - `[../ard/0001-documentation-hub-architecture.md]`
 

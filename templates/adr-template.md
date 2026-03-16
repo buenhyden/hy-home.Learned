@@ -44,7 +44,7 @@ Use frontmatter when the surrounding doc set already uses it. Skip it when the a
 > **Authors:** [Optional]
 > **Deciders:** [Optional]
 
-**Overview (KR):** [Write a 1-2 sentence Korean summary of the decision intent, why it matters now, and what boundary it affects.]
+**Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 ## Required Core Sections
 

@@ -47,7 +47,7 @@ layer: '<layer>'
 > **Related Architecture:** `[../ard/system-or-domain-ard.md]`
 > **Decision Record:** `[../adr/NNNN-decision.md]` (Optional)
 
-**Overview (KR):** [Write a 1-2 sentence Korean summary of the technical baseline, the implementation boundary, and the main risk or contract this spec addresses.]
+**Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 ## Required Core Sections
 

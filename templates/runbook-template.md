@@ -43,7 +43,7 @@ layer: '<layer>'
 > **Last Reviewed:** YYYY-MM-DD
 > **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
 
-**Overview (KR):** [Write a 1-2 sentence Korean summary of the operational problem this runbook addresses and when maintainers should use it.]
+**Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 ## Required Core Sections
 

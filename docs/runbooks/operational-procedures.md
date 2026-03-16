@@ -5,15 +5,13 @@ owner: 'buenhyden'
 tags:
   - runbook
   - operation
-layer: 'common'
 ---
 
 # Runbook: Global Operational Procedures
 
-- **Status**: Active
-- **Owner**: buenhyden
-- **Last Reviewed**: 2026-03-14
-- **layer**: common
+> **Status:** Active
+> **Owner:** buenhyden
+> **layer:** common
 
 **Overview (KR):** 시스템 운영 전반에 걸친 공통 절차와 인시던트 대응 표준을 정의한 통합 런북입니다.
 
@@ -30,7 +28,7 @@ Procedure for service changes.
 ## Canonical References
 
 - `[../ard/0001-documentation-hub-architecture.md]`
-- `[../prd/documentation-system-prd.md]`
+- `[../prd/0000-documentation-hub-prd.md]`
 - `[../specs/2026-03-14-documentation-spec.md]`
 
 ---

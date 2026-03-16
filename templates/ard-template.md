@@ -45,12 +45,12 @@ layer: '<layer>'
 > **Scope:** [master | domain | historical]
 > **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
 
-**Overview (KR):** [Write a 1-2 sentence Korean summary of the architecture boundary, the system role, and how it relates to the wider platform.]
+**Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 - **PRD Reference**: `[../prd/feature-or-system-prd.md]`
 - **ADR References**: `[../adr/NNNN-decision.md]`, `[../adr/NNNN-decision-2.md]`
 
-**Overview (KR):** [Write a 1-2 sentence Korean summary of the architecture boundary, the system role, and how it relates to the wider platform.]
+**Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 ## Required Core Sections
 

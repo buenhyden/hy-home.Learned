@@ -43,7 +43,7 @@ layer: '<layer>'
 > **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
 > **Parent Master Plan:** `[./YYYY-MM-DD-system-master-plan.md]` (Optional for `domain`)
 
-**Overview (KR):** [Write a 1-2 sentence Korean summary of why this work exists, where it sits in the document hierarchy, and what this plan is trying to complete.]
+**Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 ## Required Core Sections
 

@@ -46,7 +46,7 @@ layer: '<layer>'
 > **Parent Epic:** [N/A or parent PRD] (Optional)
 > **Parent Master PRD:** `[./system-master-prd.md]` (Optional for `domain`)
 
-**Overview (KR):** [Write a 1-2 sentence Korean summary of the product intent, the problem space, and why this document matters.]
+**Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 ## Required Core Sections
 
