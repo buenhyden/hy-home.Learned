@@ -35,6 +35,11 @@ layer: '<layer>'
 
 # Postmortem: [Short Incident Title]
 
+> **Status:** [Resolved | Archived]
+> **Severity:** [SEV-1 | SEV-2 | SEV-3]
+> **Incident ID:** `INC-YYYYMMDD-XXX`
+> **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
+
 **Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 ## Required Core Sections

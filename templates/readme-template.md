@@ -2,6 +2,9 @@
 
 > Use this template when creating README.md for new projects or major features.
 
+> **Status:** Active
+> **layer:** common
+
 ---
 
 # {Project Name}
@@ -111,12 +114,12 @@ This project follows an AI-Agent-managed, Spec-Driven Development structure:
 
 Ensure you read the governance files before contributing or generating code via AI Agents:
 
-- [🤖 Multi-Agent Governance](./AGENTS.md)
-- [🏛️ System Architecture](./ARCHITECTURE.md)
-- [⚙️ Operations Baseline](./OPERATION.md)
-- [📝 Specifications & API Contracts](./specs/)
-- [📚 Product & Arch Docs](./docs/)
-- [🤝 Contributor Guide](./CONTRIBUTING.md)
+- [🤖 Multi-Agent Governance](../AGENTS.md)
+- [🏛️ System Architecture](../ARCHITECTURE.md)
+- [⚙️ Operations Baseline](../OPERATIONS.md)
+- [📝 Specifications & API Contracts](../docs/specs/)
+- [📚 Product & Arch Docs](../docs/prd/)
+- [🤝 Contributor Guide](../CONTRIBUTING.md)
 
 ## Testing
 
@@ -159,8 +162,8 @@ docker run -p 3000:3000 --env-file .env {project-name}:latest
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-See [COLLABORATING.md](./COLLABORATING.md) and [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
+See [COLLABORATING.md](../COLLABORATING.md) and [CONTRIBUTING.md](../CONTRIBUTING.md) for detailed guidelines.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md) or [LICENSE](../LICENSE) file for details.

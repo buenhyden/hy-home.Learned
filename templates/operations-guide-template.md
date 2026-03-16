@@ -1,9 +1,9 @@
 # Operations Blueprint (OPERATION.md)
 
-_Target Location: `OPERATION.md` (Project Root)_
-_Description: This document defines the project's operational baseline, including environments, deployment strategies, observability, and continuity plans, as per the `0301-operations-blueprint-standard.md` rule._
+> **Status:** Active
+> **layer:** infra
 
-- **layer:** [infra]
+**Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 ---
 

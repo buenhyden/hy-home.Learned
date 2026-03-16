@@ -63,7 +63,7 @@ The flow of authority follows:
 
 ## Related
 
-- `[../prd/2026-03-15-governance-hub.md]`
+- `[../prd/0003-governance-hub.md]`
 - `[../specs/2026-03-14-documentation-spec.md]`
 - `[../adr/0001-documentation-restructuring.md]`
 - `[../adr/0003-lazy-loading-rules.md]`

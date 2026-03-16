@@ -1,8 +1,9 @@
 # Development Process & Collaboration Guide
 
-_Description: This document defines the team's working agreements, development processes, and collaboration SLAs as per the 0202-collaboration-and-sla-standard.md rules._
+> **Status:** Active
+> **layer:** common
 
-- **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
+**Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 
 ---
 

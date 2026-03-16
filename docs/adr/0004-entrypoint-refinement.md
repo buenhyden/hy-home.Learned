@@ -31,4 +31,4 @@ Current root entrypoints are primarily informational. While they mention lazy lo
 
 - `[../ard/0001-documentation-hub-architecture.md]`
 - `[../adr/0003-lazy-loading-rules.md]`
-- `[../prd/2026-03-15-entrypoint-refinement.md]`
+- `[../prd/0002-entrypoint-refinement.md]`

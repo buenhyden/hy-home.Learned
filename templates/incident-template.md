@@ -41,7 +41,10 @@ layer: '<layer>'
 
 # Active Incident: INC-YYYYMMDD-XXX / [Short Incident Title]
 
-**Postmortem Link**: [N/A or `../postmortems/YYYY-MM-DD-incident-postmortem.md`]
+> **Status:** [Investigating | Identified | Mitigating | Monitoring | Resolved | Closed]
+> **Severity:** [SEV-1 | SEV-2 | SEV-3]
+> **Postmortem Link:** [N/A or `../postmortems/YYYY-MM-DD-incident-postmortem.md`]
+> **layer:** [common | architecture | backend | frontend | infra | mobile | product | qa | security]
 
 **Overview (KR):** [구현할 기능/결정사항의 핵심 가치와 비즈니스 목적을 한 문장으로 요약합니다.]
 

@@ -51,6 +51,6 @@ This plan executes the decisions recorded in Governance Hub PRD. It focuses on d
 
 ## Related
 
-- `[../prd/2026-03-15-governance-hub.md]`
+- `[../prd/0003-governance-hub.md]`
 - `[../ard/0001-documentation-hub-architecture.md]`
 - `[../adr/0002-path-pluralization.md]`
