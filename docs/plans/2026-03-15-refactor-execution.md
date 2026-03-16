@@ -46,11 +46,11 @@ This plan executes the decisions recorded in Governance Hub PRD. It focuses on d
 ## Verification
 
 - `[VAL-EXE-001]` All paths in `README.md` structure tree exist on disk.
-- `[VAL-EXE-002]` `grep -r "docs/plan/" .` returns zero results.
+- `[VAL-EXE-002]` `grep -r "docs/plans/" .` returns zero results.
 - `[VAL-EXE-003]` `AGENTS.md` contains explicit lazy loading and skill autonomy instructions.
 
 ## Related
 
-- `[../prd/0003-governance-hub.md]`
-- `[../ard/0001-documentation-hub-architecture.md]`
+- `[../prd/2026-03-15-governance-hub.md]`
+- `[../ard/2026-03-16-documentation-hub-architecture.md]`
 - `[../adr/0002-path-pluralization.md]`

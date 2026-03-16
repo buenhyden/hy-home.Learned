@@ -15,7 +15,7 @@ The current repository structure has core documentation files in the root and fr
 
 ## Decision
 
-- Adopt a folder-based documentation hierarchy under `docs/` (`ard/`, `adr/`, `prd/`, `specs/`, `plans/`, `runbooks/`, `operations/`).
+- Adopt a folder-based documentation hierarchy under `docs/` (`ard/`, `adr/`, `prd/`, `specs/`, `plan/`, `runbooks/`, `operations/`).
 - Centralize all detailed AI Agent instructions and standards in `docs/agentic/`.
 - Transform `.agent/rules/` into lightweight "trigger" files that lazy-load deep context from `docs/agentic/`.
 - Mandate `layer:` metadata in all documentation files for better context filtering.
@@ -28,6 +28,6 @@ The current repository structure has core documentation files in the root and fr
 
 ## Related
 
-- `[../ard/0001-documentation-hub-architecture.md]`
-- `[../prd/0001-agentic-hub-refinement.md]`
+- `[../ard/2026-03-16-documentation-hub-architecture.md]`
+- `[../prd/2026-03-14-agentic-hub-refinement.md]`
 - `[../specs/2026-03-14-lazy-loading-implementation.md]`

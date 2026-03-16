@@ -63,6 +63,7 @@ Customize the following for your specific project upon cloning.
 
 - **`docs/`**: Holds "Why" and "What" (PRD, ADR, ARD).
 - **`docs/specs/`**: Holds "Exactly How" prior to coding.
+- **`docs/plans/`**: Holds "When" and "Who" during execution.
 - **`docs/runbooks/`**: Holds executable scripts and "What to do when X fails."
 
 ### Extending the Architecture

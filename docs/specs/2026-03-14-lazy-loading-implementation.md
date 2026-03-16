@@ -3,8 +3,8 @@
 > **Status**: Canonical
 > **Scope**: master
 > **layer:** agentic
-> **Related PRD**: `[../prd/0001-agentic-hub-refinement.md]`
-> **Related Architecture**: `[../ard/0001-documentation-hub-architecture.md]`
+> **Related PRD**: `[../prd/2026-03-14-agentic-hub-refinement.md]`
+> **Related Architecture**: `[../ard/2026-03-16-documentation-hub-architecture.md]`
 > **Decision Record**: `[../adr/0001-documentation-restructuring.md]`
 
 **Overview (KR):** AI Agent의 명령어를 작업 상황에 맞춰 동적으로 로드하는 시스템에 대한 기술 사양서입니다. `.agent/rules/`는 트리거 역할만 수행하며, 실제 상세 지침은 `docs/agentic/`에서 로드됩니다.
@@ -48,6 +48,6 @@ This spec defines a **Push-to-Pull** instructional model. Triggers "push" the ag
 
 ## Related
 
-- `[../prd/0001-agentic-hub-refinement.md]`
-- `[../ard/0001-documentation-hub-architecture.md]`
+- `[../prd/2026-03-14-agentic-hub-refinement.md]`
+- `[../ard/2026-03-16-documentation-hub-architecture.md]`
 - `[../adr/0003-lazy-loading-rules.md]`

@@ -23,16 +23,16 @@ Fragmented documentation and incorrect structural interpretation required a pivo
 
 ## 2. Execution Steps
 
-- [x] Create category directories (`adr/`, `ard/`, `prd/`, `specs/`, `plans/`, `runbooks/`, `operations/`).
+- [x] Create category directories (`adr/`, `ard/`, `prd/`, `specs/`, `plan/`, `runbooks/`, `operations/`).
 - [x] Re-format and move content into template-compliant files within folders.
 - [x] Update central navigation in `docs/README.md`.
 - [x] Cleanup obsolete root files and directories.
 
 ## References
 
-- `[../prd/0000-documentation-hub-prd.md]`
+- `[../prd/2026-03-14-documentation-hub-prd.md]`
 - `[../specs/2026-03-14-documentation-spec.md]`
-- `[../ard/0001-documentation-hub-architecture.md]`
+- `[../ard/2026-03-16-documentation-hub-architecture.md]`
 
 ---
 

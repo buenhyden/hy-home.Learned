@@ -30,5 +30,5 @@ The repository previously had a mix of singular and plural directory names for d
 
 ## Related
 
-- `[../ard/0001-documentation-hub-architecture.md]`
+- `[../ard/2026-03-16-documentation-hub-architecture.md]`
 - `[../plans/2026-03-15-refactor-execution.md]`

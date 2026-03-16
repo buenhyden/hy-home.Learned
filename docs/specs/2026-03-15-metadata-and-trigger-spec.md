@@ -3,8 +3,8 @@
 > **Status:** Canonical
 > **Scope:** master
 > **layer:** agentic
-> **Related PRD:** `[../prd/0003-governance-hub.md]`
-> **Related Architecture:** `[../ard/0001-documentation-hub-architecture.md]`
+> **Related PRD:** `[../prd/2026-03-15-governance-hub.md]`
+> **Related Architecture:** `[../ard/2026-03-16-documentation-hub-architecture.md]`
 
 **Overview (KR):** 프로젝트 문서의 `layer:` 메타데이터 표준과 AI Agent 지침 로딩을 위한 트리거(Trigger) 형식을 정의하는 기술 사양서입니다.
 
@@ -57,7 +57,7 @@ grep -r "docs/agentic/" .agent/rules/
 
 - `[../specs/2026-03-14-lazy-loading-implementation.md]`
 - `[../adr/0003-lazy-loading-rules.md]`
-- `[../prd/0003-governance-hub.md]`
+- `[../prd/2026-03-15-governance-hub.md]`
 
 ---
 

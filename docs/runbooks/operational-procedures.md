@@ -27,8 +27,8 @@ Procedure for service changes.
 
 ## Canonical References
 
-- `[../ard/0001-documentation-hub-architecture.md]`
-- `[../prd/0000-documentation-hub-prd.md]`
+- `[../ard/2026-03-16-documentation-hub-architecture.md]`
+- `[../prd/2026-03-14-documentation-hub-prd.md]`
 - `[../specs/2026-03-14-documentation-spec.md]`
 
 ---

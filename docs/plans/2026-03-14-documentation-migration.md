@@ -33,5 +33,5 @@ This plan covers the mechanical work of moving files, updating cross-references,
 
 ## References
 
-- `[../prd/0001-agentic-hub-refinement.md]`
+- `[../prd/2026-03-14-agentic-hub-refinement.md]`
 - `[../specs/2026-03-14-lazy-loading-implementation.md]`

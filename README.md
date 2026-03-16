@@ -27,7 +27,7 @@ This repository is not:
 
 - Spec-driven development workflow anchored in PRDs, specs, and execution plans
 - Agent governance system with personas, rules, workflows, and runtime overlays
-- Lazy-loaded documentation hub for ADRs, ARDs, PRDs, specs, plans, runbooks, and operations
+- Lazy-loaded documentation hub for ADRs, ARDs, PRDs, specs, plan, runbooks, and operations
 - Python-first contributor environment powered by `uv`, Ruff, MyPy, pytest, coverage, and pre-commit
 - Reusable template library for README, ADR, PRD, spec, plan, and runbook authoring
 - Operational baseline documentation and runbooks for deployment, monitoring, and incident response
@@ -154,7 +154,7 @@ hy-home.Learned/
 │   ├── ard/            # Architecture Reference Documents
 │   ├── prd/            # Product Requirements Documents
 │   ├── specs/          # Technical Specifications
-│   ├── plans/          # Execution Plans
+│   ├── plan/           # Execution Plans
 │   ├── runbooks/       # Operational Runbooks
 │   └── operations/     # Incident and Postmortem Records
 ├── examples/           # Example documents showing template usage

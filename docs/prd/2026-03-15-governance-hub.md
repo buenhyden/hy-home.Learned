@@ -1,10 +1,10 @@
-# Governance Hub PRD
+# PRD 0003: Governance Hub
 
-- **Status**: Approved
-- **Target Version**: v1.1.0
-- **Owner**: buenhyden
-- **Scope**: master
-- **layer:** agentic
+> **Status:** Approved
+> **Target Version:** v1.1.0
+> **Owner:** buenhyden
+> **Scope:** master
+> **layer:** agentic
 
 **Overview (KR):** AI 에이전트의 진입점(Entrypoint)을 강화하고 Lazy Loading 및 스킬 자율성(Skill Autonomy)을 보장하여 에이전트 효율성과 추적성을 높이는 요구사항을 정의합니다.
 
@@ -28,5 +28,5 @@ Establish a robust, vendor-neutral governance hub that allows AI agents to opera
 
 ## Related
 
-- `[../ard/0001-documentation-hub-architecture.md]`
+- `[../ard/2026-03-16-documentation-hub-architecture.md]`
 - `[../adr/0002-path-pluralization.md]`

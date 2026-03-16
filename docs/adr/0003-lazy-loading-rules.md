@@ -28,6 +28,6 @@ Current agent rules in `.agent/rules/` are flat and can lead to context bloat if
 
 ## Related
 
-- `[../ard/0001-documentation-hub-architecture.md]`
-- `[../prd/0003-governance-hub.md]`
+- `[../ard/2026-03-16-documentation-hub-architecture.md]`
+- `[../prd/2026-03-15-governance-hub.md]`
 - `[../specs/2026-03-15-metadata-and-trigger-spec.md]`

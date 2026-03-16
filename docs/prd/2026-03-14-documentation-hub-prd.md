@@ -40,7 +40,7 @@ Establish a robust, template-driven documentation hierarchy that facilitates rap
 
 ## Related
 
-- `[../ard/0001-documentation-hub-architecture.md]`
+- `[../ard/2026-03-16-documentation-hub-architecture.md]`
 - `[../specs/2026-03-14-documentation-spec.md]`
 - `[../adr/0001-documentation-restructuring.md]`
 
