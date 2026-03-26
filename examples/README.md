@@ -1,34 +1,41 @@
-# Example Implementations (`examples/`)
+# docs: 프로젝트의 모든 것
 
-This directory holds sample codes, mock configurations, and proof-of-concept setups demonstrating how to use the templates defined in `/templates/`.
+> [!NOTE]
+> All AI agent interactions with this documentation suite must comply with the [Agent Governance Hub](./00.agent-governance/README.md).
 
-## 1. Necessity and Purpose
+여기는 `hy-home.Learned` 프로젝트가 어떻게 돌아가는지, 어떤 고민을 거쳐 지금의 모습이 되었는지를 기록하는 저장소입니다. 기획부터 아키텍처, 실제 구현 작업과 운영 기록까지 모든 정보가 이곳에 모입니다.
 
-This directory is necessary to provide safe, isolated reference implementations without polluting production code or formal specifications.
+## 우리가 문서를 대하는 방식
 
-- Provide humans and AI models with tangible references for how specific components or integrations are expected to work in this architecture.
-- Isolate experimental code from the primary `/src` and specification paths.
+단순히 기록을 남기기 위해 쓰는 문서는 지양합니다. 우리는 다음 가치에 집중합니다.
 
-## 2. Required Content
+1. **이어지는 맥락 (Traceability)**: 기획(`PRD`) 단계의 고민이 아키텍처 결정(`ADR`)을 거쳐 실제 작업(`Task`)까지 어떻게 연결되는지 한눈에 볼 수 있어야 합니다.
+2. **먼저 설계하고 나중에 구현 (Spec-First)**: 무작정 코드부터 짜기보다는, 무엇을 만들고 어떻게 검증할지 명세(`Spec`)를 먼저 고민합니다.
+3. **인간과 AI의 팀플레이**: AI 에이전트와 사람이 같은 구조와 맥락을 공유하며 안전하고 효율적으로 협업할 수 있는 환경을 만듭니다.
 
-Examples must be completely self-contained and should not import live production databases or configurations.
+## 문서의 흐름 (Lifecycle)
 
-| Example File         | Template Used         | Purpose                                                  |
-| -------------------- | --------------------- | -------------------------------------------------------- |
-| `example-adr.md`     | `adr-template.md`     | Architecture Decision Record for database selection      |
-| `example-prd.md`     | `prd-template.md`     | Product Requirements Document for authentication feature |
-| `example-runbook.md` | `runbook-template.md` | Deployment runbook with rollback procedures              |
+모든 작업은 아이디어에서 시작해 회고까지 선형적인 흐름을 따라 구체화됩니다.
 
-_(Also see `specs/example-spec.md` for a complete feature specification example)_
+`01.prd` (기획) → `02.ard/03.adr` (설계/결정) → `04.specs` (상세 명세) → `05.plans/06.tasks` (실행/작업) → `07~09` (운영 지침) → `10~11` (사고/회고)
 
-## 3. General Guidelines
+## 언어 및 협업 원칙
 
-- All examples MUST include brief inline comments explaining their intended context.
-- Assume nothing in this folder will be deployed to production.
-- Examples MUST follow the exact structure defined in their corresponding templates.
+소통의 효율을 위해 역할을 나눴습니다.
 
-## 4. AI Agent Guidelines & Anti-Patterns
+- **AI 에이전트용 (Internal English)**: 에이전트의 정확한 추론을 돕기 위해 내부 지침(`00.agent-governance/`)과 기술 명세 상세는 **영어**로 작성합니다.
+- **사람용 (External Korean)**: 프로젝트 전체를 이해하기 위한 `README.md`와 개요 문서는 **한국어**가 기본입니다.
+- **응답 원칙**: 사용자의 요청에 대한 모든 답변은 항상 **한글**로 합니다.
 
-While these serve as "examples" to guide format and structure, any AI agent deriving actual project templates or creating new documents from these MUST ensure full compliance with the latest `.agent/rules/`.
+---
 
-- **Anti-Pattern**: Using outdated example configurations to override a strict security or operational rule defined in the `.agent/rules/`. Examples do _not_ supersede official standards unless explicitly permitted by `docs/guides/`.
+## 디렉터리 안내
+
+- **[00.agent-governance](00.agent-governance/README.md)**: AI 에이전트 전용 지침 및 거버넌스 (Lazy Loading)
+- **[01.prd](01.prd/README.md)**: 프로젝트 기획 및 요구사항 (Vision, Requirements)
+- **[02.ard](02.ard/README.md)** / **[03.adr](03.adr/README.md)**: 아키텍처 모델 및 의사결정 기록
+- **[04.specs](04.specs/README.md)**: 기술 명세 및 상세 설계 (SSoT)
+- **[05.plans](05.plans/README.md)** / **[06.tasks](06.tasks/README.md)**: 구현 계획 및 작업 현황 관리
+- **[07.guides](07.guides/README.md)** / **[08.operations](08.operations/README.md)**: 가이드라인 및 운영 정책
+- **[09.runbooks](09.runbooks/README.md)** / **[10.incidents](10.incidents/README.md)**: 운영 절차 및 사고 대응 기록
+- **[11.postmortems](11.postmortems/README.md)** / **[99.templates](99.templates/README.md)**: 장애 회고 및 공통 템플릿

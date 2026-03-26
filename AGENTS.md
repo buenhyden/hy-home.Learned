@@ -8,14 +8,14 @@ This document is the authoritative entrypoint for ALL AI assistants as of March 
 
 - **Lazy Loading**: Read indices first (`docs/README.md`); load only specific files needed for the task. Use `list_dir` or `view_file_outline` to discover structure.
 - **Skill Autonomy**: You are NOT restricted to specific tool whitelists. Choose the most effective tool for the task based on intent and efficiency.
-- **Traceability**: Every code change MUST link to a requirement in `docs/prd/` or a contract in `docs/specs/` and be tracked in `docs/plans/`.
+- **Traceability**: Every code change MUST link to a requirement in `docs/01.prd/` or a contract in `docs/04.specs/` and be tracked in `docs/05.plans/`.
 
 ## 2. Navigation Hierarchy
 
-- **Requirements**: [PRDs](docs/prd/)
-- **Decisions**: [ADRs](docs/adr/) | [ARDs](docs/ard/)
-- **Operations**: [Incidents](docs/operations/incidents/) | [Runbooks](docs/runbooks/) | [Postmortems](docs/operations/postmortems/)
-- **Execution**: [Plans](docs/plans/) | [Specs](docs/specs/)
+- **Requirements**: [PRDs](docs/01.prd/)
+- **Decisions**: [ADRs](docs/03.adr/) | [ARDs](docs/02.ard/)
+- **Operations**: [Incidents](docs/10.incidents/) | [Runbooks](docs/09.runbooks/) | [Postmortems](docs/11.postmortems/)
+- **Execution**: [Plans](docs/05.plans/) | [Specs](docs/04.specs/)
 
 ## 3. Runtime Selection
 
