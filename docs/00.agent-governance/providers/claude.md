@@ -1,21 +1,22 @@
 # Claude Provider Notes
 
-This file contains Claude Code-specific notes only.
+This file contains Claude Code-specific runtime behavior only.
 
 ## Core Behavior
 
-- Claude Code reads `CLAUDE.md`, not `AGENTS.md`, so the repository shim must import `AGENTS.md`.
-- Keep the root `CLAUDE.md` minimal and let provider detail live here.
-- Claude-specific project instructions should stay concise and modular.
-
-## Repository Contract
-
-- The repository shim is:
+- Claude Code reads `CLAUDE.md`, not `AGENTS.md` directly.
+- Use a thin repository shim in `CLAUDE.md`:
   - `@AGENTS.md`
   - `@./docs/00.agent-governance/providers/claude.md`
-- Root provider behavior must not duplicate repository-wide standards already defined in `AGENTS.md`.
+- Keep project `CLAUDE.md` concise. Recommended target is under 200 lines.
 
-## Notes
+## Loading And Modularity
 
-- `.claude/rules/` can be used later if the repository needs Claude-only path-scoped rules.
-- For this repository, the active governance source of truth is the root bootstrap plus `docs/00.agent-governance/`.
+- `@path` imports are expanded at session startup.
+- For larger rule sets, prefer path-scoped files under `.claude/rules/`.
+- Subdirectory `CLAUDE.md` files are loaded on demand when Claude reads files in those areas.
+
+## Governance Boundary
+
+- Keep repository-wide governance in `AGENTS.md` and `docs/00.agent-governance/rules/`.
+- Keep this file limited to Claude-specific behavior and caveats.
