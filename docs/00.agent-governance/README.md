@@ -1,32 +1,42 @@
-# Agentic Documentation (`docs/agentic/`)
+# AI Agent Governance Hub
 
-> **layer:** agentic
+This directory is the canonical governance hub for AI agents working in this repository.
 
-This directory houses the authoritative instructions, protocols, and governance standards for AI Agents working in this repository.
+## Directory Structure
 
-## Core Pillars
+- `rules/`: repository-wide bootstrap, persona routing, documentation protocol, git workflow, and quality gates
+- `scopes/`: task-layer guidance for product, architecture, backend, docs, infra, ops, security, qa, and meta-governance work
+- `providers/`: provider-specific notes for Claude Code and Gemini CLI
+- `memory/`: optional memory templates and notes for future reuse
 
-- [Agentic Pillars](pillar.md): Foundational reasoning and autonomy principles.
-- [Reasoning Standards](standards.md): Detailed 9-step deep execution protocol.
-- [Persona Standards](personas.md): Specialized role definitions (Architect, Security, DevOps).
-- [Instruction Management](management.md): Governance for versioning and scaling instructions.
-- [Standard Operating Procedures](standards/):
-  - [Engineering Standards](standards/engineering-standards.md)
-  - [Git Standards](standards/git-standards.md)
-  - [Architecture Standards](standards/architecture-standards.md)
-  - [Traceability Standards](standards/traceability.md)
-  - [Requirements & Specifications](standards/requirements-specs.md)
-  - [Engineering Excellence](standards/excellence.md)
-  - [API Design](standards/api-design.md)
-  - [Database Design](standards/database-design.md)
+## Usage Order
 
-## Governing Principles
+1. Start from the repository root `AGENTS.md`.
+2. Read `rules/bootstrap.md`.
+3. Load `rules/persona.md` to select the task persona.
+4. Load the matching file from `scopes/`.
+5. Load the relevant file from `providers/` when the runtime matters.
 
-1. **Reasoning-First**: All agents must follow the 9-step reasoning framework.
-2. **Skill Autonomy**: Specific skills are not restricted; agents should choose the best tool for the purpose.
-3. **Lazy Loading**: Instructions are discovered and loaded on-demand based on the task context.
-4. **Traceability**: All agent actions must be traceable to a specific requirement, plan, or operational need.
+## Compliance
+
+- All work must anchor to `docs/01.prd/` or `docs/04.specs/`, with execution tracked in `docs/05.plans/`.
+- Read the docs index first and load only the documents needed for the active task.
+- Keep active governance files in this directory English-only.
+- Update README files when structure, responsibilities, or navigation change.
+
+## Relationship To The Numeric Docs Taxonomy
+
+- `docs/01.prd/`: product intent and requirements
+- `docs/02.ard/` and `docs/03.adr/`: architecture references and decisions
+- `docs/04.specs/`: technical contracts and implementation design
+- `docs/05.plans/`: execution plans
+- `docs/06.tasks/`: task tracking
+- `docs/07.guides/` to `docs/11.postmortems/`: guides, operations, runbooks, incidents, and lessons learned
+
+## Language Rule
+
+- Human-facing root guidance is written in Korean.
+- Active AI-agent governance files in this directory are written in English.
 
 ---
-
-_Last Updated: March 2026_
+_Last Updated: 2026-03-26_

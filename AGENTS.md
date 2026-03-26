@@ -1,28 +1,48 @@
-# AI Agent Master Guide
+# AI Agent Bootstrap
 
 > **layer:** agentic
 
-This document is the authoritative entrypoint for ALL AI assistants as of March 2026.
+This file is the repository-wide bootstrap for all coding agents.
 
-## 1. Governance Rules
+## Governance Rules
 
-- **Lazy Loading**: Read indices first (`docs/README.md`); load only specific files needed for the task. Use `list_dir` or `view_file_outline` to discover structure.
-- **Skill Autonomy**: You are NOT restricted to specific tool whitelists. Choose the most effective tool for the task based on intent and efficiency.
-- **Traceability**: Every code change MUST link to a requirement in `docs/01.prd/` or a contract in `docs/04.specs/` and be tracked in `docs/05.plans/`.
+- Read [docs/README.md](./docs/README.md) first and load only the specific index or document needed for the current task.
+- Every code or documentation change must anchor to a requirement in `docs/01.prd/` or a contract in `docs/04.specs/`, and execution must be tracked in `docs/05.plans/`.
+- Select the persona and scope that match the task before acting.
+- Use the most effective available skills and tools. No artificial whitelist is allowed.
+- Update affected README files when structure, responsibilities, or navigation change.
 
-## 2. Navigation Hierarchy
+## Documentation Taxonomy
 
-- **Requirements**: [PRDs](docs/01.prd/)
-- **Decisions**: [ADRs](docs/03.adr/) | [ARDs](docs/02.ard/)
-- **Operations**: [Incidents](docs/10.incidents/) | [Runbooks](docs/09.runbooks/) | [Postmortems](docs/11.postmortems/)
-- **Execution**: [Plans](docs/05.plans/) | [Specs](docs/04.specs/)
+- `docs/00.agent-governance/`: AI-agent governance, routing, provider notes
+- `docs/01.prd/`: product requirements
+- `docs/02.ard/` and `docs/03.adr/`: architecture references and decisions
+- `docs/04.specs/`: technical contracts and design
+- `docs/05.plans/`: execution plans
+- `docs/06.tasks/`: task tracking
+- `docs/07.guides/` to `docs/11.postmortems/`: guides, ops, runbooks, incidents, lessons
 
-## 3. Runtime Selection
+## Language Strategy
 
-After reading this guide, immediately load your specific runtime context:
+- Human-facing repository overviews and root guides are written in Korean.
+- AI-facing governance and technical operating documents are written in English.
+- `docs/00.agent-governance/` must remain English-only.
 
-- [Claude Code](CLAUDE.md)
-- [Gemini](GEMINI.md)
+## Persona And Scope Activation
+
+- Start with `docs/00.agent-governance/rules/bootstrap.md`.
+- Load `docs/00.agent-governance/rules/persona.md` to select the task persona.
+- Load the matching file in `docs/00.agent-governance/scopes/` for task-specific rules.
+
+## Runtime Handoff
+
+- Claude Code: [CLAUDE.md](./CLAUDE.md)
+- Gemini CLI: [GEMINI.md](./GEMINI.md)
+
+## Verification Mandate
+
+- Run the checks required by the touched files and the governing instructions after edits.
+- For governance refactors, verify structure, stale paths, language policy, and provider import chains.
 
 ---
-_Last Updated: 2026-03-15_
+_Last Updated: 2026-03-26_
