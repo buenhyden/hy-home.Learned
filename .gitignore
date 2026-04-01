@@ -60,3 +60,5 @@ References/
 
 .claude/settings.local.json
 .agent/
+
+certs/
