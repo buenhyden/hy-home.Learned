@@ -20,7 +20,7 @@
     "detect-secrets>=1.5.0",
     "docstr-coverage>=2.3.0",
     "httpx>=0.28.1",
-    "hypothesis>=6.150.1",
+    "hypothesis>=6.151.11",
     "mypy>=1.19.1",
     "nox>=2025.11.12",
     "nuitka>=2.8.9",
