@@ -22,7 +22,7 @@
     "httpx>=0.28.1",
     "hypothesis>=6.150.1",
     "mypy>=1.19.1",
-    "nox>=2025.11.12",
+    "nox>=2026.2.9",
     "nuitka>=2.8.9",
     "pip-audit>=2.10.0",
     "pipdeptree>=2.30.0",
