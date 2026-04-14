@@ -158,8 +158,8 @@ docs/00.agent-governance/
 
 | ID | Level | Description | Command / How to Run | Pass Criteria |
 | --- | --- | --- | --- | --- |
-| VAL-PLN-001 | Structural | Verify `docs/00.agent-governance/` matches the example-aligned top-level shape. | `find docs/00.agent-governance -maxdepth 2 -type f | sort` | Output contains only `README.md`, `rules/`, `scopes/`, `providers/`, and optional `memory/` files expected by the plan. |
-| VAL-PLN-002 | Reference | Scan for obsolete path patterns in active governance files. | `rg -n "docs/(prd|adr|specs|plans|runbooks|operations)|docs/agentic|templates/|file:///|\\.agent/" AGENTS.md GEMINI.md CLAUDE.md docs/00.agent-governance` | No stale path appears in active guidance except explicitly labeled legacy compatibility notes. |
+| VAL-PLN-001 | Structural | Verify `docs/00.agent-governance/` matches the example-aligned top-level shape. | `find docs/00.agent-governance -maxdepth 2 -type f \| sort` | Output contains only `README.md`, `rules/`, `scopes/`, `providers/`, and optional `memory/` files expected by the plan. |
+| VAL-PLN-002 | Reference | Scan for obsolete path patterns in active governance files. | `rg -n "docs/(prd\|adr\|specs\|plans\|runbooks\|operations)\|docs/agentic\|templates/\|file:///\|\\.agent/" AGENTS.md GEMINI.md CLAUDE.md docs/00.agent-governance` | No stale path appears in active guidance except explicitly labeled legacy compatibility notes. |
 | VAL-PLN-003 | Language | Ensure `docs/00.agent-governance/` remains English-only. | `rg -n "[가-힣]" docs/00.agent-governance` | No matches. |
 | VAL-PLN-004 | Language | Ensure root `README.md` is Korean and contains docs language policy. | Manual review of `README.md` | Korean narrative exists and explicitly states the English/Korean document split. |
 | VAL-PLN-005 | Token Budget | Check that root entry files stay thin. | `wc -l AGENTS.md GEMINI.md CLAUDE.md` | `AGENTS.md` stays under 80 lines, `GEMINI.md` and `CLAUDE.md` stay under 40 lines each unless a justified exception is documented. |
