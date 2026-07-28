@@ -35,7 +35,7 @@
     "pytest-xdist>=3.8.0",
     "pytest>=9.0.3",
     "ruff>=0.15.9",
-    "setuptools>=80.9.0",
+    "setuptools>=83.0.0",
     "tox>=4.34.1",
     "ty>=0.0.11",
     "wheel>=0.46.3",
