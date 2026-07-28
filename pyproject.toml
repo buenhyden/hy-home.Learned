@@ -61,7 +61,7 @@
 
 [tool.uv]
   managed              =true
-  override-dependencies=["py>=1.11.0"]
+  override-dependencies=["py>=1.11.0", "pygments>=2.20.0"]
   package              =false
 
 [tool.ruff]
