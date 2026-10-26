@@ -56,9 +56,7 @@ examples/.generated/
 .opencode/skills/
 !.opencode/skills/.gitkeep
 
-References/
-
 .claude/settings.local.json
-.agent/
+
 
 certs/
